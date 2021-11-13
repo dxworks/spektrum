@@ -17,9 +17,9 @@ open class HierarchyUnit(
     }
 
     object HierarchyUnitTypes {
-        const val METHOD = "METHOD"
         const val FOLDER = "FOLDER"
         const val FILE = "FILE"
         const val CLASS = "CLASS"
+        const val METHOD = "METHOD"
     }
 }
