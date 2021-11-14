@@ -29,9 +29,9 @@ fun castUnitSet(set: Set<MockHierarchyUnit>): Set<HierarchyUnit> {
     set.forEach {
         outSet.add(
             HierarchyUnit(
-                it.identifier!!,
+                it.identifier,
                 castChildren(it.children!!),
-                it.type!!
+                it.type
             )
         )
     }
@@ -43,14 +43,14 @@ fun castChildren(children: Set<MockHierarchyUnit>): MutableSet<HierarchyUnit> {
     val outSet = mutableSetOf<HierarchyUnit>()
 
     if (children.all { it.type == HierarchyUnit.HierarchyUnitTypes.METHOD })
-        children.forEach { outSet.add(Method(it.identifier!!, it.callers!!)) }
+        children.forEach { outSet.add(Method(it.identifier, it.callers!!)) }
     else {
         children.forEach{
             outSet.add(
                 HierarchyUnit(
-                    it.identifier!!,
+                    it.identifier,
                     castChildren(it.children!!),
-                    it.type!!
+                    it.type
                 )
             )
         }
