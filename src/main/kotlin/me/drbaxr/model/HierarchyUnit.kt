@@ -24,8 +24,25 @@ open class HierarchyUnit(
     }
 
     override fun toString(): String {
-        return "HierarchyUnit(identifier='$identifier', children=$children, type='$type', isTestable=$isTestable)"
+        var finalString = printStyle(this)
+        children.forEach { finalString += "\n${recursivePrint(it, 1)}" }
+
+        return finalString
     }
 
+    private fun recursivePrint(hierarchyUnit: HierarchyUnit, indentCount: Int): String {
+        val indentation = "\t".repeat(indentCount)
+        var finalString = "$indentation${printStyle(hierarchyUnit)}"
 
+        if (hierarchyUnit.type != HierarchyUnitTypes.METHOD) {
+            hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1)}" }
+        } else if (hierarchyUnit is Method) {
+            hierarchyUnit.callers.forEach { finalString += "\n$indentation\t$it" }
+        }
+
+        return finalString
+    }
+
+    private fun printStyle(hierarchyUnit: HierarchyUnit): String =
+        "[${hierarchyUnit.type}] ${hierarchyUnit.identifier}"
 }

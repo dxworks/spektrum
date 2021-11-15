@@ -8,9 +8,9 @@ import me.drbaxr.model.Method
 import java.io.FileReader
 
 fun main() {
-    val test = getMock(FileReader("inputs/input.json"))
+    val units = getMock(FileReader("inputs/input.json"))
 
-    println(test)
+    units.forEach { println(it) }
 }
 
 fun getMock(reader: FileReader): Set<HierarchyUnit> {
