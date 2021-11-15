@@ -6,7 +6,7 @@ open class HierarchyUnit(
     val identifier: String,
     val children: MutableSet<HierarchyUnit>,
     val type: String,
-    var isTestable: Boolean = false
+    var isTestable: Boolean = true
 ) {
     private var coverage: Float = 0.0f
 
@@ -37,12 +37,16 @@ open class HierarchyUnit(
         if (hierarchyUnit.type != HierarchyUnitTypes.METHOD) {
             hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1)}" }
         } else if (hierarchyUnit is Method) {
-            hierarchyUnit.callers.forEach { finalString += "\n$indentation\t$it" }
+            hierarchyUnit.callers.forEach { finalString += "\n$indentation\t${getTreeCharacter(hierarchyUnit.callers, it)}$it" }
         }
 
         return finalString
     }
 
+    private fun <T> getTreeCharacter(units: Set<T>, unit: T): String {
+        return "╠".takeIf { units.last() !== unit } ?: "╚"
+    }
+
     private fun printStyle(hierarchyUnit: HierarchyUnit): String =
-        "[${hierarchyUnit.type}] ${hierarchyUnit.identifier}"
+        "[${hierarchyUnit.type}] ${"[TEST] ".takeIf { !isTestable } ?: ""}${hierarchyUnit.identifier}"
 }
