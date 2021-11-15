@@ -2,6 +2,8 @@ package me.drbaxr
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import me.drbaxr.central.UnitClassifier
+import me.drbaxr.identifier.SimpleTestIdentifier
 import me.drbaxr.mock.MockHierarchyUnit
 import me.drbaxr.model.HierarchyUnit
 import me.drbaxr.model.Method
@@ -10,7 +12,13 @@ import java.io.FileReader
 fun main() {
     val units = getMock(FileReader("inputs/input.json"))
 
-    units.forEach { println(it) }
+    val split = UnitClassifier().classify(units, SimpleTestIdentifier())
+    println("***TEST UNITS***")
+    split.first.forEach { println(it) }
+    println()
+    println()
+    println("***TESTABLE UNITS***")
+    split.second.forEach { println(it) }
 }
 
 fun getMock(reader: FileReader): Set<HierarchyUnit> {
