@@ -6,7 +6,8 @@ open class HierarchyUnit(
     val identifier: String,
     val children: MutableSet<HierarchyUnit>,
     val type: String,
-    var isTestable: Boolean = true
+    var isTestable: Boolean = true, // shouldn't be changed outside of unit classifier
+    var parent: HierarchyUnit? = null // shouldn't be changed outside of model adapter
 ) {
     private var coverage: Float = 0.0f
 
@@ -19,6 +20,7 @@ open class HierarchyUnit(
 
     fun getCoverage(): Float = coverage.takeIf { isTestable } ?: throw NonTestableUnitException(identifier)
 
+    // shouldn't be called outside of coverage model calculator
     fun setCoverage(coverage: Float) {
         this.coverage = coverage.takeIf { isTestable } ?: throw NonTestableUnitException(identifier)
     }
@@ -37,16 +39,12 @@ open class HierarchyUnit(
         if (hierarchyUnit.type != HierarchyUnitTypes.METHOD) {
             hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1)}" }
         } else if (hierarchyUnit is Method) {
-            hierarchyUnit.callers.forEach { finalString += "\n$indentation\t${getTreeCharacter(hierarchyUnit.callers, it)}$it" }
+            hierarchyUnit.callers.forEach { finalString += "\n$indentation\t$it" }
         }
 
         return finalString
     }
 
-    private fun <T> getTreeCharacter(units: Set<T>, unit: T): String {
-        return "╠".takeIf { units.last() !== unit } ?: "╚"
-    }
-
     private fun printStyle(hierarchyUnit: HierarchyUnit): String =
-        "[${hierarchyUnit.type}] ${"[TEST] ".takeIf { !isTestable } ?: ""}${hierarchyUnit.identifier}"
+        "[${hierarchyUnit.type}] ${"[TEST]".takeIf { !isTestable } ?: "[${hierarchyUnit.getCoverage()}]"} ${hierarchyUnit.identifier}"
 }

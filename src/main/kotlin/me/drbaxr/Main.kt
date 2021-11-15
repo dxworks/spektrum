@@ -2,6 +2,7 @@ package me.drbaxr
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import me.drbaxr.central.CoverageModelCalculator
 import me.drbaxr.central.UnitClassifier
 import me.drbaxr.identifier.SimpleTestIdentifier
 import me.drbaxr.mock.MockHierarchyUnit
@@ -13,14 +14,10 @@ fun main() {
     val units = getMock(FileReader("inputs/input.json"))
 
     val split = UnitClassifier().classify(units, SimpleTestIdentifier())
-    println("***TEST UNITS***")
-    split.first.forEach { println(it) }
-    println()
-    println()
-    println("***TESTABLE UNITS***")
-    split.second.forEach { println(it) }
+    CoverageModelCalculator().calculate(split.first, split.second)
 }
 
+// everything under this will have to be removed
 fun getMock(reader: FileReader): Set<HierarchyUnit> {
     val type = object : TypeToken<Set<MockHierarchyUnit>>() {}.type
     val mockSet = Gson().fromJson<Set<MockHierarchyUnit>>(
@@ -44,7 +41,17 @@ fun castUnitSet(set: Set<MockHierarchyUnit>): Set<HierarchyUnit> {
         )
     }
 
+    setParents(outSet)
+
     return outSet
+}
+
+fun setParents(units: Set<HierarchyUnit>) {
+    units.forEach { unit ->
+        unit.children.forEach { it.parent = unit }
+        if (unit.type != HierarchyUnit.HierarchyUnitTypes.METHOD && unit !is Method)
+            setParents(unit.children)
+    }
 }
 
 fun castChildren(children: Set<MockHierarchyUnit>): MutableSet<HierarchyUnit> {
