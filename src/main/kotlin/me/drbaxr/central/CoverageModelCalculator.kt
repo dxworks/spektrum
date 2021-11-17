@@ -2,18 +2,20 @@ package me.drbaxr.central
 
 import me.drbaxr.model.HierarchyUnit
 import me.drbaxr.model.Method
+import me.drbaxr.util.HierarchyUnitTools
 
 class CoverageModelCalculator {
 
-    fun calculate(test: Set<HierarchyUnit>, testable: Set<HierarchyUnit>) {
-        val testMethods = mutableSetOf<Method>()
-        val testableMethods = mutableSetOf<Method>()
-
-        test.forEach { testMethods.addAll(extractMethods(it)) }
-        testable.forEach { testableMethods.addAll(extractMethods(it)) }
+    fun calculate(test: Set<HierarchyUnit>, testable: Set<HierarchyUnit>): Set<HierarchyUnit> {
+        val testMethods =
+            HierarchyUnitTools.getTypeUnits(test, HierarchyUnit.HierarchyUnitTypes.METHOD).map { it as Method }.toSet()
+        val testableMethods =
+            HierarchyUnitTools.getTypeUnits(testable, HierarchyUnit.HierarchyUnitTypes.METHOD).map { it as Method }.toSet()
 
         setCoverage(testable, testMethods)
         aggregateCoverage(testableMethods)
+
+        return testable
     }
 
     private fun aggregateCoverage(units: Set<HierarchyUnit>) {
@@ -45,16 +47,6 @@ class CoverageModelCalculator {
             } else {
                 setCoverage(it.children, testMethods)
             }
-        }
-    }
-
-    private fun extractMethods(unit: HierarchyUnit): Set<Method> {
-        return if (unit.type == HierarchyUnit.HierarchyUnitTypes.METHOD && unit is Method) {
-            setOf(unit)
-        } else {
-            val childrenMethods = mutableSetOf<Method>()
-            unit.children.forEach { childrenMethods.addAll(extractMethods(it)) }
-            childrenMethods
         }
     }
 
