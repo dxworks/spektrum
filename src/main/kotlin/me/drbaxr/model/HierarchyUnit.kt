@@ -26,6 +26,10 @@ open class HierarchyUnit(
     }
 
     override fun toString(): String {
+        return "[$type] $identifier"
+    }
+
+    fun toPrettyString(): String {
         var finalString = printStyle(this)
         children.forEach { finalString += "\n${recursivePrint(it, 1)}" }
 
