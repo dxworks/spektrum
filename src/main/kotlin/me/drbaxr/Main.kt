@@ -3,6 +3,7 @@ package me.drbaxr
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import me.drbaxr.central.CoverageModelCalculator
+import me.drbaxr.central.MetricsExporter
 import me.drbaxr.central.UnitClassifier
 import me.drbaxr.identifier.SimpleTestIdentifier
 import me.drbaxr.mock.MockHierarchyUnit
@@ -14,10 +15,11 @@ fun main() {
     val units = getMock(FileReader("inputs/input.json"))
 
     val split = UnitClassifier().classify(units, SimpleTestIdentifier())
-    CoverageModelCalculator().calculate(split.first, split.second)
+    val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
+    MetricsExporter().export(coveredModel)
 }
 
-// everything under this will have to be removed
+// everything under this will be removed
 fun getMock(reader: FileReader): Set<HierarchyUnit> {
     val type = object : TypeToken<Set<MockHierarchyUnit>>() {}.type
     val mockSet = Gson().fromJson<Set<MockHierarchyUnit>>(
