@@ -1,0 +1,55 @@
+[
+  {
+    "identifier": "src/main/java/Main.java",
+    "type": "FILE",
+    "coverage": 0.5,
+    "children": [
+      {
+        "identifier": "src/main/java/Main.java/Main",
+        "type": "CLASS",
+        "coverage": 0.5,
+        "children": [
+          {
+            "identifier": "src/main/java/Main.java/Main/main",
+            "type": "METHOD",
+            "coverage": 0.0
+          },
+          {
+            "identifier": "src/main/java/Main.java/Main/mainTest",
+            "type": "METHOD",
+            "coverage": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "src/main/java/Class.java",
+    "type": "FILE",
+    "coverage": 0.6666667,
+    "children": [
+      {
+        "identifier": "src/main/java/Class.java/Class",
+        "type": "CLASS",
+        "coverage": 0.6666667,
+        "children": [
+          {
+            "identifier": "src/main/java/Class.java/Class/sampleMethod",
+            "type": "METHOD",
+            "coverage": 1.0
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/anotherMethod",
+            "type": "METHOD",
+            "coverage": 1.0
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/notTested",
+            "type": "METHOD",
+            "coverage": 0.0
+          }
+        ]
+      }
+    ]
+  }
+]

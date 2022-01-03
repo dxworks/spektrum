@@ -16,7 +16,7 @@ fun main() {
 
     val split = UnitClassifier().classify(units, SimpleTestIdentifier())
     val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
-    MetricsExporter().export(coveredModel)
+    MetricsExporter().exportAndSave(coveredModel)
 }
 
 // everything under this will be removed

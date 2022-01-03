@@ -1,6 +1,7 @@
 package me.drbaxr.central
 
 import com.google.gson.GsonBuilder
+import me.drbaxr.model.ExportUnit
 import me.drbaxr.model.HierarchyUnit
 import me.drbaxr.util.FileTools
 import me.drbaxr.util.HierarchyUnitTools
@@ -14,7 +15,12 @@ class MetricsExporter {
         const val MODEL_FILE_PATH = "analytics/model.json"
     }
 
-    fun export(model: Set<HierarchyUnit>) {
+    fun getExportModel(model: Set<HierarchyUnit>): Set<ExportUnit> {
+        return HierarchyUnitTools.mapToExport(model)
+    }
+
+    fun exportAndSave(model: Set<HierarchyUnit>) {
+        val exportModel = getExportModel(model)
         val coverageByTypes = mutableMapOf<String, TypeCoverage>()
 
         val coverageTypes = getCoverageTypes(model)
@@ -25,8 +31,6 @@ class MetricsExporter {
 
             coverageByTypes[type] = TypeCoverage(typeCoverageAvg.toFloat(), typeCoverageCeil.toFloat())
         }
-
-        val exportModel = HierarchyUnitTools.mapToExport(model)
 
         val gson = GsonBuilder().setPrettyPrinting().create()
 

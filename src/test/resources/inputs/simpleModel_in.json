@@ -1,0 +1,73 @@
+[
+  {
+    "identifier": "src/main/java/Main.java",
+    "children": [
+      {
+        "identifier": "src/main/java/Main.java/Main",
+        "children": [
+          {
+            "identifier": "src/main/java/Main.java/Main/main",
+            "callers": [],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Main.java/Main/mainTest",
+            "callers": ["src/main/java/Class.java/Class/anotherTestMethod", "src/main/java/Main.java/Main/main"],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "FILE"
+  },
+  {
+    "identifier": "src/main/java/Class.java",
+    "children": [
+      {
+        "identifier": "src/main/java/Class.java/Class",
+        "children": [
+          {
+            "identifier": "src/main/java/Class.java/Class/sampleMethod",
+            "callers": ["src/main/java/Main.java/Main/main", "src/main/java/Class.java/Class/anotherTestMethod"],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/anotherMethod",
+            "callers": ["src/main/java/Main.java/Main/main", "src/main/java/Class.java/Class/sampleMethod", "src/main/java/Class.java/Class/sampleTestMethod"],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/notTested",
+            "callers": ["src/main/java/Main.java/Main/main", "src/main/java/Class.java/Class/sampleMethod"],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "FILE"
+  },
+  {
+    "identifier": "src/main/java/TestClass.java",
+    "children": [
+      {
+        "identifier": "src/main/java/TestClass.java/TestClass",
+        "children": [
+          {
+            "identifier": "src/main/java/Class.java/Class/sampleTestMethod",
+            "callers": [],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/anotherTestMethod",
+            "callers": [],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "FILE"
+  }
+]
