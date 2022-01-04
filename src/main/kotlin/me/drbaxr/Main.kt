@@ -12,7 +12,7 @@ import me.drbaxr.model.Method
 import java.io.FileReader
 
 fun main() {
-    val units = getMock(FileReader("inputs/input.json"))
+    val units = getMock(FileReader("inputs/input_cs.json"))
 
     val split = UnitClassifier().classify(units, SimpleTestIdentifier())
     val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)

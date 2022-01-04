@@ -1,0 +1,89 @@
+[
+  {
+    "identifier": "SimpleJSON",
+    "children": [
+      {
+        "identifier": "SimpleJSON/JSONParser",
+        "children": [
+          {
+            "identifier": "SimpleJSON/JSONParser/toJSON",
+            "callers": ["JSONTest/TestClass/testMethod1"],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "SimpleJSON/JSONParser/fromJSON",
+            "callers": [],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      },
+      {
+        "identifier": "SimpleJSON/JSONSimplifier",
+        "children": [
+          {
+            "identifier": "SimpleJSON/JSONSimplifier/simplify",
+            "callers": ["JSONTest/TestClass/testMethod1"],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "SimpleJSON/JSONSimplifier/optimize",
+            "callers": [],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "SimpleJSON/JSONSimplifier/beautify",
+            "callers": [],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "PACKAGE"
+  },
+  {
+    "identifier": "JSONUtil",
+    "children": [
+      {
+        "identifier": "JSONUtil/Utils",
+        "children": [
+          {
+            "identifier": "JSONUtil/Utils/sum",
+            "callers": [],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "JSONUtil/Utils/mul",
+            "callers": ["JSONTest/TestClass/testMethod2"],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "PACKAGE"
+  },
+  {
+    "identifier": "JSONTest",
+    "children": [
+      {
+        "identifier": "JSONTest/TestClass",
+        "children": [
+          {
+            "identifier": "JSONTest/TestClass/testMethod1",
+            "callers": [],
+            "type": "METHOD"
+          },
+          {
+            "identifier": "JSONTest/TestClass/testMethod2",
+            "callers": [],
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "PACKAGE"
+  }
+]

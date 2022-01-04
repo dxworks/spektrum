@@ -1,0 +1,72 @@
+[
+  {
+    "identifier": "SimpleJSON",
+    "type": "PACKAGE",
+    "coverage": 0.4166667,
+    "children": [
+      {
+        "identifier": "SimpleJSON/JSONParser",
+        "type": "CLASS",
+        "coverage": 0.5,
+        "children": [
+          {
+            "identifier": "SimpleJSON/JSONParser/toJSON",
+            "type": "METHOD",
+            "coverage": 1.0
+          },
+          {
+            "identifier": "SimpleJSON/JSONParser/fromJSON",
+            "type": "METHOD",
+            "coverage": 0.0
+          }
+        ]
+      },
+      {
+        "identifier": "SimpleJSON/JSONSimplifier",
+        "type": "CLASS",
+        "coverage": 0.33333334,
+        "children": [
+          {
+            "identifier": "SimpleJSON/JSONSimplifier/simplify",
+            "type": "METHOD",
+            "coverage": 1.0
+          },
+          {
+            "identifier": "SimpleJSON/JSONSimplifier/optimize",
+            "type": "METHOD",
+            "coverage": 0.0
+          },
+          {
+            "identifier": "SimpleJSON/JSONSimplifier/beautify",
+            "type": "METHOD",
+            "coverage": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "identifier": "JSONUtil",
+    "type": "PACKAGE",
+    "coverage": 0.5,
+    "children": [
+      {
+        "identifier": "JSONUtil/Utils",
+        "type": "CLASS",
+        "coverage": 0.5,
+        "children": [
+          {
+            "identifier": "JSONUtil/Utils/sum",
+            "type": "METHOD",
+            "coverage": 0.0
+          },
+          {
+            "identifier": "JSONUtil/Utils/mul",
+            "type": "METHOD",
+            "coverage": 1.0
+          }
+        ]
+      }
+    ]
+  }
+]

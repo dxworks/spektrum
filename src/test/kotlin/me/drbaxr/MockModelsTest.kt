@@ -18,7 +18,16 @@ class MockModelsTest {
 
     @Test
     fun testSimpleModel() {
-        val units = getMock(FileReader("src/test/resources/inputs/simpleModel_in.json"))
+        assertTrue { getComparisonWithExpectedViaFixedProgramRun("simpleModel") }
+    }
+
+    @Test
+    fun testSimpleModelCS() {
+        assertTrue { getComparisonWithExpectedViaFixedProgramRun("simpleModelCS") }
+    }
+
+    private fun getComparisonWithExpectedViaFixedProgramRun(runName: String): Boolean {
+        val units = getMock(FileReader("src/test/resources/inputs/${runName}_in.json"))
 
         val split = UnitClassifier().classify(units, SimpleTestIdentifier())
         val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
@@ -26,11 +35,11 @@ class MockModelsTest {
 
         val exportedModelType = object : TypeToken<Set<ExportUnit>>() {}.type
         val expectedModel = Gson().fromJson<Set<ExportUnit>>(
-            FileReader("src/test/resources/outputs/simpleModel_exp.json"),
+            FileReader("src/test/resources/outputs/${runName}_exp.json"),
             exportedModelType
         )
 
-        assertTrue { exportedModel == expectedModel }
+        return exportedModel == expectedModel
     }
 
     private fun getMock(reader: FileReader): Set<HierarchyUnit> {
