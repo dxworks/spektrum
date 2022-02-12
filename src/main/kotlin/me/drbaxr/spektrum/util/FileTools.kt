@@ -1,4 +1,4 @@
-package me.drbaxr.util
+package me.drbaxr.spektrum.util
 
 import java.io.File
 import kotlin.io.path.Path

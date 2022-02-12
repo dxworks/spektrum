@@ -1,8 +1,8 @@
-package me.drbaxr.util
+package me.drbaxr.spektrum.util
 
-import me.drbaxr.model.ExportUnit
-import me.drbaxr.model.HierarchyUnit
-import me.drbaxr.model.Method
+import me.drbaxr.spektrum.main.model.ExportUnit
+import me.drbaxr.spektrum.main.model.HierarchyUnit
+import me.drbaxr.spektrum.main.model.Method
 
 class HierarchyUnitTools {
 

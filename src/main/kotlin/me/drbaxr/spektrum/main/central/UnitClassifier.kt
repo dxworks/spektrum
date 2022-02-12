@@ -1,7 +1,7 @@
-package me.drbaxr.central
+package me.drbaxr.spektrum.main.central
 
-import me.drbaxr.identifier.TestIdentifier
-import me.drbaxr.model.HierarchyUnit
+import me.drbaxr.spektrum.main.identifier.TestIdentifier
+import me.drbaxr.spektrum.main.model.HierarchyUnit
 
 class UnitClassifier {
 

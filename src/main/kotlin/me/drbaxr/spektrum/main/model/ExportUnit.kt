@@ -1,4 +1,4 @@
-package me.drbaxr.model
+package me.drbaxr.spektrum.main.model
 
 data class ExportUnit (
     val identifier: String,

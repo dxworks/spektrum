@@ -1,6 +1,6 @@
-package me.drbaxr.model
+package me.drbaxr.spektrum.main.model
 
-import me.drbaxr.exception.NonTestableUnitException
+import me.drbaxr.spektrum.main.exception.NonTestableUnitException
 
 open class HierarchyUnit(
     val identifier: String,

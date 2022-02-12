@@ -1,4 +1,4 @@
-package me.drbaxr.model
+package me.drbaxr.spektrum.main.model
 
 class Method(
     identifier: String,

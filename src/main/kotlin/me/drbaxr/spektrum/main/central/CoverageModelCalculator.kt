@@ -1,8 +1,8 @@
-package me.drbaxr.central
+package me.drbaxr.spektrum.main.central
 
-import me.drbaxr.model.HierarchyUnit
-import me.drbaxr.model.Method
-import me.drbaxr.util.HierarchyUnitTools
+import me.drbaxr.spektrum.main.model.HierarchyUnit
+import me.drbaxr.spektrum.main.model.Method
+import me.drbaxr.spektrum.util.HierarchyUnitTools
 
 class CoverageModelCalculator {
 

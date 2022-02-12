@@ -2,14 +2,14 @@ package me.drbaxr
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.central.CoverageModelCalculator
-import me.drbaxr.central.MetricsExporter
-import me.drbaxr.central.UnitClassifier
-import me.drbaxr.identifier.SimpleTestIdentifier
-import me.drbaxr.mock.MockHierarchyUnit
-import me.drbaxr.model.ExportUnit
-import me.drbaxr.model.HierarchyUnit
-import me.drbaxr.model.Method
+import me.drbaxr.spektrum.main.central.CoverageModelCalculator
+import me.drbaxr.spektrum.main.central.MetricsExporter
+import me.drbaxr.spektrum.main.central.UnitClassifier
+import me.drbaxr.spektrum.main.identifier.SimpleTestIdentifier
+import me.drbaxr.spektrum.main.mock.MockHierarchyUnit
+import me.drbaxr.spektrum.main.model.ExportUnit
+import me.drbaxr.spektrum.main.model.HierarchyUnit
+import me.drbaxr.spektrum.main.model.Method
 import org.junit.Test
 import java.io.FileReader
 import kotlin.test.assertTrue

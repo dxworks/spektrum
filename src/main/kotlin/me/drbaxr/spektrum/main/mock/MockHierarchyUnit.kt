@@ -1,4 +1,4 @@
-package me.drbaxr.mock
+package me.drbaxr.spektrum.main.mock
 
 data class MockHierarchyUnit(
     var identifier: String,
