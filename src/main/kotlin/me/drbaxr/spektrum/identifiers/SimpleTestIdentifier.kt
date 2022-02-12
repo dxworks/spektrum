@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.main.identifier
+package me.drbaxr.spektrum.identifiers
 
 import me.drbaxr.spektrum.main.model.HierarchyUnit
 
