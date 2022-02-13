@@ -3,13 +3,9 @@ package me.drbaxr.spektrum
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.adapters.CSModelAdapter
-import me.drbaxr.spektrum.main.central.CoverageModelCalculator
-import me.drbaxr.spektrum.main.central.MetricsExporter
-import me.drbaxr.spektrum.main.central.UnitClassifier
-import me.drbaxr.spektrum.identifiers.SimpleTestIdentifier
 import me.drbaxr.spektrum.main.mock.MockHierarchyUnit
 import me.drbaxr.spektrum.main.model.HierarchyUnit
-import me.drbaxr.spektrum.main.model.Method
+import me.drbaxr.spektrum.main.model.HierarchyMethod
 import java.io.FileReader
 
 fun main() {
@@ -19,7 +15,11 @@ fun main() {
 //    val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
 //    MetricsExporter().exportAndSave(coveredModel)
     val adapter = CSModelAdapter()
-    adapter.adapt()
+    val model = adapter.adapt()
+
+    model.forEach {
+        println(it.toPrettyString())
+    }
 }
 
 // everything under this will be removed
@@ -54,7 +54,7 @@ fun castUnitSet(set: Set<MockHierarchyUnit>): Set<HierarchyUnit> {
 fun setParents(units: Set<HierarchyUnit>) {
     units.forEach { unit ->
         unit.children.forEach { it.parent = unit }
-        if (unit.type != HierarchyUnit.HierarchyUnitTypes.METHOD && unit !is Method)
+        if (unit.type != HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit !is HierarchyMethod)
             setParents(unit.children)
     }
 }
@@ -62,8 +62,8 @@ fun setParents(units: Set<HierarchyUnit>) {
 fun castChildren(children: Set<MockHierarchyUnit>): MutableSet<HierarchyUnit> {
     val outSet = mutableSetOf<HierarchyUnit>()
 
-    if (children.all { it.type == HierarchyUnit.HierarchyUnitTypes.METHOD })
-        children.forEach { outSet.add(Method(it.identifier, it.callers!!)) }
+    if (children.all { it.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD })
+        children.forEach { outSet.add(HierarchyMethod(it.identifier, it.callers!!)) }
     else {
         children.forEach{
             outSet.add(

@@ -3,17 +3,29 @@ package me.drbaxr.spektrum.main.model
 import me.drbaxr.spektrum.main.exception.NonTestableUnitException
 
 open class HierarchyUnit(
-    val identifier: String,
+    val identifier: String, // identifier MUST be the result that has a mapping oh 1-to-1 and is reversible (to be able to easily obtain parent name and local name of unit)
     val children: MutableSet<HierarchyUnit>,
     val type: String,
     var isTestable: Boolean = true, // shouldn't be changed outside of unit classifier
     var parent: HierarchyUnit? = null // shouldn't be changed outside of model adapter
 ) {
+    companion object {
+        const val childSeparator = "->"
+    }
+
     private var coverage: Float = 0.0f
 
-    object HierarchyUnitTypes {
+    object GeneralHierarchyUnitTypes {
         const val FOLDER = "FOLDER"
         const val FILE = "FILE"
+        const val CLASS = "CLASS"
+        const val METHOD = "METHOD"
+    }
+
+    object CSHierarchyUnitTypes {
+        const val PROJECT = "PROJECT"
+        const val FILE = "FILE"
+        const val NAMESPACE = "NAMESPACE"
         const val CLASS = "CLASS"
         const val METHOD = "METHOD"
     }
@@ -40,9 +52,9 @@ open class HierarchyUnit(
         val indentation = "\t".repeat(indentCount)
         var finalString = "$indentation${printStyle(hierarchyUnit)}"
 
-        if (hierarchyUnit.type != HierarchyUnitTypes.METHOD) {
+        if (hierarchyUnit.type != GeneralHierarchyUnitTypes.METHOD) {
             hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1)}" }
-        } else if (hierarchyUnit is Method) {
+        } else if (hierarchyUnit is HierarchyMethod) {
             hierarchyUnit.callers.forEach { finalString += "\n$indentation\t$it" }
         }
 

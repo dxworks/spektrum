@@ -2,7 +2,7 @@ package me.drbaxr.spektrum.util
 
 import me.drbaxr.spektrum.main.model.ExportUnit
 import me.drbaxr.spektrum.main.model.HierarchyUnit
-import me.drbaxr.spektrum.main.model.Method
+import me.drbaxr.spektrum.main.model.HierarchyMethod
 
 class HierarchyUnitTools {
 
@@ -26,7 +26,7 @@ class HierarchyUnitTools {
             model.forEach { unit ->
                 val exUnit: ExportUnit
 
-                if (unit.type == HierarchyUnit.HierarchyUnitTypes.METHOD && unit is Method) {
+                if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
                     exUnit = ExportUnit(unit.identifier, unit.type, unit.getCoverage(), null)
                 } else {
                     exUnit = ExportUnit(unit.identifier, unit.type, unit.getCoverage(), mutableSetOf())

@@ -1,16 +1,16 @@
 package me.drbaxr.spektrum.main.central
 
 import me.drbaxr.spektrum.main.model.HierarchyUnit
-import me.drbaxr.spektrum.main.model.Method
+import me.drbaxr.spektrum.main.model.HierarchyMethod
 import me.drbaxr.spektrum.util.HierarchyUnitTools
 
 class CoverageModelCalculator {
 
     fun calculate(test: Set<HierarchyUnit>, testable: Set<HierarchyUnit>): Set<HierarchyUnit> {
         val testMethods =
-            HierarchyUnitTools.getTypeUnits(test, HierarchyUnit.HierarchyUnitTypes.METHOD).map { it as Method }.toSet()
+            HierarchyUnitTools.getTypeUnits(test, HierarchyUnit.GeneralHierarchyUnitTypes.METHOD).map { it as HierarchyMethod }.toSet()
         val testableMethods =
-            HierarchyUnitTools.getTypeUnits(testable, HierarchyUnit.HierarchyUnitTypes.METHOD).map { it as Method }.toSet()
+            HierarchyUnitTools.getTypeUnits(testable, HierarchyUnit.GeneralHierarchyUnitTypes.METHOD).map { it as HierarchyMethod }.toSet()
 
         setCoverage(testable, testMethods)
         aggregateCoverage(testableMethods)
@@ -38,9 +38,9 @@ class CoverageModelCalculator {
             aggregateCoverage(parents)
     }
 
-    private fun setCoverage(testable: Set<HierarchyUnit>, testMethods: Set<Method>) {
+    private fun setCoverage(testable: Set<HierarchyUnit>, testMethods: Set<HierarchyMethod>) {
         testable.forEach {
-            if (it.type == HierarchyUnit.HierarchyUnitTypes.METHOD && it is Method) {
+            if (it.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && it is HierarchyMethod) {
                 if (isTested(it, testMethods)) {
                     it.setCoverage(1.0f)
                 }
@@ -50,7 +50,7 @@ class CoverageModelCalculator {
         }
     }
 
-    private fun isTested(method: Method, testMethods: Set<Method>): Boolean {
+    private fun isTested(method: HierarchyMethod, testMethods: Set<HierarchyMethod>): Boolean {
         return method.callers.any { callerId -> testMethods.any { callerId == it.identifier } }
     }
 

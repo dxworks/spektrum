@@ -26,7 +26,7 @@ class UnitClassifier {
     }
 
     private fun setUnitAsTest(unit: HierarchyUnit) {
-        if (unit.type != HierarchyUnit.HierarchyUnitTypes.METHOD) {
+        if (unit.type != HierarchyUnit.GeneralHierarchyUnitTypes.METHOD) {
             unit.isTestable = false
             unit.children.forEach { setUnitAsTest(it) }
         }

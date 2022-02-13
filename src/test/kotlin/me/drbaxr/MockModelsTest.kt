@@ -9,7 +9,7 @@ import me.drbaxr.spektrum.identifiers.SimpleTestIdentifier
 import me.drbaxr.spektrum.main.mock.MockHierarchyUnit
 import me.drbaxr.spektrum.main.model.ExportUnit
 import me.drbaxr.spektrum.main.model.HierarchyUnit
-import me.drbaxr.spektrum.main.model.Method
+import me.drbaxr.spektrum.main.model.HierarchyMethod
 import org.junit.Test
 import java.io.FileReader
 import kotlin.test.assertTrue
@@ -73,7 +73,7 @@ class MockModelsTest {
     private fun setParents(units: Set<HierarchyUnit>) {
         units.forEach { unit ->
             unit.children.forEach { it.parent = unit }
-            if (unit.type != HierarchyUnit.HierarchyUnitTypes.METHOD && unit !is Method)
+            if (unit.type != HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit !is HierarchyMethod)
                 setParents(unit.children)
         }
     }
@@ -81,8 +81,8 @@ class MockModelsTest {
     private fun castChildren(children: Set<MockHierarchyUnit>): MutableSet<HierarchyUnit> {
         val outSet = mutableSetOf<HierarchyUnit>()
 
-        if (children.all { it.type == HierarchyUnit.HierarchyUnitTypes.METHOD })
-            children.forEach { outSet.add(Method(it.identifier, it.callers!!)) }
+        if (children.all { it.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD })
+            children.forEach { outSet.add(HierarchyMethod(it.identifier, it.callers!!)) }
         else {
             children.forEach {
                 outSet.add(
