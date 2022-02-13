@@ -2,6 +2,7 @@ package me.drbaxr.spektrum
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import me.drbaxr.spektrum.adapters.CSModelAdapter
 import me.drbaxr.spektrum.main.central.CoverageModelCalculator
 import me.drbaxr.spektrum.main.central.MetricsExporter
 import me.drbaxr.spektrum.main.central.UnitClassifier
@@ -12,11 +13,13 @@ import me.drbaxr.spektrum.main.model.Method
 import java.io.FileReader
 
 fun main() {
-    val units = getMock(FileReader("inputs/input_cs.json"))
-
-    val split = UnitClassifier().classify(units, SimpleTestIdentifier())
-    val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
-    MetricsExporter().exportAndSave(coveredModel)
+//    val units = getMock(FileReader("inputs/input_cs.json"))
+//
+//    val split = UnitClassifier().classify(units, SimpleTestIdentifier())
+//    val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
+//    MetricsExporter().exportAndSave(coveredModel)
+    val adapter = CSModelAdapter()
+    adapter.adapt()
 }
 
 // everything under this will be removed
