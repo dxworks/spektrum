@@ -79,7 +79,7 @@ class CSModelAdapter : ModelAdapter {
             mutableSetOf()
         )
 
-        // TODO: rest of mapper
+        hMethod.callers.addAll(method.callers)
 
         return hMethod
     }
