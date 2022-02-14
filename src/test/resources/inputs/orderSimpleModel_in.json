@@ -1,0 +1,86 @@
+[
+  {
+    "identifier": "src/main/java/Main.java",
+    "children": [
+      {
+        "identifier": "src/main/java/Main.java/Main",
+        "children": [
+          {
+            "identifier": "src/main/java/Main.java/Main/main",
+            "callers": {},
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Main.java/Main/mainTest",
+            "callers": {
+              "src/main/java/Class.java/Class/anotherTestMethod": 3,
+              "src/main/java/Main.java/Main/main": 1
+            },
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "FILE"
+  },
+  {
+    "identifier": "src/main/java/Class.java",
+    "children": [
+      {
+        "identifier": "src/main/java/Class.java/Class",
+        "children": [
+          {
+            "identifier": "src/main/java/Class.java/Class/sampleMethod",
+            "callers": {
+              "src/main/java/Main.java/Main/main": 1,
+              "src/main/java/Class.java/Class/anotherTestMethod": 1
+            },
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/anotherMethod",
+            "callers": {
+              "src/main/java/Main.java/Main/main": 1,
+              "src/main/java/Class.java/Class/sampleMethod": 1,
+              "src/main/java/Class.java/Class/sampleTestMethod": 2
+            },
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/notTested",
+            "callers": {
+              "src/main/java/Main.java/Main/main": 1,
+              "src/main/java/Class.java/Class/sampleMethod": 1
+            },
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "FILE"
+  },
+  {
+    "identifier": "src/main/java/TestClass.java",
+    "children": [
+      {
+        "identifier": "src/main/java/TestClass.java/TestClass",
+        "children": [
+          {
+            "identifier": "src/main/java/Class.java/Class/sampleTestMethod",
+            "callers": {},
+            "type": "METHOD"
+          },
+          {
+            "identifier": "src/main/java/Class.java/Class/anotherTestMethod",
+            "callers": {},
+            "type": "METHOD"
+          }
+        ],
+        "type": "CLASS"
+      }
+    ],
+    "type": "FILE"
+  }
+]

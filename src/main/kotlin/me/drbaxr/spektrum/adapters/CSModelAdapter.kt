@@ -79,6 +79,7 @@ class CSModelAdapter : ModelAdapter {
             mutableMapOf()
         )
 
+        // TODO: do the transitive method thing here instead of setting hard coded order
         method.callers.forEach {
             hMethod.callers[it] = 1
         }

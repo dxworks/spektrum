@@ -41,17 +41,17 @@ class CoverageModelCalculator {
     private fun setCoverage(testable: Set<HierarchyUnit>, testMethods: Set<HierarchyMethod>) {
         testable.forEach {
             if (it.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && it is HierarchyMethod) {
-                if (isTested(it, testMethods)) {
-                    it.setCoverage(1.0f)
-                }
+                it.setCoverage(getMethodCoverage(it, testMethods))
             } else {
                 setCoverage(it.children, testMethods)
             }
         }
     }
 
-    private fun isTested(method: HierarchyMethod, testMethods: Set<HierarchyMethod>): Boolean {
-        return method.callers.any { caller -> testMethods.any { caller.key == it.identifier } }
-    }
+    private fun getMethodCoverage(method: HierarchyMethod, testMethods: Set<HierarchyMethod>): Float {
+        val testedMethods = method.callers.filter { caller -> testMethods.any { caller.key == it.identifier } }
+        val minOrder = testedMethods.values.minOrNull() ?: return 0f
 
+        return 1f / minOrder
+    }
 }

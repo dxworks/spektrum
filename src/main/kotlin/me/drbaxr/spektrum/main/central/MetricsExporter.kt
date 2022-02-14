@@ -15,10 +15,12 @@ class MetricsExporter {
         const val MODEL_FILE_PATH = "analytics/model.json"
     }
 
+    // use this to only get the model without creating analytics files
     fun getExportModel(model: Set<HierarchyUnit>): Set<ExportUnit> {
         return HierarchyUnitTools.mapToExport(model)
     }
 
+    // use this to also create files with analytics
     fun exportAndSave(model: Set<HierarchyUnit>) {
         val exportModel = getExportModel(model)
         val coverageByTypes = mutableMapOf<String, TypeCoverage>()
