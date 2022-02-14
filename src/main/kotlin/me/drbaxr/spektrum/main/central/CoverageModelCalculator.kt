@@ -51,7 +51,7 @@ class CoverageModelCalculator {
     }
 
     private fun isTested(method: HierarchyMethod, testMethods: Set<HierarchyMethod>): Boolean {
-        return method.callers.any { callerId -> testMethods.any { callerId == it.identifier } }
+        return method.callers.any { caller -> testMethods.any { caller.key == it.identifier } }
     }
 
 }

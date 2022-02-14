@@ -5,5 +5,5 @@ data class MockHierarchyUnit(
     var children: MutableSet<MockHierarchyUnit>?,
     var type: String,
     var isTestable: Boolean? = false,
-    var callers: MutableSet<String>?
+    var callers: MutableMap<String, Int>?
 )

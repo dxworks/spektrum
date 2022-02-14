@@ -76,10 +76,12 @@ class CSModelAdapter : ModelAdapter {
     private fun mapMethod(method: Method, parentId: String): HierarchyMethod {
         val hMethod = HierarchyMethod(
             "${parentId}${HierarchyUnit.childSeparator}${method.name}",
-            mutableSetOf()
+            mutableMapOf()
         )
 
-        hMethod.callers.addAll(method.callers)
+        method.callers.forEach {
+            hMethod.callers[it] = 1
+        }
 
         return hMethod
     }

@@ -1,4 +1,4 @@
-package me.drbaxr
+package me.drbaxr.spektrum.test
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -80,6 +80,7 @@ class MockModelsTest {
 
     private fun castChildren(children: Set<MockHierarchyUnit>): MutableSet<HierarchyUnit> {
         val outSet = mutableSetOf<HierarchyUnit>()
+
 
         if (children.all { it.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD })
             children.forEach { outSet.add(HierarchyMethod(it.identifier, it.callers!!)) }

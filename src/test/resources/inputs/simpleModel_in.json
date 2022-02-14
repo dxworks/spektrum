@@ -7,12 +7,15 @@
         "children": [
           {
             "identifier": "src/main/java/Main.java/Main/main",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           },
           {
             "identifier": "src/main/java/Main.java/Main/mainTest",
-            "callers": ["src/main/java/Class.java/Class/anotherTestMethod", "src/main/java/Main.java/Main/main"],
+            "callers": {
+              "src/main/java/Class.java/Class/anotherTestMethod": 1,
+              "src/main/java/Main.java/Main/main": 1
+            },
             "type": "METHOD"
           }
         ],
@@ -29,17 +32,27 @@
         "children": [
           {
             "identifier": "src/main/java/Class.java/Class/sampleMethod",
-            "callers": ["src/main/java/Main.java/Main/main", "src/main/java/Class.java/Class/anotherTestMethod"],
+            "callers": {
+              "src/main/java/Main.java/Main/main": 1,
+              "src/main/java/Class.java/Class/anotherTestMethod": 1
+            },
             "type": "METHOD"
           },
           {
             "identifier": "src/main/java/Class.java/Class/anotherMethod",
-            "callers": ["src/main/java/Main.java/Main/main", "src/main/java/Class.java/Class/sampleMethod", "src/main/java/Class.java/Class/sampleTestMethod"],
+            "callers": {
+              "src/main/java/Main.java/Main/main": 1,
+              "src/main/java/Class.java/Class/sampleMethod": 1,
+              "src/main/java/Class.java/Class/sampleTestMethod": 1
+            },
             "type": "METHOD"
           },
           {
             "identifier": "src/main/java/Class.java/Class/notTested",
-            "callers": ["src/main/java/Main.java/Main/main", "src/main/java/Class.java/Class/sampleMethod"],
+            "callers": {
+              "src/main/java/Main.java/Main/main": 1,
+              "src/main/java/Class.java/Class/sampleMethod": 1
+            },
             "type": "METHOD"
           }
         ],
@@ -56,12 +69,12 @@
         "children": [
           {
             "identifier": "src/main/java/Class.java/Class/sampleTestMethod",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           },
           {
             "identifier": "src/main/java/Class.java/Class/anotherTestMethod",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           }
         ],

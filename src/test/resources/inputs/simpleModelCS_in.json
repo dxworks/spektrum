@@ -7,12 +7,14 @@
         "children": [
           {
             "identifier": "SimpleJSON/JSONParser/toJSON",
-            "callers": ["JSONTest/TestClass/testMethod1"],
+            "callers": {
+              "JSONTest/TestClass/testMethod1": 1
+            },
             "type": "METHOD"
           },
           {
             "identifier": "SimpleJSON/JSONParser/fromJSON",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           }
         ],
@@ -23,17 +25,19 @@
         "children": [
           {
             "identifier": "SimpleJSON/JSONSimplifier/simplify",
-            "callers": ["JSONTest/TestClass/testMethod1"],
+            "callers": {
+              "JSONTest/TestClass/testMethod1": 1
+            },
             "type": "METHOD"
           },
           {
             "identifier": "SimpleJSON/JSONSimplifier/optimize",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           },
           {
             "identifier": "SimpleJSON/JSONSimplifier/beautify",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           }
         ],
@@ -50,12 +54,14 @@
         "children": [
           {
             "identifier": "JSONUtil/Utils/sum",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           },
           {
             "identifier": "JSONUtil/Utils/mul",
-            "callers": ["JSONTest/TestClass/testMethod2"],
+            "callers": {
+              "JSONTest/TestClass/testMethod2": 1
+            },
             "type": "METHOD"
           }
         ],
@@ -72,12 +78,12 @@
         "children": [
           {
             "identifier": "JSONTest/TestClass/testMethod1",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           },
           {
             "identifier": "JSONTest/TestClass/testMethod2",
-            "callers": [],
+            "callers": {},
             "type": "METHOD"
           }
         ],
