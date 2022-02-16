@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.adapters.model
+package me.drbaxr.spektrum.adapters.model.external
 
 data class ImportModel(
     val solutions: Set<Solution>,
