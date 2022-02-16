@@ -2,7 +2,7 @@ package me.drbaxr.spektrum.adapters
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.adapters.model.*
+import me.drbaxr.spektrum.adapters.model.external.*
 import me.drbaxr.spektrum.main.model.HierarchyMethod
 import me.drbaxr.spektrum.main.model.HierarchyUnit
 import java.io.FileReader
@@ -79,7 +79,9 @@ class CSModelAdapter : ModelAdapter {
             mutableMapOf()
         )
 
-        // TODO: do the transitive method thing here instead of setting hard coded order
+        // TODO: calculate the rest of the callers
+        // TODO: build method call tree(s?)
+
         method.callers.forEach {
             hMethod.callers[it] = 1
         }
