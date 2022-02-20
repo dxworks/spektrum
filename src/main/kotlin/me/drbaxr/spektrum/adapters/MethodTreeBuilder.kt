@@ -7,14 +7,24 @@ import me.drbaxr.spektrum.adapters.model.internal.MethodTreeNode
 import kotlin.Exception
 
 class MethodTreeBuilder(private val model: ImportModel) {
-    // methodIdentifier needs to be full name - at the moment it does not use # part
     // returns null if the searched method does not exist in model
-    fun build(methodIdentifier: String): MethodTreeNode? {
+    // ignoredCallers is the stack of method calls so far: first element is method that was initially called
+    fun build(methodIdentifier: String, ignoredCallers: List<String>): MethodTreeNode? {
         return try {
             val method = getMethod(methodIdentifier)
-            TODO("Construct MethodTree and return node of searched method")
 
-            MethodTreeNode("", setOf(), setOf())
+            val callerMethods = mutableSetOf<MethodTreeNode>()
+            method.callers.forEach { callerName ->
+                if (!ignoredCallers.contains(trimName(callerName))) { // not called by itself
+                    val newCallers = listOf(*ignoredCallers.toTypedArray(), trimName(callerName))
+                    val callerNode =
+                        build(trimName(callerName), newCallers) // TODO: don't trim params in final version ANYWHERE - delete trim method
+                    if (callerNode != null)
+                        callerMethods.add(callerNode)
+                }
+            }
+
+            return MethodTreeNode(methodIdentifier, callerMethods)
         } catch (e: Exception) {
             null
         }

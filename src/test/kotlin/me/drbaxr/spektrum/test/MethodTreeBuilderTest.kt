@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.adapters.MethodTreeBuilder
 import me.drbaxr.spektrum.adapters.model.external.ImportModel
+import me.drbaxr.spektrum.adapters.model.internal.MethodTreeNode
 import org.junit.Test
 import org.junit.Before
 import java.io.FileReader
@@ -21,6 +22,8 @@ class MethodTreeBuilderTest {
 
     @Test
     fun testBuild() {
+        val nodes = mutableListOf<MethodTreeNode>()
+
         model.projects.forEach { project ->
             project.files.forEach { file ->
                 file.namespaces.forEach { namespace ->
@@ -29,12 +32,19 @@ class MethodTreeBuilderTest {
                             if (method.type == "Method") {
                                 val className = cls.name.split(".").last()
                                 val fullName = builder.fullName(file.path, namespace.name, className, method.name)
-                                builder.build(fullName)
+                                val node = builder.build(fullName, listOf())
+                                if (node != null && node.callerMethods.isNotEmpty()) {
+                                    nodes.add(node)
+                                }
                             }
                         }
                     }
                 }
             }
+        }
+
+        nodes.forEach {
+            println(it.toOrderString())
         }
     }
 
