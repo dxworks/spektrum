@@ -23,6 +23,8 @@ data class Method(
 
         fun method(name: String): String = name.split("@")[1]
 
+        fun trimmedIdentifier(identifier: String) = identifier.split("#")[0]
+
         private fun getSplit(name: String): List<String> {
             val noFile = name.split("->")[1]
             val namespaceClass = noFile.split("@")[0]

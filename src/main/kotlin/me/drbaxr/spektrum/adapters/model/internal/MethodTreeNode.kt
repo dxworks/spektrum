@@ -1,13 +1,32 @@
 package me.drbaxr.spektrum.adapters.model.internal
 
+import me.drbaxr.spektrum.adapters.model.external.Method
+
 data class MethodTreeNode(
     val identifier: String,
     val callerMethods: Set<MethodTreeNode>
 ) {
-    fun toOrderString(): String {
+    fun toOrderString(trimmed: Boolean = false): String {
+        val orderMap = getOrderMap()
+
+        var orderString = "$identifier:\n"
+        orderMap.keys.forEach { key ->
+            orderString = orderString.plus("\tOrder $key:\n")
+
+            val callers = orderMap[key] ?: listOf()
+            callers.forEach { caller ->
+                orderString = orderString.plus("\t\t${if (trimmed) Method.trimmedIdentifier(caller) else caller}\n")
+            }
+        }
+
+        return orderString;
+    }
+
+    fun getOrderMap(): Map<Int, List<String>> {
         val orderMap = mutableMapOf<Int, MutableList<String>>()
         getOrderMap(1, orderMap)
-        return orderMap.toString()
+
+        return orderMap
     }
 
     // builds the order map in the map param

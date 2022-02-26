@@ -79,9 +79,7 @@ class CSModelAdapter : ModelAdapter {
             mutableMapOf()
         )
 
-        // TODO: calculate the rest of the callers
-        // TODO: build method call tree(s?)
-
+        // TODO: Make this create MethodTreeNode for each Method and use orderMap to get all callers of all orders
         method.callers.forEach {
             hMethod.callers[it] = 1
         }
