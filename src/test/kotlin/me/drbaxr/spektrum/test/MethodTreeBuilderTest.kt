@@ -55,20 +55,6 @@ class MethodTreeBuilderTest {
         assertEquals(expected, actual)
     }
 
-    @Test
-    fun testTrimNameNormal() {
-        val expected = "name"
-        val actual = builder.trimName("name#params")
-        assertEquals(expected, actual)
-    }
-
-    @Test
-    fun testTrimNameNOP() {
-        val expected = "name"
-        val actual = builder.trimName("name")
-        assertEquals(expected, actual)
-    }
-
     private fun getOriginalModel(file: String): ImportModel {
         val type = object : TypeToken<ImportModel>() {}.type
         return Gson().fromJson(FileReader(file), type)

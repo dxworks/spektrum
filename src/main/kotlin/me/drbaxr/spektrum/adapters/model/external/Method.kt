@@ -21,7 +21,7 @@ data class Method(
             return split.last()
         }
 
-        fun method(name: String): String = name.split("@")[1].split("#")[0]
+        fun method(name: String): String = name.split("@")[1]
 
         private fun getSplit(name: String): List<String> {
             val noFile = name.split("->")[1]

@@ -15,10 +15,10 @@ class MethodTreeBuilder(private val model: ImportModel) {
 
             val callerMethods = mutableSetOf<MethodTreeNode>()
             method.callers.forEach { callerName ->
-                if (!ignoredCallers.contains(trimName(callerName))) { // not called by itself
-                    val newCallers = listOf(*ignoredCallers.toTypedArray(), trimName(callerName))
+                if (!ignoredCallers.contains(callerName) && callerName != methodIdentifier) { // not called by itself
+                    val newCallers = listOf(*ignoredCallers.toTypedArray(), callerName)
                     val callerNode =
-                        build(trimName(callerName), newCallers) // TODO: don't trim params in final version ANYWHERE - delete trim method
+                        build(callerName, newCallers)
                     if (callerNode != null)
                         callerMethods.add(callerNode)
                 }
@@ -32,8 +32,6 @@ class MethodTreeBuilder(private val model: ImportModel) {
 
     fun fullName(filePath: String, namespaceName: String, className: String, methodName: String): String =
         "${filePath}->${namespaceName}.${className}@${methodName}"
-
-    fun trimName(methodName: String): String = methodName.split("#")[0]
 
     private fun getMethod(methodIdentifier: String): Method {
         val filePath = Method.file(methodIdentifier)
