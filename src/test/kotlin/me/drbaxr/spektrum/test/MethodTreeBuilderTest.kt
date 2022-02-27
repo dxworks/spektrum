@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.adapters.MethodTreeBuilder
 import me.drbaxr.spektrum.adapters.model.external.ImportModel
+import me.drbaxr.spektrum.adapters.model.external.Method
 import me.drbaxr.spektrum.adapters.model.internal.MethodTreeNode
 import org.junit.Test
 import org.junit.Before
@@ -31,7 +32,7 @@ class MethodTreeBuilderTest {
                         cls.methods.forEach { method ->
                             if (method.type == "Method") {
                                 val className = cls.name.split(".").last()
-                                val fullName = builder.fullName(file.path, namespace.name, className, method.name)
+                                val fullName = Method.fullName(file.path, namespace.name, className, method.name)
                                 val node = builder.build(fullName, listOf())
                                 if (node != null && node.callerMethods.isNotEmpty()) {
                                     nodes.add(node)
@@ -51,7 +52,7 @@ class MethodTreeBuilderTest {
     @Test
     fun testFullName() {
         val expected = "file->namespace.class@method"
-        val actual = builder.fullName("file", "namespace", "class", "method")
+        val actual = Method.fullName("file", "namespace", "class", "method")
         assertEquals(expected, actual)
     }
 

@@ -1,5 +1,7 @@
 package me.drbaxr.spektrum.adapters.model.external
 
+import me.drbaxr.spektrum.main.model.HierarchyUnit
+
 data class Method(
     val name: String, // <file>-><namespace>.<class>@<method>#<params>
     val attributes: Set<String>,
@@ -9,24 +11,36 @@ data class Method(
     val type: String
 ) {
     companion object {
-        fun file(name: String): String = name.split("->")[0]
+        fun file(fullName: String): String = fullName.split("->")[0]
 
-        fun namespace(name: String): String {
-            val split = getSplit(name)
+        fun namespace(fullName: String): String {
+            val split = getSplit(fullName)
             return split.subList(0, split.size - 1).joinToString(".")
         }
 
-        fun className(name: String): String {
-            val split = getSplit(name)
+        fun className(fullName: String): String {
+            val split = getSplit(fullName)
             return split.last()
         }
 
-        fun method(name: String): String = name.split("@")[1]
+        fun method(fullName: String): String = fullName.split("@")[1]
 
-        fun trimmedIdentifier(identifier: String) = identifier.split("#")[0]
+        fun trimmedFullName(fullName: String) = fullName.split("#")[0]
 
-        private fun getSplit(name: String): List<String> {
-            val noFile = name.split("->")[1]
+        fun fullName(filePath: String, namespaceName: String, className: String, methodName: String): String =
+            "${filePath}->${namespaceName}.${className}@${methodName}"
+
+        fun methodNameToFullName(name: String): String {
+            val splitName = name.split(HierarchyUnit.childSeparator)
+            val file = splitName[0]
+            val namespace = splitName[1]
+            val cls = splitName[2].split(".").last()
+            val method = splitName[3]
+            return fullName(file, namespace, cls, method)
+        }
+
+        private fun getSplit(fullName: String): List<String> {
+            val noFile = fullName.split("->")[1]
             val namespaceClass = noFile.split("@")[0]
             return namespaceClass.split(".")
         }

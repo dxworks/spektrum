@@ -82,29 +82,14 @@ class CSModelAdapter : ModelAdapter {
             mutableMapOf()
         )
 
-        val fullName = methodNameToFullName(hMethod.identifier)
+        val fullName = Method.methodNameToFullName(hMethod.identifier)
         val methodNode = methodTreeBuilder.build(fullName, listOf())
         val callerMap = methodNode?.getCallerMap() ?: mapOf()
 
         callerMap.forEach { (fullName, order) ->
-            hMethod.callers[methodFullNameToName(fullName)] = order
+            hMethod.callers[HierarchyMethod.methodFullNameToName(fullName)] = order
         }
 
         return hMethod
     }
-
-    private fun methodNameToFullName(name: String): String {
-        val splitName = name.split(HierarchyUnit.childSeparator)
-        val file = splitName[0]
-        val namespace = splitName[1]
-        val cls = splitName[2].split(".").last()
-        val method = splitName[3]
-        return methodTreeBuilder.fullName(file, namespace, cls, method)
-    }
-
-    private fun methodFullNameToName(fullName: String): String =
-        "${Method.file(fullName)}${HierarchyUnit.childSeparator}" +
-        "${Method.namespace(fullName)}${HierarchyUnit.childSeparator}" +
-        "${Method.namespace(fullName)}.${Method.className(fullName)}${HierarchyUnit.childSeparator}" +
-        Method.method(fullName)
 }

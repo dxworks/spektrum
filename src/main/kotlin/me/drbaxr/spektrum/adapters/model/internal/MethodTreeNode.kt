@@ -15,7 +15,7 @@ data class MethodTreeNode(
 
             val callers = orderMap[key] ?: listOf()
             callers.forEach { caller ->
-                orderString = orderString.plus("\t\t${if (trimmed) Method.trimmedIdentifier(caller) else caller}\n")
+                orderString = orderString.plus("\t\t${if (trimmed) Method.trimmedFullName(caller) else caller}\n")
             }
         }
 
