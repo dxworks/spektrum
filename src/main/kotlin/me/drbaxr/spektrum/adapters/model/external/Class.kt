@@ -1,7 +1,7 @@
 package me.drbaxr.spektrum.adapters.model.external
 
 data class Class(
-    val name: String,
+    val name: String, // NOTE: class name also contains namespace name - namespace.class
     val type: String,
     val usingStatements: Set<String>,
     val attributes: Set<String>,

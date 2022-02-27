@@ -19,10 +19,26 @@ data class MethodTreeNode(
             }
         }
 
-        return orderString;
+        return orderString
     }
 
-    fun getOrderMap(): Map<Int, List<String>> {
+    fun getCallerMap(): Map<String, Int> {
+        val orderMap = getOrderMap()
+        val callerMap = mutableMapOf<String, Int>()
+        orderMap.keys.forEach { order ->
+            val methodFullNames = orderMap[order] ?: listOf()
+            methodFullNames.forEach { fullName ->
+                val currentOrder = callerMap[fullName]
+                if (currentOrder == null || order < currentOrder) { // if a method calls another method with different orders, keep the lowest order
+                    callerMap[fullName] = order
+                }
+            }
+        }
+
+        return callerMap
+    }
+
+    private fun getOrderMap(): Map<Int, List<String>> {
         val orderMap = mutableMapOf<Int, MutableList<String>>()
         getOrderMap(1, orderMap)
 

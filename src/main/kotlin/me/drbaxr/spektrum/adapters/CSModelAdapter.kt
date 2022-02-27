@@ -8,8 +8,11 @@ import me.drbaxr.spektrum.main.model.HierarchyUnit
 import java.io.FileReader
 
 class CSModelAdapter : ModelAdapter {
+    private lateinit var methodTreeBuilder: MethodTreeBuilder
+
     override fun adapt(): Set<HierarchyUnit> {
         val importModel = getOriginalModel("inputs/Honeydew-testing_stuff.json")
+        methodTreeBuilder = MethodTreeBuilder(importModel)
 
         return importModel.projects.map { mapProject(it) }.toSet()
     }
@@ -21,7 +24,7 @@ class CSModelAdapter : ModelAdapter {
 
     private fun mapProject(project: Project): HierarchyUnit {
         val unit = HierarchyUnit(
-            project.name,
+            project.name, // project name is unused in the children identifiers
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.PROJECT
         )
@@ -33,7 +36,7 @@ class CSModelAdapter : ModelAdapter {
 
     private fun mapFile(file: File, parent: HierarchyUnit): HierarchyUnit {
         val unit = HierarchyUnit(
-            "${parent.identifier}${HierarchyUnit.childSeparator}${file.path}",
+            file.path,
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.FILE,
             true,
@@ -79,11 +82,29 @@ class CSModelAdapter : ModelAdapter {
             mutableMapOf()
         )
 
-        // TODO: Make this create MethodTreeNode for each Method and use orderMap to get all callers of all orders
-        method.callers.forEach {
-            hMethod.callers[it] = 1
+        val fullName = methodNameToFullName(hMethod.identifier)
+        val methodNode = methodTreeBuilder.build(fullName, listOf())
+        val callerMap = methodNode?.getCallerMap() ?: mapOf()
+
+        callerMap.forEach { (fullName, order) ->
+            hMethod.callers[methodFullNameToName(fullName)] = order
         }
 
         return hMethod
     }
+
+    private fun methodNameToFullName(name: String): String {
+        val splitName = name.split(HierarchyUnit.childSeparator)
+        val file = splitName[0]
+        val namespace = splitName[1]
+        val cls = splitName[2].split(".").last()
+        val method = splitName[3]
+        return methodTreeBuilder.fullName(file, namespace, cls, method)
+    }
+
+    private fun methodFullNameToName(fullName: String): String =
+        "${Method.file(fullName)}${HierarchyUnit.childSeparator}" +
+        "${Method.namespace(fullName)}${HierarchyUnit.childSeparator}" +
+        "${Method.namespace(fullName)}.${Method.className(fullName)}${HierarchyUnit.childSeparator}" +
+        Method.method(fullName)
 }
