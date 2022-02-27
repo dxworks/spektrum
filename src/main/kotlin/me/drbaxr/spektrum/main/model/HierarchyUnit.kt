@@ -54,8 +54,9 @@ open class HierarchyUnit(
 
         if (hierarchyUnit.type != GeneralHierarchyUnitTypes.METHOD) {
             hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1)}" }
-        } else if (hierarchyUnit is HierarchyMethod) {
-            hierarchyUnit.callers.forEach { finalString += "\n$indentation\t$it" }
+        } else {
+            val hierarchyMethod = hierarchyUnit as HierarchyMethod
+            hierarchyMethod.callers.forEach { finalString += "\n$indentation\t[CALL] [${it.value}] ${it.key}" }
         }
 
         return finalString
