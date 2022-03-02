@@ -71,7 +71,11 @@ class CSModelAdapter : ModelAdapter {
             parent
         )
 
-        unit.children.addAll(cls.methods.map { mapMethod(it, unit.identifier) })
+        unit.children.addAll(
+            cls.methods
+                .filter { it.type == "Method" }
+                .map { mapMethod(it, unit.identifier) }
+        )
 
         return unit
     }
