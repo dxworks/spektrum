@@ -48,6 +48,36 @@ open class HierarchyUnit(
         return finalString
     }
 
+    fun isEqual(unit: HierarchyUnit): Boolean {
+        if (unit is HierarchyMethod) {
+            if (this !is HierarchyMethod)
+                return false
+
+            if (identifier != unit.identifier)
+                return false
+
+            var eq = true
+            callers.forEach { (method, order) ->
+                if (unit.callers[method] != order)
+                    eq = false
+            }
+
+            return eq
+        } else {
+            if (identifier != unit.identifier)
+                return false
+
+            var eq = true
+            children.forEach { otherChild ->
+                val child = children.find { it.identifier == otherChild.identifier }
+                if (child?.isEqual(otherChild) != true)
+                    eq = false
+            }
+
+            return eq
+        }
+    }
+
     private fun recursivePrint(hierarchyUnit: HierarchyUnit, indentCount: Int): String {
         val indentation = "\t".repeat(indentCount)
         var finalString = "$indentation${printStyle(hierarchyUnit)}"
