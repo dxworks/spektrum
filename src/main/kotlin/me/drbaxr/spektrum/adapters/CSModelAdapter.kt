@@ -7,11 +7,11 @@ import me.drbaxr.spektrum.main.model.HierarchyMethod
 import me.drbaxr.spektrum.main.model.HierarchyUnit
 import java.io.FileReader
 
-class CSModelAdapter : ModelAdapter {
+class CSModelAdapter(val path: String) : ModelAdapter {
     private lateinit var methodTreeBuilder: MethodTreeBuilder
 
     override fun adapt(): Set<HierarchyUnit> {
-        val importModel = getOriginalModel("inputs/Honeydew-testing_stuff.json")
+        val importModel = getOriginalModel(path)
         methodTreeBuilder = MethodTreeBuilder(importModel)
 
         return importModel.projects.map { mapProject(it) }.toSet()

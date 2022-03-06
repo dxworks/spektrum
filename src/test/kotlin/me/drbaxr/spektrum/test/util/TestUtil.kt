@@ -1,11 +1,13 @@
 package me.drbaxr.spektrum.test.util
 
 import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.main.mock.MockHierarchyUnit
 import me.drbaxr.spektrum.main.model.HierarchyMethod
 import me.drbaxr.spektrum.main.model.HierarchyUnit
 import java.io.FileReader
+import java.io.FileWriter
 
 class TestUtil {
     companion object {
@@ -17,6 +19,12 @@ class TestUtil {
             )
 
             return castUnitSet(mockSet)
+        }
+
+        fun writeModelToFile(model: Set<HierarchyUnit>) {
+            val exp = model.map { convertToParsable(it) }
+            val gson = GsonBuilder().setPrettyPrinting().create()
+            gson.toJson(exp, FileWriter("src/test/resources/outputs/honeydewCSModel_exp.json"))
         }
 
         private fun castUnitSet(set: Set<MockHierarchyUnit>): Set<HierarchyUnit> {
@@ -64,6 +72,35 @@ class TestUtil {
             }
 
             return outSet
+        }
+
+        private fun convertToParsable(unit: HierarchyUnit): MockHierarchyUnit {
+            val newUnit = if (unit is HierarchyMethod) {
+                MockHierarchyUnit(
+                    unit.identifier,
+                    null,
+                    unit.type,
+                    unit.isTestable,
+                    unit.callers
+                )
+            } else {
+                MockHierarchyUnit(
+                    unit.identifier,
+                    mutableSetOf(),
+                    unit.type,
+                    unit.isTestable,
+                    null
+                )
+            }
+
+            if (newUnit.children != null) {
+                unit.children.forEach {
+                    val newChild = convertToParsable(it)
+                    newUnit.children!!.add(newChild)
+                }
+            }
+
+            return newUnit
         }
     }
 }
