@@ -23,8 +23,12 @@ class TestUtil {
 
         fun writeModelToFile(model: Set<HierarchyUnit>) {
             val exp = model.map { convertToParsable(it) }
-            val gson = GsonBuilder().setPrettyPrinting().create()
-            gson.toJson(exp, FileWriter("src/test/resources/outputs/honeydewCSModel_exp.json"))
+            val gson = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
+            val writer = FileWriter("src/test/resources/outputs/honeydewCSModel_exp.json")
+            gson.toJson(exp, writer)
+
+            writer.flush()
+            writer.close()
         }
 
         private fun castUnitSet(set: Set<MockHierarchyUnit>): Set<HierarchyUnit> {
