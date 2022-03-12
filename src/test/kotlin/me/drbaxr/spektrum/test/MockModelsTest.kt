@@ -5,8 +5,11 @@ import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.main.central.CoverageModelCalculator
 import me.drbaxr.spektrum.main.central.MetricsExporter
 import me.drbaxr.spektrum.main.central.UnitClassifier
-import me.drbaxr.spektrum.identifiers.SimpleTestIdentifier
+import me.drbaxr.spektrum.identifiers.TestIdentifier
+import me.drbaxr.spektrum.identifiers.rules.ContainsTestInIdentifier
+import me.drbaxr.spektrum.identifiers.rules.Rule
 import me.drbaxr.spektrum.main.model.ExportUnit
+import me.drbaxr.spektrum.main.model.HierarchyUnit
 import me.drbaxr.spektrum.test.util.TestUtil.Companion.getMock
 import org.junit.Test
 import java.io.FileReader
@@ -31,8 +34,11 @@ class MockModelsTest {
 
     private fun getComparisonWithExpectedViaFixedProgramRun(runName: String): Boolean {
         val units = getMock(FileReader("src/test/resources/inputs/${runName}_in.json"))
+        val identifier = TestIdentifier(listOf(
+            ContainsTestInIdentifier(),
+        ))
 
-        val split = UnitClassifier().classify(units, SimpleTestIdentifier())
+        val split = UnitClassifier().classify(units, identifier)
         val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
         val exportedModel = MetricsExporter().getExportModel(coveredModel)
 

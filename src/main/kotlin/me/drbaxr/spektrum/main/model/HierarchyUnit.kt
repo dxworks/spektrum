@@ -48,6 +48,7 @@ open class HierarchyUnit(
         return finalString
     }
 
+    // TODO: test this more
     fun isEqual(unit: HierarchyUnit): Boolean {
         if (unit is HierarchyMethod) {
             if (this !is HierarchyMethod)
