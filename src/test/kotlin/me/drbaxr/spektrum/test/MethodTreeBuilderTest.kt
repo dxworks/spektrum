@@ -2,10 +2,10 @@ package me.drbaxr.spektrum.test
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.adapters.MethodTreeBuilder
-import me.drbaxr.spektrum.adapters.model.external.ImportModel
-import me.drbaxr.spektrum.adapters.model.external.Method
-import me.drbaxr.spektrum.adapters.model.internal.MethodTreeNode
+import me.drbaxr.spektrum.flexible.adapters.MethodTreeBuilder
+import me.drbaxr.spektrum.flexible.adapters.model.external.ImportModel
+import me.drbaxr.spektrum.flexible.adapters.model.external.Method
+import me.drbaxr.spektrum.flexible.adapters.model.internal.MethodTreeNode
 import org.junit.Test
 import org.junit.Before
 import java.io.FileReader

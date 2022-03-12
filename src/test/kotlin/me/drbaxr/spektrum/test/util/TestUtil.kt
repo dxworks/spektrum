@@ -3,9 +3,9 @@ package me.drbaxr.spektrum.test.util
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.main.mock.MockHierarchyUnit
-import me.drbaxr.spektrum.main.model.HierarchyMethod
-import me.drbaxr.spektrum.main.model.HierarchyUnit
+import me.drbaxr.spektrum.fixed.mock.MockHierarchyUnit
+import me.drbaxr.spektrum.fixed.model.HierarchyMethod
+import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import java.io.FileReader
 import java.io.FileWriter
 

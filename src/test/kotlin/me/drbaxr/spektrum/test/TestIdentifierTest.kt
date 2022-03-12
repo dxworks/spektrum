@@ -1,9 +1,9 @@
 package me.drbaxr.spektrum.test
 
-import me.drbaxr.spektrum.identifiers.TestIdentifier
-import me.drbaxr.spektrum.identifiers.rules.ContainsTestInIdentifier
-import me.drbaxr.spektrum.identifiers.rules.Rule
-import me.drbaxr.spektrum.main.model.HierarchyUnit
+import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
+import me.drbaxr.spektrum.flexible.identifiers.rules.ContainsTestInIdentifier
+import me.drbaxr.spektrum.flexible.identifiers.rules.Rule
+import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import org.junit.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue

@@ -1,6 +1,6 @@
 package me.drbaxr.spektrum
 
-import me.drbaxr.spektrum.adapters.CSModelAdapter
+import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
 
 fun main() {
     val adapter = CSModelAdapter("inputs/Honeydew-testing_stuff.json")

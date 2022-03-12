@@ -1,6 +1,6 @@
 package me.drbaxr.spektrum.test
 
-import me.drbaxr.spektrum.adapters.CSModelAdapter
+import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
 import me.drbaxr.spektrum.test.util.TestUtil
 import org.junit.Test
 import java.io.FileReader

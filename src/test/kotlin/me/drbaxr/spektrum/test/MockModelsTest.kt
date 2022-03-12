@@ -2,14 +2,12 @@ package me.drbaxr.spektrum.test
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.main.central.CoverageModelCalculator
-import me.drbaxr.spektrum.main.central.MetricsExporter
-import me.drbaxr.spektrum.main.central.UnitClassifier
-import me.drbaxr.spektrum.identifiers.TestIdentifier
-import me.drbaxr.spektrum.identifiers.rules.ContainsTestInIdentifier
-import me.drbaxr.spektrum.identifiers.rules.Rule
-import me.drbaxr.spektrum.main.model.ExportUnit
-import me.drbaxr.spektrum.main.model.HierarchyUnit
+import me.drbaxr.spektrum.fixed.central.CoverageModelCalculator
+import me.drbaxr.spektrum.fixed.central.MetricsExporter
+import me.drbaxr.spektrum.fixed.central.UnitClassifier
+import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
+import me.drbaxr.spektrum.flexible.identifiers.rules.ContainsTestInIdentifier
+import me.drbaxr.spektrum.fixed.model.ExportUnit
 import me.drbaxr.spektrum.test.util.TestUtil.Companion.getMock
 import org.junit.Test
 import java.io.FileReader
