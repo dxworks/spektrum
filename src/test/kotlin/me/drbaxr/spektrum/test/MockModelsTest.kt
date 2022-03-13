@@ -6,7 +6,7 @@ import me.drbaxr.spektrum.fixed.central.CoverageModelCalculator
 import me.drbaxr.spektrum.fixed.central.MetricsExporter
 import me.drbaxr.spektrum.fixed.central.UnitClassifier
 import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
-import me.drbaxr.spektrum.flexible.identifiers.rules.ContainsTestInIdentifier
+import me.drbaxr.spektrum.flexible.identifiers.rules.general.ContainsTestInIdentifier
 import me.drbaxr.spektrum.fixed.model.ExportUnit
 import me.drbaxr.spektrum.test.util.TestUtil.Companion.getMock
 import org.junit.Test
