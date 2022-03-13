@@ -5,6 +5,7 @@ import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.flexible.adapters.model.external.*
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
+import me.drbaxr.spektrum.flexible.RelevantInformation
 import java.io.FileReader
 
 class CSModelAdapter(val path: String) : ModelAdapter {
@@ -12,6 +13,8 @@ class CSModelAdapter(val path: String) : ModelAdapter {
 
     override fun adapt(): Set<HierarchyUnit> {
         val importModel = getOriginalModel(path)
+        RelevantInformation.importCSModel = importModel
+
         methodTreeBuilder = MethodTreeBuilder(importModel)
 
         return importModel.projects.map { mapProject(it) }.toSet()
