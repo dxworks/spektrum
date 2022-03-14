@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.test
+package me.drbaxr.spektrum.test.rules
 
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter

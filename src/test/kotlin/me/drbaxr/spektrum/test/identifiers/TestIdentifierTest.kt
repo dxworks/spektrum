@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.test
+package me.drbaxr.spektrum.test.identifiers
 
 import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
 import me.drbaxr.spektrum.flexible.identifiers.rules.general.ContainsTestInIdentifier
