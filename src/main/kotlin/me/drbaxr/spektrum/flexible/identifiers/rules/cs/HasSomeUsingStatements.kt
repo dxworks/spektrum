@@ -4,12 +4,12 @@ import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.flexible.RelevantInformation
 import me.drbaxr.spektrum.flexible.identifiers.rules.Rule
 
-class HasSomeAttribute(val attributes: Set<String>): Rule {
+class HasSomeUsingStatements(val statements: Set<String>) : Rule {
 
     override fun isRespectedBy(unit: HierarchyUnit): Boolean {
-        val importModelMethod = CSRulesUtil.findMethodInModel(RelevantInformation.importCSModel, unit)
+        val importedModelClass = CSRulesUtil.findMethodClassInModel(RelevantInformation.importCSModel, unit)
 
-        return attributes.any { attribute -> importModelMethod.attributes.any { it == attribute } }
+        return statements.any { statement -> importedModelClass.usingStatements.any { it == statement } }
     }
 
 }

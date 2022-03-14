@@ -3,6 +3,7 @@ package me.drbaxr.spektrum.test
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeAttribute
+import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeUsingStatements
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.exceptions.*
 import org.junit.Test
 import org.junit.jupiter.api.assertThrows
@@ -138,6 +139,42 @@ class CSRulesTest {
 
         assertThrows<MethodNotFoundException> {
             HasSomeAttribute(setOf("Some.Random.Attribute", "No", "Attribute.Here"))
+                .isRespectedBy(unit)
+        }
+    }
+
+    @Test
+    fun testHasSomeUsedClassTrue() {
+        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
+                "HoneydewCoreIntegrationTests.Processors->" +
+                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
+                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsNull#"
+
+        val unit = HierarchyMethod(
+            identifier,
+            mutableMapOf()
+        )
+
+        assertTrue {
+            HasSomeUsingStatements(setOf("Some.Random.Attribute", "Xunit", "HoneydewModels.Reference"))
+                .isRespectedBy(unit)
+        }
+    }
+
+    @Test
+    fun testHasSomeUsedClassFalse() {
+        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
+                "HoneydewCoreIntegrationTests.Processors->" +
+                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
+                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsNull#"
+
+        val unit = HierarchyMethod(
+            identifier,
+            mutableMapOf()
+        )
+
+        assertFalse {
+            HasSomeUsingStatements(setOf("Some.Random.Attribute", "HoneydewModels.Reference"))
                 .isRespectedBy(unit)
         }
     }
