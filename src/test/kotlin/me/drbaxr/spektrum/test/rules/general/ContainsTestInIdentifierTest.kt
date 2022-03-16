@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.test
+package me.drbaxr.spektrum.test.rules.general
 
 import me.drbaxr.spektrum.flexible.identifiers.rules.general.ContainsTestInIdentifier
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
@@ -6,7 +6,7 @@ import org.junit.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class RulesTest {
+class ContainsTestInIdentifierTest {
     @Test
     fun testContainsTestInIdentifierTrue() {
         val unit = HierarchyUnit(

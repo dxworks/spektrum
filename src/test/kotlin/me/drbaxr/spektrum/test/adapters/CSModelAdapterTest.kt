@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.test
+package me.drbaxr.spektrum.test.adapters
 
 import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
 import me.drbaxr.spektrum.test.util.TestUtil
