@@ -67,7 +67,7 @@ class CSModelAdapter(val path: String) : ModelAdapter {
 
     private fun mapClass(cls: Class, parent: HierarchyUnit): HierarchyUnit {
         val unit = HierarchyUnit(
-            "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name}",
+            "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name.split(".").last()}",
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.CLASS,
             true,
