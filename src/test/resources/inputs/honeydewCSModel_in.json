@@ -47,7 +47,9 @@
                       "modifiers": [
                         "private"
                       ],
-                      "callers": [],
+                      "callers": [
+                        "HoneydewCoreIntegrationTests/Models/ProjectNamespaceTests.cs->HoneydewCoreIntegrationTests.Models.ProjectNamespaceTests@Add_ShouldAddNewClass_WhenClassIsFromDefaultNamespace#"
+                      ],
                       "calledMethods": []
                     },
                     {

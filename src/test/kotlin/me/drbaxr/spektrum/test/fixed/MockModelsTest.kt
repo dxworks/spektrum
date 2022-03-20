@@ -36,8 +36,8 @@ class MockModelsTest {
             ContainsTestInIdentifier(),
         ))
 
-        val split = UnitClassifier().classify(units, identifier)
-        val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
+        UnitClassifier().classify(units, identifier)
+        val coveredModel = CoverageModelCalculator().calculate(units)
         val exportedModel = MetricsExporter().getExportModel(coveredModel)
 
         val exportedModelType = object : TypeToken<Set<ExportUnit>>() {}.type

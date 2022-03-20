@@ -18,13 +18,12 @@ class CSTestIdentifierTest {
 
         // C# part
         val model = adapter.adapt()
-        val csTestIdentifier = buildTestIdentifier();
+        val csTestIdentifier = buildTestIdentifier()
 
         // Fixed part
-        val split = UnitClassifier().classify(model, csTestIdentifier)
-        val coveredModel = CoverageModelCalculator().calculate(split.first, split.second)
+        UnitClassifier().classify(model, csTestIdentifier)
+        val coveredModel = CoverageModelCalculator().calculate(model)
 
-        val test = MetricsExporter().getExportModel(coveredModel)
         MetricsExporter().exportAndSave(coveredModel)
     }
 
