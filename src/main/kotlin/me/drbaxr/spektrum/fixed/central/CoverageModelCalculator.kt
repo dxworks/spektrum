@@ -1,21 +1,27 @@
 package me.drbaxr.spektrum.fixed.central
 
+import me.drbaxr.spektrum.fixed.exception.NonTestableUnitException
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.util.HierarchyUnitTools
 
 class CoverageModelCalculator {
 
-    fun calculate(test: Set<HierarchyUnit>, testable: Set<HierarchyUnit>): Set<HierarchyUnit> {
-        val testMethods =
-            HierarchyUnitTools.getTypeUnits(test, HierarchyUnit.GeneralHierarchyUnitTypes.METHOD).map { it as HierarchyMethod }.toSet()
-        val testableMethods =
-            HierarchyUnitTools.getTypeUnits(testable, HierarchyUnit.GeneralHierarchyUnitTypes.METHOD).map { it as HierarchyMethod }.toSet()
+    fun calculate(units: Set<HierarchyUnit>): Set<HierarchyUnit> {
+        val modelMethods = HierarchyUnitTools.getTypeUnits(units, HierarchyUnit.GeneralHierarchyUnitTypes.METHOD)
+            .map { it as HierarchyMethod }
 
-        setCoverage(testable, testMethods)
+        val testableMethods = modelMethods
+            .filter { it.isTestable }
+            .toSet()
+        val testMethods = modelMethods
+            .filter { !it.isTestable }
+            .toSet()
+
+        setCoverage(testMethods, testableMethods)
         aggregateCoverage(testableMethods)
 
-        return testable
+        return units
     }
 
     private fun aggregateCoverage(units: Set<HierarchyUnit>) {
@@ -30,7 +36,13 @@ class CoverageModelCalculator {
 
         parents.forEach { p ->
             p.setCoverage(
-                p.children.map { it.getCoverage() }.average().toFloat()
+                p.children.map {
+                    try {
+                        it.getCoverage()
+                    } catch (e: NonTestableUnitException) {
+                        0f
+                    }
+                }.average().toFloat()
             )
         }
 
@@ -38,13 +50,9 @@ class CoverageModelCalculator {
             aggregateCoverage(parents)
     }
 
-    private fun setCoverage(testable: Set<HierarchyUnit>, testMethods: Set<HierarchyMethod>) {
+    private fun setCoverage(test: Set<HierarchyMethod>, testable: Set<HierarchyMethod>) {
         testable.forEach {
-            if (it.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && it is HierarchyMethod) {
-                it.setCoverage(getMethodCoverage(it, testMethods))
-            } else {
-                setCoverage(it.children, testMethods)
-            }
+            it.setCoverage(getMethodCoverage(it, test))
         }
     }
 

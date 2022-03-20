@@ -10,7 +10,7 @@ class HierarchyMethod(
         fun methodFullNameToName(fullName: String): String =
             "${Method.file(fullName)}$childSeparator" +
             "${Method.namespace(fullName)}$childSeparator" +
-            "${Method.namespace(fullName)}.${Method.className(fullName)}$childSeparator" +
+            "${Method.className(fullName)}$childSeparator" +
             Method.method(fullName)
     }
 }
