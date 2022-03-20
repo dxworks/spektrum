@@ -1,5 +1,6 @@
 package me.drbaxr.spektrum.util
 
+import me.drbaxr.spektrum.fixed.exception.NonTestableUnitException
 import me.drbaxr.spektrum.fixed.model.ExportUnit
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
@@ -26,10 +27,16 @@ class HierarchyUnitTools {
             model.forEach { unit ->
                 val exUnit: ExportUnit
 
+                val coverage = try {
+                    unit.getCoverage()
+                } catch (e: NonTestableUnitException) {
+                    -1.0f
+                }
+
                 if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
-                    exUnit = ExportUnit(unit.identifier, unit.type, unit.getCoverage(), null)
+                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, null)
                 } else {
-                    exUnit = ExportUnit(unit.identifier, unit.type, unit.getCoverage(), mutableSetOf())
+                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, mutableSetOf())
                     exUnit.children?.addAll(mapToExport(unit.children))
                 }
 

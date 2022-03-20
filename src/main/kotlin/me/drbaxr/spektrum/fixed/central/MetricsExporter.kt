@@ -25,14 +25,15 @@ class MetricsExporter {
         val exportModel = getExportModel(model)
         val coverageByTypes = mutableMapOf<String, TypeCoverage>()
 
-        val coverageTypes = getCoverageTypes(model)
-        coverageTypes.forEach { type ->
-            val typeUnits = HierarchyUnitTools.getTypeUnits(model, type)
-            val typeCoverageAvg = typeUnits.map { it.getCoverage() }.average()
-            val typeCoverageCeil = typeUnits.map { if (it.getCoverage() > 0) 1f else 0f }.average()
-
-            coverageByTypes[type] = TypeCoverage(typeCoverageAvg.toFloat(), typeCoverageCeil.toFloat())
-        }
+        // TODO: See what you can salvage out of this
+//        val coverageTypes = getCoverageTypes(model)
+//        coverageTypes.forEach { type ->
+//            val typeUnits = HierarchyUnitTools.getTypeUnits(model, type)
+//            val typeCoverageAvg = typeUnits.map { it.getCoverage() }.average()
+//            val typeCoverageCeil = typeUnits.map { if (it.getCoverage() > 0) 1f else 0f }.average()
+//
+//            coverageByTypes[type] = TypeCoverage(typeCoverageAvg.toFloat(), typeCoverageCeil.toFloat())
+//        }
 
         val gson = GsonBuilder().setPrettyPrinting().create()
 

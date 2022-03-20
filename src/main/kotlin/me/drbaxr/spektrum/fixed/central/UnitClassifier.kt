@@ -1,35 +1,45 @@
 package me.drbaxr.spektrum.fixed.central
 
+import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 
 class UnitClassifier {
 
-    // fst - #Test, snd - #Testable
+    // fst - #Test test methods, snd - #Testable all units
     fun classify(
         hierarchyUnits: Set<HierarchyUnit>,
         testIdentifier: TestIdentifier
-    ): Pair<Set<HierarchyUnit>, Set<HierarchyUnit>> {
-        val testUnits = mutableSetOf<HierarchyUnit>()
+    ) {
+        // TODO: cleanup
+        val testMethods = mutableSetOf<HierarchyMethod>()
         val testableUnits = mutableSetOf<HierarchyUnit>()
 
         hierarchyUnits.forEach {
-            if (testIdentifier.isTest(it)) {
-                testUnits.add(it)
-                setUnitAsTest(it)
-            } else {
-                testableUnits.add(it)
+            testMethods.addAll(getTestMethods(it, testIdentifier))
+
+            testableUnits.add(it)
+        }
+    }
+
+    private fun getTestMethods(unit: HierarchyUnit, testIdentifier: TestIdentifier): Set<HierarchyMethod> {
+        val testMethods = mutableSetOf<HierarchyMethod>()
+
+        if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
+            try {
+               if (testIdentifier.isTest(unit)) {
+                   unit.isTestable = false
+                   testMethods.add(unit)
+               }
+            } catch (e: Exception) {
+            }
+        } else {
+            unit.children.forEach {
+                val test = getTestMethods(it, testIdentifier)
+                testMethods.addAll(test)
             }
         }
 
-        return Pair(testUnits, testableUnits)
+        return testMethods
     }
-
-    private fun setUnitAsTest(unit: HierarchyUnit) {
-        if (unit.type != HierarchyUnit.GeneralHierarchyUnitTypes.METHOD) {
-            unit.isTestable = false
-            unit.children.forEach { setUnitAsTest(it) }
-        }
-    }
-
 }

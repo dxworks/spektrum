@@ -67,7 +67,7 @@ class CSModelAdapter(val path: String) : ModelAdapter {
 
     private fun mapClass(cls: Class, parent: HierarchyUnit): HierarchyUnit {
         val unit = HierarchyUnit(
-            "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name}",
+            "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name.split(".").last()}",
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.CLASS,
             true,
@@ -77,17 +77,18 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         unit.children.addAll(
             cls.methods
                 .filter { it.type == "Method" }
-                .map { mapMethod(it, unit.identifier) }
+                .map { mapMethod(it, unit) }
         )
 
         return unit
     }
 
-    private fun mapMethod(method: Method, parentId: String): HierarchyMethod {
+    private fun mapMethod(method: Method, parent: HierarchyUnit): HierarchyMethod {
         val hMethod = HierarchyMethod(
-            "${parentId}${HierarchyUnit.childSeparator}${method.name}",
+            "${parent.identifier}${HierarchyUnit.childSeparator}${method.name}",
             mutableMapOf()
         )
+        hMethod.parent = parent
 
         val fullName = Method.methodNameToFullName(hMethod.identifier)
         val methodNode = methodTreeBuilder.build(fullName, listOf())
