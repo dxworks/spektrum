@@ -1,4 +1,4 @@
-package me.drbaxr.spektrum.test.fixed
+package me.drbaxr.spektrum.test.integration
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
