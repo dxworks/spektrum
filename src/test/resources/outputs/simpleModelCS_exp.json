@@ -68,5 +68,29 @@
         ]
       }
     ]
+  },
+  {
+    "identifier": "JSONTest",
+    "type": "PACKAGE",
+    "coverage": 0.0,
+    "children": [
+      {
+        "identifier": "JSONTest/TestClass",
+        "type": "CLASS",
+        "coverage": 0.0,
+        "children": [
+          {
+            "identifier": "JSONTest/TestClass/testMethod1",
+            "type": "METHOD",
+            "coverage": -1.0
+          },
+          {
+            "identifier": "JSONTest/TestClass/testMethod2",
+            "type": "METHOD",
+            "coverage": -1.0
+          }
+        ]
+      }
+    ]
   }
 ]

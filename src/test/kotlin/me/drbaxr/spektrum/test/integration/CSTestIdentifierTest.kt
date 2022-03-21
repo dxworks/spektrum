@@ -25,11 +25,13 @@ class CSTestIdentifierTest {
         val coveredModel = CoverageModelCalculator().calculate(model)
 
         MetricsExporter().exportAndSave(coveredModel)
+
+        TODO("Finish assertion")
     }
 
     private fun buildTestIdentifier(): TestIdentifier {
         val usingStatementsRule = HasSomeUsingStatements(setOf("Xunit"))
-        val attributesRule = HasSomeAttribute(setOf("Xunit.FactAttribute"))
+        val attributesRule = HasSomeAttribute(setOf("Xunit.FactAttribute", "Xunit.TheoryAttribute"))
         val andRule = And(listOf(usingStatementsRule, attributesRule))
 
         return TestIdentifier(mutableListOf(andRule))
