@@ -19,10 +19,10 @@ class HasSomeAttributeExceptionsTest {
 
     @Test
     fun `test should throw NamespaceNotFoundException`() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "Invalid.Namespace->" +
-                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
-                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsEmpty#"
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters.invalid->" +
+                "invalidClass->" +
+                "invalidMethod#"
 
         val unit = HierarchyMethod(
             identifier,
@@ -37,10 +37,10 @@ class HasSomeAttributeExceptionsTest {
 
     @Test
     fun `test should throw ClassNotFoundException`() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "HoneydewCoreIntegrationTests.Processors->" +
-                "InvalidClass->" +
-                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsEmpty#"
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters->" +
+                "invalidClass->" +
+                "invalidMethod#"
 
         val unit = HierarchyMethod(
             identifier,
@@ -55,9 +55,9 @@ class HasSomeAttributeExceptionsTest {
 
     @Test
     fun `test should throw MethodNotFoundException`() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "HoneydewCoreIntegrationTests.Processors->" +
-                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters->" +
+                "ExportUtilsTests->" +
                 "invalidMethod#"
 
         val unit = HierarchyMethod(

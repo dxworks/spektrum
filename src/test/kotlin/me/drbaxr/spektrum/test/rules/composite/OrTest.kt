@@ -21,10 +21,10 @@ class OrTest {
 
     @Test
     fun testOrTrue() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "HoneydewCoreIntegrationTests.Processors->" +
-                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
-                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsNull#"
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters->" +
+                "ExportUtilsTests->" +
+                "CsvCountPerLine_ShouldReturn0_WhenNoNumberIsDetected#"
 
         val unit = HierarchyMethod(
             identifier,
@@ -41,10 +41,10 @@ class OrTest {
 
     @Test
     fun testOrFalse() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "HoneydewCoreIntegrationTests.Processors->" +
-                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
-                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsNull#"
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters->" +
+                "ExportUtilsTests->" +
+                "CsvCountPerLine_ShouldReturn0_WhenNoNumberIsDetected#"
 
         val unit = HierarchyMethod(
             identifier,
