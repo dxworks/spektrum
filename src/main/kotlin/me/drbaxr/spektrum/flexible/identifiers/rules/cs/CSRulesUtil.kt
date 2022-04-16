@@ -31,7 +31,7 @@ class CSRulesUtil {
                 ?: throw ClassNotFoundException(splitId[2])
         }
 
-        private fun findFileInModel(model: ImportModel, path: String): File? {
+        fun findFileInModel(model: ImportModel, path: String): File? {
             var file: File? = null
 
             model.projects.forEach { project ->
