@@ -19,10 +19,10 @@ class HasSomeAttributeTest {
 
     @Test
     fun testHasSomeAttributeTrue() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "HoneydewCoreIntegrationTests.Processors->" +
-                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
-                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsNull#"
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters->" +
+                "ExportUtilsTests->" +
+                "CsvCountPerLine_ShouldReturn0_WhenNoNumberIsDetected#"
 
         val unit = HierarchyMethod(
             identifier,
@@ -37,10 +37,10 @@ class HasSomeAttributeTest {
 
     @Test
     fun testHasSomeAttributeFalse() {
-        val identifier = "HoneydewCoreIntegrationTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs->" +
-                "HoneydewCoreIntegrationTests.Processors->" +
-                "RepositoryModelToReferenceRepositoryModelProcessorTests->" +
-                "GetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsEmpty#"
+        val identifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
+                "HoneydewCoreTest.IO.Writers.Exporters->" +
+                "ExportUtilsTests->" +
+                "CsvCountPerLine_ShouldReturn0_WhenNoNumberIsDetected#"
 
         val unit = HierarchyMethod(
             identifier,
