@@ -4,5 +4,7 @@ def check(unitInfo) {
 
     print_helper.invokeMethod("print_some_shit", null)
 
-    return unitInfo.cls.name
+    println unitInfo.cls.name
+
+    return true
 }

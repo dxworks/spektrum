@@ -1,13 +1,12 @@
 package me.drbaxr.spektrum.test.rules.script
 
-import groovy.lang.GroovyShell
-import me.drbaxr.spektrum.flexible.RelevantInformation
+import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
+import me.drbaxr.spektrum.flexible.identifiers.rules.cs.ScriptRuleCS
 import org.junit.Before
 import org.junit.Test
-import java.io.File
 
-class ScriptRuleTest {
+class ScriptRuleCSTest {
 
     @Before
     fun init() {
@@ -16,21 +15,19 @@ class ScriptRuleTest {
 
     @Test
     fun test() {
-        val scriptPath = "rules/test.groovy"
-        val functionName = "check"
-
         val unitIdentifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
                 "HoneydewCoreTest.IO.Writers.Exporters->" +
                 "ExportUtilsTests->" +
                 "CsvCountPerLine_ShouldReturn0_WhenNoNumberIsDetected#"
 
-        val value = GroovyShell()
-            .parse(File(scriptPath))
-            .invokeMethod(
-                functionName,
-                RelevantInformation.getCSImportModelInformation(unitIdentifier)
-            )
+        val unit = HierarchyUnit(
+            unitIdentifier,
+            mutableSetOf(),
+            "METHOD"
+        )
 
-        println(value)
+        val rule = ScriptRuleCS("rules/test.groovy")
+
+        println(rule.isRespectedBy(unit))
     }
 }
