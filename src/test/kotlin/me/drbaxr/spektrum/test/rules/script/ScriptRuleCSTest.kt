@@ -5,6 +5,8 @@ import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.ScriptRuleCS
 import org.junit.Before
 import org.junit.Test
+import kotlin.test.assertFalse
+import kotlin.test.assertTrue
 
 class ScriptRuleCSTest {
 
@@ -14,7 +16,7 @@ class ScriptRuleCSTest {
     }
 
     @Test
-    fun test() {
+    fun testScriptRuleCSTrue() {
         val unitIdentifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
                 "HoneydewCoreTest.IO.Writers.Exporters->" +
                 "ExportUtilsTests->" +
@@ -26,8 +28,26 @@ class ScriptRuleCSTest {
             "METHOD"
         )
 
-        val rule = ScriptRuleCS("rules/test.groovy")
+        val rule = ScriptRuleCS("rules/cs/rule.groovy")
 
-        println(rule.isRespectedBy(unit))
+        assertTrue { rule.isRespectedBy(unit) }
+    }
+
+    @Test
+    fun testScriptRuleCSFalse() {
+        val unitIdentifier = "HoneydewModels/CSharp/ClassModel.cs->" +
+                "HoneydewModels.CSharp->" +
+                "ClassModel->" +
+                "get#"
+
+        val unit = HierarchyUnit(
+            unitIdentifier,
+            mutableSetOf(),
+            "METHOD"
+        )
+
+        val rule = ScriptRuleCS("rules/cs/rule.groovy")
+
+        assertFalse { rule.isRespectedBy(unit) }
     }
 }
