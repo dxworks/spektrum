@@ -16,8 +16,8 @@ class ScriptRuleTest {
 
     @Test
     fun test() {
-        val scriptPath = "scripts/test.groovy"
-        val functionName = "evaluate"
+        val scriptPath = "rules/test.groovy"
+        val functionName = "check"
 
         val unitIdentifier = "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs->" +
                 "HoneydewCoreTest.IO.Writers.Exporters->" +
@@ -32,7 +32,5 @@ class ScriptRuleTest {
             )
 
         println(value)
-
-        TODO("make ScriptCSRule and test that shit")
     }
 }
