@@ -3,7 +3,7 @@ package me.drbaxr.spektrum.test.adapters
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.flexible.adapters.cs.MethodTreeBuilder
-import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModel
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNode
 import org.junit.Test
@@ -12,7 +12,7 @@ import java.io.FileReader
 import kotlin.test.assertEquals
 
 class MethodTreeBuilderTest {
-    private lateinit var model: ImportModel
+    private lateinit var model: ImportModelCS
     private lateinit var builder: MethodTreeBuilder
 
     @Before
@@ -56,8 +56,8 @@ class MethodTreeBuilderTest {
         assertEquals(expected, actual)
     }
 
-    private fun getOriginalModel(file: String): ImportModel {
-        val type = object : TypeToken<ImportModel>() {}.type
+    private fun getOriginalModel(file: String): ImportModelCS {
+        val type = object : TypeToken<ImportModelCS>() {}.type
         return Gson().fromJson(FileReader(file), type)
     }
 }

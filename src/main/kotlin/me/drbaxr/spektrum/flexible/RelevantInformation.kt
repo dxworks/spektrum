@@ -2,7 +2,7 @@ package me.drbaxr.spektrum.flexible
 
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.FileCS
-import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModel
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ProjectCS
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.exceptions.*
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.model.CSUnitInfo
@@ -10,7 +10,7 @@ import java.lang.Exception
 
 class RelevantInformation {
     companion object {
-        lateinit var importCSModel: ImportModel
+        lateinit var importCSModel: ImportModelCS
 
         // returns all needed information about a C# method
         fun getCSImportModelInformation(unitIdentifier: String): CSUnitInfo {

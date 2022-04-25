@@ -1,12 +1,12 @@
 package me.drbaxr.spektrum.flexible.adapters.cs
 
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.FileCS
-import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModel
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNode
 import kotlin.Exception
 
-class MethodTreeBuilder(private val model: ImportModel) {
+class MethodTreeBuilder(private val model: ImportModelCS) {
     // returns null if the searched method does not exist in model
     // ignoredCallers is the stack of method calls so far: first element is method that was initially called
     fun build(methodIdentifier: String, ignoredCallers: List<String>): MethodTreeNode? {

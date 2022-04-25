@@ -21,8 +21,8 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         return importModel.projects.map { mapProject(it) }.toSet()
     }
 
-    private fun getOriginalModel(file: String): ImportModel {
-        val type = object : TypeToken<ImportModel>() {}.type
+    private fun getOriginalModel(file: String): ImportModelCS {
+        val type = object : TypeToken<ImportModelCS>() {}.type
         return Gson().fromJson(FileReader(file), type)
     }
 
