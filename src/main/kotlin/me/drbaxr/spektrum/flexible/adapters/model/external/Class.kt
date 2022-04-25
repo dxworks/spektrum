@@ -7,4 +7,12 @@ data class Class(
     val attributes: Set<String>,
     val usedClasses: Set<String>,
     val methods: Set<Method>
-)
+) {
+    fun getInfo(): ClassInfo = ClassInfo(
+        name,
+        type,
+        usingStatements,
+        attributes,
+        usedClasses
+    )
+}

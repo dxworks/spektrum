@@ -7,9 +7,9 @@ import me.drbaxr.spektrum.flexible.identifiers.rules.Rule
 class HasSomeAttribute(val attributes: Set<String>): Rule {
 
     override fun isRespectedBy(unit: HierarchyUnit): Boolean {
-        val importModelMethod = CSRulesUtil.findMethodInModel(RelevantInformation.importCSModel, unit)
+        val unitInfo = RelevantInformation.getCSImportModelInformation(unit.identifier)
 
-        return attributes.any { attribute -> importModelMethod.attributes.any { it == attribute } }
+        return attributes.any { attribute -> unitInfo.method.attributes.any { it == attribute } }
     }
 
 }

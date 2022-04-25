@@ -1,6 +1,7 @@
 package me.drbaxr.spektrum.flexible.adapters.model.external
 
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
+import me.drbaxr.spektrum.flexible.adapters.model.external.MethodInfo
 
 data class Method(
     val name: String, // <file>-><namespace>.<class>@<method>#<params>
@@ -45,4 +46,13 @@ data class Method(
             return namespaceClass.split(".")
         }
     }
+
+    fun getInfo(): MethodInfo = MethodInfo(
+        name,
+        attributes,
+        modifiers,
+        callers,
+        calledMethods,
+        type
+    )
 }
