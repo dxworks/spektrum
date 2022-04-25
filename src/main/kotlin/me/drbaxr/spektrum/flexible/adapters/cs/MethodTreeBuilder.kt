@@ -1,9 +1,9 @@
-package me.drbaxr.spektrum.flexible.adapters
+package me.drbaxr.spektrum.flexible.adapters.cs
 
-import me.drbaxr.spektrum.flexible.adapters.model.external.File
-import me.drbaxr.spektrum.flexible.adapters.model.external.ImportModel
-import me.drbaxr.spektrum.flexible.adapters.model.external.Method
-import me.drbaxr.spektrum.flexible.adapters.model.internal.MethodTreeNode
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.FileCS
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModel
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
+import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNode
 import kotlin.Exception
 
 class MethodTreeBuilder(private val model: ImportModel) {
@@ -30,13 +30,13 @@ class MethodTreeBuilder(private val model: ImportModel) {
         }
     }
 
-    private fun getMethod(methodIdentifier: String): Method {
-        val filePath = Method.file(methodIdentifier)
-        val namespaceName = Method.namespace(methodIdentifier)
-        val className = Method.className(methodIdentifier)
-        val methodName = Method.method(methodIdentifier)
+    private fun getMethod(methodIdentifier: String): MethodCS {
+        val filePath = MethodCS.file(methodIdentifier)
+        val namespaceName = MethodCS.namespace(methodIdentifier)
+        val className = MethodCS.className(methodIdentifier)
+        val methodName = MethodCS.method(methodIdentifier)
 
-        var file: File? = null
+        var file: FileCS? = null
         model.projects.forEach { project ->
             project.files.forEach {
                 if (it.path == filePath)

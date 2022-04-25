@@ -1,6 +1,6 @@
-package me.drbaxr.spektrum.flexible.adapters.model.external
+package me.drbaxr.spektrum.flexible.adapters.cs.model.external
 
-data class MethodInfo(
+data class MethodCSInfo(
     val name: String, // <file>-><namespace>.<class>@<method>#<params>
     val attributes: Set<String>,
     val modifiers: Set<String>,

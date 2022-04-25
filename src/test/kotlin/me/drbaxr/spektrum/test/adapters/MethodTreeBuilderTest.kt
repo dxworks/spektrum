@@ -2,10 +2,10 @@ package me.drbaxr.spektrum.test.adapters
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.flexible.adapters.MethodTreeBuilder
-import me.drbaxr.spektrum.flexible.adapters.model.external.ImportModel
-import me.drbaxr.spektrum.flexible.adapters.model.external.Method
-import me.drbaxr.spektrum.flexible.adapters.model.internal.MethodTreeNode
+import me.drbaxr.spektrum.flexible.adapters.cs.MethodTreeBuilder
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModel
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
+import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNode
 import org.junit.Test
 import org.junit.Before
 import java.io.FileReader
@@ -32,7 +32,7 @@ class MethodTreeBuilderTest {
                         cls.methods.forEach { method ->
                             if (method.type == "Method") {
                                 val className = cls.name.split(".").last()
-                                val fullName = Method.fullName(file.path, namespace.name, className, method.name)
+                                val fullName = MethodCS.fullName(file.path, namespace.name, className, method.name)
                                 val node = builder.build(fullName, listOf())
                                 if (node != null && node.callerMethods.isNotEmpty()) {
                                     nodes.add(node)
@@ -52,7 +52,7 @@ class MethodTreeBuilderTest {
     @Test
     fun testFullName() {
         val expected = "file->namespace.class@method"
-        val actual = Method.fullName("file", "namespace", "class", "method")
+        val actual = MethodCS.fullName("file", "namespace", "class", "method")
         assertEquals(expected, actual)
     }
 

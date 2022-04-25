@@ -1,7 +1,7 @@
 package me.drbaxr.spektrum.test.rules.script
 
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
-import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
+import me.drbaxr.spektrum.flexible.adapters.cs.CSModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.ScriptRuleCS
 import org.junit.Before
 import org.junit.Test

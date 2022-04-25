@@ -1,6 +1,6 @@
 package me.drbaxr.spektrum.fixed.model
 
-import me.drbaxr.spektrum.flexible.adapters.model.external.Method
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 
 class HierarchyMethod(
     identifier: String,
@@ -8,9 +8,9 @@ class HierarchyMethod(
 ) : HierarchyUnit(identifier, mutableSetOf(), GeneralHierarchyUnitTypes.METHOD) {
     companion object {
         fun methodFullNameToName(fullName: String): String =
-            "${Method.file(fullName)}$childSeparator" +
-            "${Method.namespace(fullName)}$childSeparator" +
-            "${Method.className(fullName)}$childSeparator" +
-            Method.method(fullName)
+            "${MethodCS.file(fullName)}$childSeparator" +
+            "${MethodCS.namespace(fullName)}$childSeparator" +
+            "${MethodCS.className(fullName)}$childSeparator" +
+            MethodCS.method(fullName)
     }
 }

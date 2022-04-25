@@ -1,7 +1,7 @@
 package me.drbaxr.spektrum.test.rules.composite
 
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
-import me.drbaxr.spektrum.flexible.adapters.CSModelAdapter
+import me.drbaxr.spektrum.flexible.adapters.cs.CSModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.rules.composite.And
 import me.drbaxr.spektrum.flexible.identifiers.rules.composite.Or
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeAttribute
