@@ -7,7 +7,7 @@ class HierarchyMethod(
     val callers: MutableMap<String, Int>
 ) : HierarchyUnit(identifier, mutableSetOf(), GeneralHierarchyUnitTypes.METHOD) {
     companion object {
-        fun methodFullNameToName(fullName: String): String =
+        fun methodCSFullNameToName(fullName: String): String =
             "${MethodCS.file(fullName)}$childSeparator" +
             "${MethodCS.namespace(fullName)}$childSeparator" +
             "${MethodCS.className(fullName)}$childSeparator" +

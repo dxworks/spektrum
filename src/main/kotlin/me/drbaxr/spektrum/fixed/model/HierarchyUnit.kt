@@ -30,6 +30,13 @@ open class HierarchyUnit(
         const val METHOD = "METHOD"
     }
 
+    object JavaHierarchyUnitTypes {
+        const val PROJECT = "PROJECT"
+        const val PACKAGE = "PACKAGE"
+        const val CLASS = "CLASS"
+        const val METHOD = "METHOD"
+    }
+
     fun getCoverage(): Float = coverage.takeIf { isTestable } ?: throw NonTestableUnitException(identifier)
 
     // shouldn't be called outside of coverage model calculator
@@ -41,9 +48,9 @@ open class HierarchyUnit(
         return "[$type] $identifier"
     }
 
-    fun toPrettyString(): String {
-        var finalString = printStyle(this)
-        children.forEach { finalString += "\n${recursivePrint(it, 1)}" }
+    fun toPrettyString(short: Boolean = false): String {
+        var finalString = printStyle(this, short)
+        children.forEach { finalString += "\n${recursivePrint(it, 1, short)}" }
 
         return finalString
     }
@@ -79,12 +86,12 @@ open class HierarchyUnit(
         }
     }
 
-    private fun recursivePrint(hierarchyUnit: HierarchyUnit, indentCount: Int): String {
+    private fun recursivePrint(hierarchyUnit: HierarchyUnit, indentCount: Int, short: Boolean): String {
         val indentation = "\t".repeat(indentCount)
-        var finalString = "$indentation${printStyle(hierarchyUnit)}"
+        var finalString = "$indentation${printStyle(hierarchyUnit, short)}"
 
         if (hierarchyUnit.type != GeneralHierarchyUnitTypes.METHOD) {
-            hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1)}" }
+            hierarchyUnit.children.forEach { finalString += "\n${recursivePrint(it, indentCount + 1, short)}" }
         } else {
             val hierarchyMethod = hierarchyUnit as HierarchyMethod
             hierarchyMethod.callers.forEach { finalString += "\n$indentation\t[CALL] [${it.value}] ${it.key}" }
@@ -93,6 +100,13 @@ open class HierarchyUnit(
         return finalString
     }
 
-    private fun printStyle(hierarchyUnit: HierarchyUnit): String =
-        "[${hierarchyUnit.type}] ${"[TEST]".takeIf { !isTestable } ?: "[${hierarchyUnit.getCoverage()}]"} ${hierarchyUnit.identifier}"
+    private fun printStyle(hierarchyUnit: HierarchyUnit, short: Boolean): String {
+        val identifier = if (short) {
+            hierarchyUnit.identifier.split(childSeparator).last()
+        } else {
+            hierarchyUnit.identifier
+        }
+        
+        return "[${hierarchyUnit.type}] ${"[TEST]".takeIf { !isTestable } ?: "[${hierarchyUnit.getCoverage()}]"} $identifier"
+    }
 }

@@ -96,7 +96,7 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         val callerMap = methodNode?.getCallerMap() ?: mapOf()
 
         callerMap.forEach { (fullName, order) ->
-            hMethod.callers[HierarchyMethod.methodFullNameToName(fullName)] = order
+            hMethod.callers[HierarchyMethod.methodCSFullNameToName(fullName)] = order
         }
 
         return hMethod
