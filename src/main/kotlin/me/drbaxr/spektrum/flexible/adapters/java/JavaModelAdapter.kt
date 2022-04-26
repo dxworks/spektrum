@@ -1,22 +1,71 @@
 package me.drbaxr.spektrum.flexible.adapters.java
 
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
+import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.flexible.adapters.ModelAdapter
+import me.drbaxr.spektrum.flexible.adapters.java.model.ClassJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.MethodJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.PackageJava
 import me.drbaxr.spektrum.flexible.adapters.java.model.ProjectJava
 import java.io.FileReader
 
 class JavaModelAdapter(val path: String) : ModelAdapter {
     override fun adapt(): Set<HierarchyUnit> {
-        val importModel = getOriginalModel(path)
+        val importModel = Gson().fromJson(FileReader(path), ProjectJava::class.java)
 
-        return setOf()
+        val project = mapProject(importModel)
+
+        return setOf(project)
     }
 
-    private fun getOriginalModel(file: String): ProjectJava {
-        val type = object : TypeToken<ProjectJava>() {}.type
+    private fun mapProject(project: ProjectJava): HierarchyUnit {
+        val unit = HierarchyUnit(
+            project.name,
+            mutableSetOf(),
+            HierarchyUnit.JavaHierarchyUnitTypes.PROJECT,
+        )
 
-        return Gson().fromJson(FileReader(file), ProjectJava::class.java)
+        unit.children.addAll(project.packages.map { mapPackage(it, unit) })
+
+        return unit
+    }
+
+    private fun mapPackage(pkg: PackageJava, parent: HierarchyUnit): HierarchyUnit {
+        val unit = HierarchyUnit(
+            "${parent.identifier}${HierarchyUnit.childSeparator}${pkg.name}",
+            mutableSetOf(),
+            HierarchyUnit.JavaHierarchyUnitTypes.PACKAGE,
+            parent = parent
+        )
+
+        unit.children.addAll(pkg.classes.map { mapClass(it, unit) })
+
+        return unit
+    }
+
+    private fun mapClass(cls: ClassJava, parent: HierarchyUnit): HierarchyUnit {
+        val unit = HierarchyUnit(
+            "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name}",
+            mutableSetOf(),
+            HierarchyUnit.JavaHierarchyUnitTypes.CLASS,
+            parent = parent
+        )
+
+        unit.children.addAll(cls.methods.map { mapMethod(it, unit) })
+
+        return unit
+    }
+
+    private fun mapMethod(method: MethodJava, parent: HierarchyUnit): HierarchyMethod {
+        val hMethod = HierarchyMethod(
+            "${parent.identifier}${HierarchyUnit.childSeparator}${method.signature}",
+            mutableMapOf(),
+        )
+        hMethod.parent = parent
+
+        // TODO: callers stack
+
+        return hMethod
     }
 }

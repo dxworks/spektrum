@@ -6,9 +6,13 @@ import org.junit.Test
 class JavaModelAdapterTest {
 
     @Test
-    fun test() {
+    fun testJavaModelAdapter() {
         val adapter = JavaModelAdapter("inputs/insider-tree-layout_java.json")
 
-        adapter.adapt()
+        val adaptedModel = adapter.adapt()
+
+        adaptedModel.forEach {
+            println(it.toPrettyString())
+        }
     }
 }
