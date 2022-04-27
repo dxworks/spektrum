@@ -6,26 +6,35 @@ import me.drbaxr.spektrum.flexible.adapters.cs.MethodTreeBuilderCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNodeCS
+import me.drbaxr.spektrum.flexible.adapters.java.MethodTreeBuilderJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.external.ProjectJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.internal.MethodTreeNodeJava
 import org.junit.Test
 import org.junit.Before
 import java.io.FileReader
 import kotlin.test.assertEquals
 
 class MethodTreeBuilderTest {
-    private lateinit var model: ImportModelCS
-    private lateinit var builder: MethodTreeBuilderCS
+    private lateinit var modelCS: ImportModelCS
+    private lateinit var builderCS: MethodTreeBuilderCS
+
+    private lateinit var projectJava: ProjectJava
+    private lateinit var builderJava: MethodTreeBuilderJava
 
     @Before
     fun init() {
-        model = getOriginalModel("inputs/Honeydew-testing_stuff.json")
-        builder = MethodTreeBuilderCS(model)
+        modelCS = getOriginalModel("inputs/Honeydew-testing_stuff.json")
+        builderCS = MethodTreeBuilderCS(modelCS)
+
+        projectJava = Gson().fromJson(FileReader("inputs/insider-tree-layout_java.json"), ProjectJava::class.java)
+        builderJava = MethodTreeBuilderJava(projectJava)
     }
 
     @Test
-    fun testBuild() {
+    fun testBuildCS() {
         val nodes = mutableListOf<MethodTreeNodeCS>()
 
-        model.projects.forEach { project ->
+        modelCS.projects.forEach { project ->
             project.files.forEach { file ->
                 file.namespaces.forEach { namespace ->
                     namespace.classes.forEach { cls ->
@@ -33,7 +42,7 @@ class MethodTreeBuilderTest {
                             if (method.type == "Method") {
                                 val className = cls.name.split(".").last()
                                 val fullName = MethodCS.fullName(file.path, namespace.name, className, method.name)
-                                val node = builder.build(fullName, listOf())
+                                val node = builderCS.build(fullName, listOf())
                                 if (node != null && node.callerMethods.isNotEmpty()) {
                                     nodes.add(node)
                                 }
@@ -54,6 +63,23 @@ class MethodTreeBuilderTest {
         val expected = "file->namespace.class@method"
         val actual = MethodCS.fullName("file", "namespace", "class", "method")
         assertEquals(expected, actual)
+    }
+
+    @Test
+    fun testBuildJava() {
+        val nodes = mutableListOf<MethodTreeNodeJava>()
+
+        projectJava.packages.forEach { pkg ->
+            pkg.classes.forEach { cls ->
+                cls.methods.forEach { mtd ->
+                    val node = builderJava.build(mtd.id, listOf())
+                    if (node.callerMethods.isNotEmpty())
+                        nodes.add(node)
+                }
+            }
+        }
+
+        println(nodes)
     }
 
     private fun getOriginalModel(file: String): ImportModelCS {

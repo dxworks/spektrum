@@ -17,8 +17,7 @@ class MethodTreeBuilderCS(private val model: ImportModelCS) {
             method.callers.forEach { callerName ->
                 if (!ignoredCallers.contains(callerName) && callerName != methodIdentifier) { // not called by itself
                     val newCallers = listOf(*ignoredCallers.toTypedArray(), callerName)
-                    val callerNode =
-                        build(callerName, newCallers)
+                    val callerNode = build(callerName, newCallers)
                     if (callerNode != null)
                         callerMethods.add(callerNode)
                 }
