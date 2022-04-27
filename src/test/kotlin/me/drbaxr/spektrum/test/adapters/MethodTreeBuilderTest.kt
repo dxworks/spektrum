@@ -53,9 +53,8 @@ class MethodTreeBuilderTest {
             }
         }
 
-        nodes.forEach {
-            println(it.toOrderString())
-        }
+        // TODO: make test do something smarter
+        assertEquals(nodes.size, 101)
     }
 
     @Test
@@ -79,7 +78,8 @@ class MethodTreeBuilderTest {
             }
         }
 
-        nodes.forEach { println(it.toOrderString(projectJava)) }
+        // TODO: make test do something smarter
+        assertEquals(nodes.size, 48)
     }
 
     private fun getOriginalModel(file: String): ImportModelCS {
