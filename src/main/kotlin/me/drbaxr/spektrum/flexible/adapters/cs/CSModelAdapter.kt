@@ -10,13 +10,13 @@ import me.drbaxr.spektrum.flexible.adapters.cs.model.external.*
 import java.io.FileReader
 
 class CSModelAdapter(val path: String) : ModelAdapter {
-    private lateinit var methodTreeBuilder: MethodTreeBuilder
+    private lateinit var methodTreeBuilder: MethodTreeBuilderCS
 
     override fun adapt(): Set<HierarchyUnit> {
         val importModel = getOriginalModel(path)
         RelevantInformation.importCSModel = importModel
 
-        methodTreeBuilder = MethodTreeBuilder(importModel)
+        methodTreeBuilder = MethodTreeBuilderCS(importModel)
 
         return importModel.projects.map { mapProject(it) }.toSet()
     }

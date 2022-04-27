@@ -4,10 +4,10 @@ import com.google.gson.Gson
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.flexible.adapters.ModelAdapter
-import me.drbaxr.spektrum.flexible.adapters.java.model.ClassJava
-import me.drbaxr.spektrum.flexible.adapters.java.model.MethodJava
-import me.drbaxr.spektrum.flexible.adapters.java.model.PackageJava
-import me.drbaxr.spektrum.flexible.adapters.java.model.ProjectJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.external.ClassJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.external.MethodJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.external.PackageJava
+import me.drbaxr.spektrum.flexible.adapters.java.model.external.ProjectJava
 import java.io.FileReader
 
 class JavaModelAdapter(val path: String) : ModelAdapter {

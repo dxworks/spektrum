@@ -2,9 +2,9 @@ package me.drbaxr.spektrum.flexible.adapters.cs.model.internal
 
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 
-data class MethodTreeNode(
+data class MethodTreeNodeCS(
     val identifier: String,
-    val callerMethods: Set<MethodTreeNode>
+    val callerMethods: Set<MethodTreeNodeCS>
 ) {
     fun toOrderString(trimmed: Boolean = false): String {
         val orderMap = getOrderMap()

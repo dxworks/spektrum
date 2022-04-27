@@ -2,10 +2,10 @@ package me.drbaxr.spektrum.test.adapters
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.flexible.adapters.cs.MethodTreeBuilder
+import me.drbaxr.spektrum.flexible.adapters.cs.MethodTreeBuilderCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
-import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNode
+import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNodeCS
 import org.junit.Test
 import org.junit.Before
 import java.io.FileReader
@@ -13,17 +13,17 @@ import kotlin.test.assertEquals
 
 class MethodTreeBuilderTest {
     private lateinit var model: ImportModelCS
-    private lateinit var builder: MethodTreeBuilder
+    private lateinit var builder: MethodTreeBuilderCS
 
     @Before
     fun init() {
         model = getOriginalModel("inputs/Honeydew-testing_stuff.json")
-        builder = MethodTreeBuilder(model)
+        builder = MethodTreeBuilderCS(model)
     }
 
     @Test
     fun testBuild() {
-        val nodes = mutableListOf<MethodTreeNode>()
+        val nodes = mutableListOf<MethodTreeNodeCS>()
 
         model.projects.forEach { project ->
             project.files.forEach { file ->

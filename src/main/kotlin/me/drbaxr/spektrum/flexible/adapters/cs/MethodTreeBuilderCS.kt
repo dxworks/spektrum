@@ -3,17 +3,17 @@ package me.drbaxr.spektrum.flexible.adapters.cs
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.FileCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
 import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
-import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNode
+import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNodeCS
 import kotlin.Exception
 
-class MethodTreeBuilder(private val model: ImportModelCS) {
+class MethodTreeBuilderCS(private val model: ImportModelCS) {
     // returns null if the searched method does not exist in model
     // ignoredCallers is the stack of method calls so far: first element is method that was initially called
-    fun build(methodIdentifier: String, ignoredCallers: List<String>): MethodTreeNode? {
+    fun build(methodIdentifier: String, ignoredCallers: List<String>): MethodTreeNodeCS? {
         return try {
             val method = getMethod(methodIdentifier)
 
-            val callerMethods = mutableSetOf<MethodTreeNode>()
+            val callerMethods = mutableSetOf<MethodTreeNodeCS>()
             method.callers.forEach { callerName ->
                 if (!ignoredCallers.contains(callerName) && callerName != methodIdentifier) { // not called by itself
                     val newCallers = listOf(*ignoredCallers.toTypedArray(), callerName)
@@ -24,7 +24,7 @@ class MethodTreeBuilder(private val model: ImportModelCS) {
                 }
             }
 
-            return MethodTreeNode(methodIdentifier, callerMethods)
+            return MethodTreeNodeCS(methodIdentifier, callerMethods)
         } catch (e: Exception) {
             null
         }
