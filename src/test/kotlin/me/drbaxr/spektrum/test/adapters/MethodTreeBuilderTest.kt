@@ -79,7 +79,7 @@ class MethodTreeBuilderTest {
             }
         }
 
-        println(nodes)
+        nodes.forEach { println(it.toOrderString(projectJava)) }
     }
 
     private fun getOriginalModel(file: String): ImportModelCS {
