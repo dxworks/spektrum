@@ -23,10 +23,10 @@ class MethodTreeBuilderTest {
 
     @Before
     fun init() {
-        modelCS = getOriginalModel("inputs/Honeydew-testing_stuff.json")
+        modelCS = getOriginalModel("src/test/resources/inputs/honeydewCSModel_in.json")
         builderCS = MethodTreeBuilderCS(modelCS)
 
-        projectJava = Gson().fromJson(FileReader("inputs/jafaxInsiderJavaModel_in.json"), ProjectJava::class.java)
+        projectJava = Gson().fromJson(FileReader("src/test/resources/inputs/jafaxInsiderJavaModel_in.json"), ProjectJava::class.java)
         builderJava = MethodTreeBuilderJava(projectJava)
     }
 
@@ -54,7 +54,7 @@ class MethodTreeBuilderTest {
         }
 
         // TODO: make test do something smarter
-        assertEquals(nodes.size, 101)
+        assertEquals(nodes.size, 163)
     }
 
     @Test
