@@ -26,7 +26,7 @@ class MethodTreeBuilderTest {
         modelCS = getOriginalModel("inputs/Honeydew-testing_stuff.json")
         builderCS = MethodTreeBuilderCS(modelCS)
 
-        projectJava = Gson().fromJson(FileReader("inputs/insider-tree-layout_java.json"), ProjectJava::class.java)
+        projectJava = Gson().fromJson(FileReader("inputs/jafaxInsiderJavaModel_in.json"), ProjectJava::class.java)
         builderJava = MethodTreeBuilderJava(projectJava)
     }
 
