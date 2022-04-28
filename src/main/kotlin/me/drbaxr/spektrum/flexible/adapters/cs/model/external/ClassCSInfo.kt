@@ -1,6 +1,6 @@
-package me.drbaxr.spektrum.flexible.adapters.model.external
+package me.drbaxr.spektrum.flexible.adapters.cs.model.external
 
-data class ClassInfo(
+data class ClassCSInfo(
     val name: String,
     val type: String,
     val usingStatements: Set<String>,

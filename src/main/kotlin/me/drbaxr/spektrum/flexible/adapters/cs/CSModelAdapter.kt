@@ -1,31 +1,32 @@
-package me.drbaxr.spektrum.flexible.adapters
+package me.drbaxr.spektrum.flexible.adapters.cs
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import me.drbaxr.spektrum.flexible.adapters.model.external.*
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.flexible.RelevantInformation
+import me.drbaxr.spektrum.flexible.adapters.ModelAdapter
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.*
 import java.io.FileReader
 
 class CSModelAdapter(val path: String) : ModelAdapter {
-    private lateinit var methodTreeBuilder: MethodTreeBuilder
+    private lateinit var methodTreeBuilder: MethodTreeBuilderCS
 
     override fun adapt(): Set<HierarchyUnit> {
         val importModel = getOriginalModel(path)
         RelevantInformation.importCSModel = importModel
 
-        methodTreeBuilder = MethodTreeBuilder(importModel)
+        methodTreeBuilder = MethodTreeBuilderCS(importModel)
 
         return importModel.projects.map { mapProject(it) }.toSet()
     }
 
-    private fun getOriginalModel(file: String): ImportModel {
-        val type = object : TypeToken<ImportModel>() {}.type
+    private fun getOriginalModel(file: String): ImportModelCS {
+        val type = object : TypeToken<ImportModelCS>() {}.type
         return Gson().fromJson(FileReader(file), type)
     }
 
-    private fun mapProject(project: Project): HierarchyUnit {
+    private fun mapProject(project: ProjectCS): HierarchyUnit {
         val unit = HierarchyUnit(
             project.name, // project name is unused in the children identifiers
             mutableSetOf(),
@@ -37,7 +38,7 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         return unit
     }
 
-    private fun mapFile(file: File, parent: HierarchyUnit): HierarchyUnit {
+    private fun mapFile(file: FileCS, parent: HierarchyUnit): HierarchyUnit {
         val unit = HierarchyUnit(
             file.path,
             mutableSetOf(),
@@ -51,7 +52,7 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         return unit
     }
 
-    private fun mapNamespace(namespace: Namespace, parent: HierarchyUnit): HierarchyUnit {
+    private fun mapNamespace(namespace: NamespaceCS, parent: HierarchyUnit): HierarchyUnit {
         val unit = HierarchyUnit(
             "${parent.identifier}${HierarchyUnit.childSeparator}${namespace.name}",
             mutableSetOf(),
@@ -65,7 +66,7 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         return unit
     }
 
-    private fun mapClass(cls: Class, parent: HierarchyUnit): HierarchyUnit {
+    private fun mapClass(cls: ClassCS, parent: HierarchyUnit): HierarchyUnit {
         val unit = HierarchyUnit(
             "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name.split(".").last()}",
             mutableSetOf(),
@@ -83,19 +84,19 @@ class CSModelAdapter(val path: String) : ModelAdapter {
         return unit
     }
 
-    private fun mapMethod(method: Method, parent: HierarchyUnit): HierarchyMethod {
+    private fun mapMethod(method: MethodCS, parent: HierarchyUnit): HierarchyMethod {
         val hMethod = HierarchyMethod(
             "${parent.identifier}${HierarchyUnit.childSeparator}${method.name}",
             mutableMapOf()
         )
         hMethod.parent = parent
 
-        val fullName = Method.methodNameToFullName(hMethod.identifier)
+        val fullName = MethodCS.methodNameToFullName(hMethod.identifier)
         val methodNode = methodTreeBuilder.build(fullName, listOf())
         val callerMap = methodNode?.getCallerMap() ?: mapOf()
 
         callerMap.forEach { (fullName, order) ->
-            hMethod.callers[HierarchyMethod.methodFullNameToName(fullName)] = order
+            hMethod.callers[HierarchyMethod.methodCSFullNameToName(fullName)] = order
         }
 
         return hMethod

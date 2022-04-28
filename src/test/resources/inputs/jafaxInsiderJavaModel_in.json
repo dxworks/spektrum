@@ -1,0 +1,1545 @@
+{
+  "name": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider",
+  "packages": [
+    {
+      "id": 1284,
+      "name": "bla.bla",
+      "classes": [
+        {
+          "id": 0,
+          "name": "Test1",
+          "methods": [
+            {
+              "id": 2,
+              "signature": "main(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 12,
+              "signature": "amethod()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1285,
+      "name": "org.dxworks.dxplatform.plugins.insider.commands",
+      "classes": [
+        {
+          "id": 31,
+          "name": "AddCommand",
+          "methods": [
+            {
+              "id": 35,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                38
+              ]
+            },
+            {
+              "id": 40,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                117,
+                57,
+                122,
+                123,
+                62
+              ]
+            },
+            {
+              "id": 122,
+              "signature": "printFingerPrintReport(java.util.List<org.dxworks.dxplatform.plugins.insider.utils.LibraryImport>, java.lang.String)",
+              "callers": [
+                40
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 123,
+              "signature": "printFingerPrintsReport(java.util.List<org.dxworks.dxplatform.plugins.insider.utils.LibraryImportInOtherTechnology>)",
+              "callers": [
+                40
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.lang.String",
+            "org.slf4j.Logger",
+            "java.nio.file.Paths",
+            "java.lang.Iterable",
+            "java.io.PrintStream",
+            "java.util.stream.Collectors",
+            "java.util.Collection",
+            "java.util.List",
+            "java.util.stream.Stream"
+          ]
+        },
+        {
+          "id": 32,
+          "name": "ConvertCommand",
+          "methods": [
+            {
+              "id": 177,
+              "signature": "transformJsonFileToCsv(java.lang.String, java.lang.String)",
+              "callers": [
+                174
+              ],
+              "calledMethods": [
+                184,
+                57
+              ]
+            },
+            {
+              "id": 38,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+                35
+              ],
+              "calledMethods": [
+                173
+              ]
+            },
+            {
+              "id": 185,
+              "signature": "usage()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 174,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                177
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.nio.file.Paths",
+            "org.slf4j.Logger"
+          ]
+        },
+        {
+          "id": 191,
+          "name": "DetectCommand",
+          "methods": [
+            {
+              "id": 192,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 210,
+              "signature": "usage()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 195,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                209
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.stream.Stream",
+            "java.util.Collection"
+          ]
+        },
+        {
+          "id": 222,
+          "name": "DiagnoseCommand",
+          "methods": [
+            {
+              "id": 224,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                173
+              ]
+            },
+            {
+              "id": 227,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                57
+              ]
+            },
+            {
+              "id": 252,
+              "signature": "usage()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.io.PrintStream",
+            "java.util.Collection",
+            "java.util.stream.Stream",
+            "java.util.stream.Collectors",
+            "java.lang.Iterable",
+            "java.lang.Object"
+          ]
+        },
+        {
+          "id": 278,
+          "name": "FindCommand",
+          "methods": [
+            {
+              "id": 292,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 280,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.lang.Iterable",
+            "java.util.Arrays",
+            "java.util.stream.Collectors",
+            "java.util.List",
+            "java.util.stream.Stream"
+          ]
+        },
+        {
+          "id": 363,
+          "name": "HelpCommand",
+          "methods": [
+            {
+              "id": 364,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+                501
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 367,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+                501
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 383,
+              "signature": "usage()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.List",
+            "java.util.stream.Stream",
+            "java.io.PrintStream",
+            "java.util.stream.Collectors"
+          ]
+        },
+        {
+          "id": 375,
+          "name": "VersionCommand",
+          "methods": [
+            {
+              "id": 423,
+              "signature": "parse(java.lang.String[])",
+              "callers": [
+                501
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 426,
+              "signature": "execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+              "callers": [
+                501
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 430,
+              "signature": "usage()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.List",
+            "java.io.PrintStream"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1286,
+      "name": "org.dxworks.dxplatform.plugins.insider",
+      "classes": [
+        {
+          "id": 48,
+          "name": "InsiderFile",
+          "methods": [
+            {
+              "id": 576,
+              "signature": "getLine(java.lang.Integer)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 575,
+              "signature": "extractLineBreaks(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.lang.String",
+            "java.util.List"
+          ]
+        },
+        {
+          "id": 302,
+          "name": "InsiderResult",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 498,
+          "name": "Insider",
+          "methods": [
+            {
+              "id": 528,
+              "signature": "readProjectFiles(java.lang.String)",
+              "callers": [
+                509
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 501,
+              "signature": "main(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                416,
+                405,
+                423,
+                426,
+                506,
+                364,
+                509,
+                367
+              ]
+            },
+            {
+              "id": 549,
+              "signature": "hasAcceptedExtension(java.nio.file.Path)",
+              "callers": [
+              ],
+              "calledMethods": [
+                459
+              ]
+            },
+            {
+              "id": 506,
+              "signature": "getInsiderCommand(java.lang.String)",
+              "callers": [
+                501
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 509,
+              "signature": "readInsiderConfiguration()",
+              "callers": [
+                501
+              ],
+              "calledMethods": [
+                450,
+                455,
+                527,
+                528
+              ]
+            },
+            {
+              "id": 527,
+              "signature": "reportUnknownExtensions()",
+              "callers": [
+                509
+              ],
+              "calledMethods": [
+                459
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.nio.file.Files",
+            "java.util.List",
+            "java.util.stream.Stream",
+            "me.tongfei.progressbar.ProgressBar",
+            "java.lang.Throwable",
+            "java.util.stream.Collectors",
+            "java.nio.file.Paths",
+            "java.nio.file.Path",
+            "org.apache.commons.io.FilenameUtils",
+            "java.io.PrintStream",
+            "org.slf4j.Logger",
+            "java.util.Collection",
+            "java.io.File",
+            "java.util.Properties"
+          ]
+        },
+        {
+          "id": 585,
+          "name": "InsiderOptions",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1287,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder.parsers",
+      "classes": [
+        {
+          "id": 50,
+          "name": "JsonFingerprintParser",
+          "methods": [
+            {
+              "id": 117,
+              "signature": "writeTechnologiesToFile(java.util.List<org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology>, java.nio.file.Path)",
+              "callers": [
+                40
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 57,
+              "signature": "parseTechnologiesFile(java.lang.String)",
+              "callers": [
+                177,
+                227,
+                40
+              ],
+              "calledMethods": [
+                299
+              ]
+            },
+            {
+              "id": 299,
+              "signature": "getConfigurationDTO(java.lang.String)",
+              "callers": [
+                57
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.nio.file.Path",
+            "com.google.gson.Gson",
+            "java.io.OutputStreamWriter",
+            "java.util.Collection",
+            "java.util.stream.Stream",
+            "java.util.stream.Collectors",
+            "com.google.gson.GsonBuilder",
+            "java.util.Collections",
+            "java.nio.file.Paths"
+          ]
+        },
+        {
+          "id": 58,
+          "name": "JavaLibrariesCsvParser",
+          "methods": [
+            {
+              "id": 184,
+              "signature": "writeTechnologiesToFile(java.util.List<org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology>, java.nio.file.Path)",
+              "callers": [
+                177
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 62,
+              "signature": "parseTechnologiesFile(java.lang.String)",
+              "callers": [
+                40
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.stream.Collectors",
+            "java.util.Collection",
+            "com.opencsv.CSVWriter",
+            "java.util.stream.Stream",
+            "java.nio.file.Path",
+            "java.util.Map",
+            "com.opencsv.CSVReader",
+            "java.util.Collections"
+          ]
+        },
+        {
+          "id": 855,
+          "name": "FingerprintsXmlParser",
+          "methods": [
+            {
+              "id": 1066,
+              "signature": "writeTechnologiesToFile(java.util.List<org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology>, java.nio.file.Path)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 859,
+              "signature": "parseTechnologiesFile(java.lang.String)",
+              "callers": [
+                853
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.nio.file.Path",
+            "java.util.stream.Collectors",
+            "java.nio.file.Paths"
+          ]
+        },
+        {
+          "id": 1244,
+          "name": "FingerprintsXmlParserTest",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1288,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder.model",
+      "classes": [
+        {
+          "id": 55,
+          "name": "Technology",
+          "methods": [
+            {
+              "id": 960,
+              "signature": "getPatternOccurrencesInFile(org.dxworks.dxplatform.plugins.insider.InsiderFile, java.util.regex.Pattern)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 961,
+              "signature": "getFullyQualifiedName(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+              "callers": [
+                324
+              ],
+              "calledMethods": [
+                450
+              ]
+            },
+            {
+              "id": 115,
+              "signature": "setFingerprints(java.util.List<java.lang.String>)",
+              "callers": [
+                926
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 324,
+              "signature": "analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+              "callers": [
+              ],
+              "calledMethods": [
+                961,
+                955
+              ]
+            },
+            {
+              "id": 955,
+              "signature": "accepts(java.lang.String)",
+              "callers": [
+                324
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.regex.Pattern",
+            "java.util.regex.Matcher",
+            "java.lang.String",
+            "java.util.stream.Collectors",
+            "java.util.Collection",
+            "java.util.stream.Stream",
+            "java.util.stream.IntStream",
+            "java.util.List"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1289,
+      "name": "org.dxworks.dxplatform.plugins.insider.utils",
+      "classes": [
+        {
+          "id": 64,
+          "name": "LibraryImport",
+          "methods": [
+            {
+              "id": 1194,
+              "signature": "toStringArray()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 77,
+          "name": "LibraryImportInOtherTechnology",
+          "methods": [
+            {
+              "id": 1217,
+              "signature": "hashCode()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 1203,
+              "signature": "equals(java.lang.Object)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.Objects",
+            "java.lang.Object"
+          ]
+        },
+        {
+          "id": 88,
+          "name": "ImportUtils",
+          "methods": [
+            {
+              "id": 87,
+              "signature": "unwrapImportPackage(java.lang.String)",
+              "callers": [
+                1275
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 1182,
+              "signature": "wrapImportPackage(java.lang.String)",
+              "callers": [
+                1272
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "id": 682,
+          "name": "MapUtils",
+          "methods": [
+            {
+              "id": 681,
+              "signature": "sortMapByValuesDesc(java.util.Map<java.lang.String,java.lang.Integer>)",
+              "callers": [
+                680,
+                701
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.stream.Collectors",
+            "java.util.Map",
+            "java.util.stream.Stream",
+            "java.util.Collection",
+            "java.util.Collections"
+          ]
+        },
+        {
+          "id": 787,
+          "name": "FileUtils",
+          "methods": [
+            {
+              "id": 786,
+              "signature": "removeComments(java.lang.String)",
+              "callers": [
+                1253,
+                782
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.regex.Pattern",
+            "java.lang.String",
+            "java.lang.Character",
+            "java.util.regex.Matcher"
+          ]
+        },
+        {
+          "id": 1252,
+          "name": "FileUtilsTest",
+          "methods": [
+            {
+              "id": 1253,
+              "signature": "removeComments()",
+              "callers": [
+              ],
+              "calledMethods": [
+                786,
+                1255
+              ]
+            },
+            {
+              "id": 1255,
+              "signature": "getContentOfResourceFile(java.lang.String)",
+              "callers": [
+                1253
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.lang.Class",
+            "java.nio.file.Files",
+            "java.io.File",
+            "java.lang.Object",
+            "java.nio.file.Paths",
+            "java.net.URL",
+            "java.lang.ClassLoader"
+          ]
+        },
+        {
+          "id": 1271,
+          "name": "ImportUtilsTest",
+          "methods": [
+            {
+              "id": 1272,
+              "signature": "fingerprintsWrappedAsImports()",
+              "callers": [
+              ],
+              "calledMethods": [
+                1182
+              ]
+            },
+            {
+              "id": 1275,
+              "signature": "testUnwrapImport()",
+              "callers": [
+              ],
+              "calledMethods": [
+                87
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1290,
+      "name": "org.dxworks.dxplatform.plugins.insider.library.detector",
+      "classes": [
+        {
+          "id": 198,
+          "name": "LibraryDetector",
+          "methods": [
+            {
+              "id": 208,
+              "signature": "accepts(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+                555
+              ]
+            },
+            {
+              "id": 209,
+              "signature": "generateResults()",
+              "callers": [
+                195
+              ],
+              "calledMethods": [
+                705,
+                680,
+                701
+              ]
+            },
+            {
+              "id": 788,
+              "signature": "analyzeForJava(java.lang.String, java.lang.String)",
+              "callers": [
+                782
+              ],
+              "calledMethods": [
+                720,
+                671
+              ]
+            },
+            {
+              "id": 789,
+              "signature": "analyzeForC_Like(java.lang.String)",
+              "callers": [
+                782
+              ],
+              "calledMethods": [
+                792
+              ]
+            },
+            {
+              "id": 792,
+              "signature": "getImportNumberForC_Like(java.lang.String, java.lang.String, org.dxworks.dxplatform.plugins.insider.library.detector.LibraryDetector.C_LikeImportExtractor)",
+              "callers": [
+                789
+              ],
+              "calledMethods": [
+                720,
+                793,
+                671
+              ]
+            },
+            {
+              "id": 782,
+              "signature": "analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+              "callers": [
+              ],
+              "calledMethods": [
+                786,
+                788,
+                789,
+                677
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.Collection",
+            "java.util.stream.Stream",
+            "java.lang.String",
+            "java.util.regex.Pattern",
+            "java.util.regex.Matcher"
+          ]
+        },
+        {
+          "id": 622,
+          "name": "C_ImportsContainer",
+          "methods": [
+            {
+              "id": 651,
+              "signature": "accepts(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 636,
+              "signature": "configure()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 653,
+              "signature": "getPackagingUnitFor(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.nio.file.Paths",
+            "java.nio.file.Files",
+            "java.lang.Iterable",
+            "java.util.HashMap"
+          ]
+        },
+        {
+          "id": 623,
+          "name": "ImportsContainer",
+          "methods": [
+            {
+              "id": 705,
+              "signature": "writePackagingUnits()",
+              "callers": [
+                209
+              ],
+              "calledMethods": [
+                708,
+                333
+              ]
+            },
+            {
+              "id": 708,
+              "signature": "createPackagingUnitList()",
+              "callers": [
+                705
+              ],
+              "calledMethods": [
+                726,
+                732
+              ]
+            },
+            {
+              "id": 677,
+              "signature": "addFile(java.lang.String, int)",
+              "callers": [
+                782
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 680,
+              "signature": "writeImportsToFile()",
+              "callers": [
+                209
+              ],
+              "calledMethods": [
+                681,
+                684,
+                333
+              ]
+            },
+            {
+              "id": 684,
+              "signature": "getContentFromMap(java.util.Map<java.lang.String,java.lang.Integer>)",
+              "callers": [
+                680,
+                701
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 720,
+              "signature": "accepts(java.lang.String)",
+              "callers": [
+                788,
+                792
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 726,
+              "signature": "getPackagingUnitFor(java.lang.String)",
+              "callers": [
+                708
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 701,
+              "signature": "writeFilesWithImports()",
+              "callers": [
+                209
+              ],
+              "calledMethods": [
+                681,
+                684,
+                333
+              ]
+            },
+            {
+              "id": 670,
+              "signature": "configure()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 671,
+              "signature": "addImport(java.lang.String)",
+              "callers": [
+                788,
+                792
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.stream.Stream",
+            "java.util.Collection",
+            "java.util.Comparator",
+            "java.nio.file.Files",
+            "java.lang.String",
+            "java.util.stream.Collectors",
+            "java.nio.file.Paths",
+            "java.util.Map",
+            "java.util.List",
+            "java.util.Optional"
+          ]
+        },
+        {
+          "id": 742,
+          "name": "JavaImportsContainer",
+          "methods": [
+            {
+              "id": 753,
+              "signature": "accepts(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 756,
+              "signature": "getPackagingUnitFor(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+                758
+              ]
+            },
+            {
+              "id": 758,
+              "signature": "getPackageName(java.lang.String)",
+              "callers": [
+                756
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 748,
+              "signature": "configure()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.stream.Stream",
+            "java.util.Collection",
+            "java.lang.String",
+            "java.nio.file.Paths",
+            "java.nio.file.Files"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1291,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder.model.json",
+      "classes": [
+        {
+          "id": 297,
+          "name": "JsonConfigurationDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 861,
+          "name": "TechnologyJsonDTO",
+          "methods": [
+            {
+              "id": 928,
+              "signature": "fingerprintsWrappedAsImports()",
+              "callers": [
+                926
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 917,
+              "signature": "fromTechnology(org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 926,
+              "signature": "toTechnology()",
+              "callers": [
+              ],
+              "calledMethods": [
+                928,
+                115
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.util.stream.Collectors",
+            "java.util.Collection",
+            "java.util.stream.Stream",
+            "java.util.concurrent.atomic.AtomicBoolean",
+            "java.util.Collections"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1292,
+      "name": "org.dxworks.dxplatform.plugins.insider.configuration",
+      "classes": [
+        {
+          "id": 334,
+          "name": "InsiderConfiguration",
+          "methods": [
+            {
+              "id": 450,
+              "signature": "getRootFolder()",
+              "callers": [
+                961,
+                509
+              ],
+              "calledMethods": [
+                333
+              ]
+            },
+            {
+              "id": 455,
+              "signature": "loadProperties(java.util.Properties)",
+              "callers": [
+                509
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 459,
+              "signature": "getListProperty(java.lang.String)",
+              "callers": [
+                549,
+                527
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 333,
+              "signature": "getProperty(java.lang.String)",
+              "callers": [
+                705,
+                450,
+                680,
+                701
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.lang.String",
+            "java.util.Arrays",
+            "java.util.Properties",
+            "java.util.Collections"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1293,
+      "name": "org.dxworks.dxplatform.plugins.insider.dxplatform.commands",
+      "classes": [
+        {
+          "id": 468,
+          "name": "PluginAddCommand",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 469,
+          "name": "PluginCommand",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1294,
+      "name": "org.dxworks.dxplatform.plugins.insider.dxplatform",
+      "classes": [
+        {
+          "id": 470,
+          "name": "InsiderDxPlugin",
+          "methods": [
+            {
+              "id": 471,
+              "signature": "main(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1295,
+      "name": "org.dxworks.dxplatform.plugins.insider.exceptions",
+      "classes": [
+        {
+          "id": 473,
+          "name": "InsiderException",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1296,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder",
+      "classes": [
+        {
+          "id": 533,
+          "name": "LanguageRegistry",
+          "methods": [
+            {
+              "id": 882,
+              "signature": "loadLanguagesToExtensionsFromConfigurationFile()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 532,
+              "signature": "containsLanguage(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 555,
+              "signature": "isOfLanguage(java.lang.String, java.lang.String)",
+              "callers": [
+                208
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+            "java.nio.file.Path",
+            "java.io.PrintStream",
+            "java.util.Properties",
+            "java.nio.file.Paths",
+            "java.util.Map",
+            "java.util.List"
+          ]
+        },
+        {
+          "id": 1157,
+          "name": "TechnologyFinder",
+          "methods": [
+            {
+              "id": 1162,
+              "signature": "loadFingerPrints()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 1163,
+              "signature": "analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 1165,
+              "signature": "accepts(java.lang.String)",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1297,
+      "name": "org.dxworks.dxplatform.plugins.insider.library.detector.model",
+      "classes": [
+        {
+          "id": 707,
+          "name": "PackagingUnit",
+          "methods": [
+            {
+              "id": 732,
+              "signature": "increment(int)",
+              "callers": [
+                708
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1298,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder.converters",
+      "classes": [
+        {
+          "id": 848,
+          "name": "XmlToJsonConverter",
+          "methods": [
+            {
+              "id": 849,
+              "signature": "main(java.lang.String[])",
+              "callers": [
+              ],
+              "calledMethods": [
+                853
+              ]
+            },
+            {
+              "id": 853,
+              "signature": "convertXmlFileTOJson(java.lang.String)",
+              "callers": [
+                849
+              ],
+              "calledMethods": [
+                859
+              ]
+            }
+          ],
+          "dependencies": [
+            "com.google.gson.Gson",
+            "java.io.OutputStreamWriter",
+            "java.util.Collection",
+            "java.lang.String",
+            "java.util.stream.Stream",
+            "java.util.stream.Collectors",
+            "com.google.gson.GsonBuilder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1299,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder.exceptions",
+      "classes": [
+        {
+          "id": 868,
+          "name": "FingerprintParseException",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1300,
+      "name": "org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old",
+      "classes": [
+        {
+          "id": 977,
+          "name": "CategoryXmlDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 980,
+          "name": "FingerprintXmlDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 987,
+          "name": "ConfigurationDataXmlDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 988,
+          "name": "LanguagesXmlDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 1005,
+          "name": "LanguageXmlDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 1016,
+          "name": "TechnologyXmlDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        },
+        {
+          "id": 1031,
+          "name": "XmlConfigurationDTO",
+          "methods": [
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1301,
+      "name": "org.dxworks.dxplatform.plugins.insider.utils.transformers",
+      "classes": [
+        {
+          "id": 1280,
+          "name": "JsonToCsvTransformerTest",
+          "methods": [
+            {
+              "id": 1281,
+              "signature": "transformJsonFileToCsv()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 1282,
+              "signature": "addCsvFileToJson()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            },
+            {
+              "id": 1283,
+              "signature": "diagnoseJsonFile()",
+              "callers": [
+              ],
+              "calledMethods": [
+              ]
+            }
+          ],
+          "dependencies": [
+          ]
+        }
+      ]
+    }
+  ]
+}

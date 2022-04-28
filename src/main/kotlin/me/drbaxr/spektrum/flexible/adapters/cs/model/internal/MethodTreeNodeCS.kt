@@ -1,10 +1,10 @@
-package me.drbaxr.spektrum.flexible.adapters.model.internal
+package me.drbaxr.spektrum.flexible.adapters.cs.model.internal
 
-import me.drbaxr.spektrum.flexible.adapters.model.external.Method
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 
-data class MethodTreeNode(
+data class MethodTreeNodeCS(
     val identifier: String,
-    val callerMethods: Set<MethodTreeNode>
+    val callerMethods: Set<MethodTreeNodeCS>
 ) {
     fun toOrderString(trimmed: Boolean = false): String {
         val orderMap = getOrderMap()
@@ -15,7 +15,7 @@ data class MethodTreeNode(
 
             val callers = orderMap[key] ?: listOf()
             callers.forEach { caller ->
-                orderString = orderString.plus("\t\t${if (trimmed) Method.trimmedFullName(caller) else caller}\n")
+                orderString = orderString.plus("\t\t${if (trimmed) MethodCS.trimmedFullName(caller) else caller}\n")
             }
         }
 

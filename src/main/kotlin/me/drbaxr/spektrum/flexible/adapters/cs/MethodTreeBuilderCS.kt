@@ -1,42 +1,41 @@
-package me.drbaxr.spektrum.flexible.adapters
+package me.drbaxr.spektrum.flexible.adapters.cs
 
-import me.drbaxr.spektrum.flexible.adapters.model.external.File
-import me.drbaxr.spektrum.flexible.adapters.model.external.ImportModel
-import me.drbaxr.spektrum.flexible.adapters.model.external.Method
-import me.drbaxr.spektrum.flexible.adapters.model.internal.MethodTreeNode
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.FileCS
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ImportModelCS
+import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
+import me.drbaxr.spektrum.flexible.adapters.cs.model.internal.MethodTreeNodeCS
 import kotlin.Exception
 
-class MethodTreeBuilder(private val model: ImportModel) {
+class MethodTreeBuilderCS(private val model: ImportModelCS) {
     // returns null if the searched method does not exist in model
     // ignoredCallers is the stack of method calls so far: first element is method that was initially called
-    fun build(methodIdentifier: String, ignoredCallers: List<String>): MethodTreeNode? {
+    fun build(methodIdentifier: String, ignoredCallers: List<String>): MethodTreeNodeCS? {
         return try {
             val method = getMethod(methodIdentifier)
 
-            val callerMethods = mutableSetOf<MethodTreeNode>()
+            val callerMethods = mutableSetOf<MethodTreeNodeCS>()
             method.callers.forEach { callerName ->
                 if (!ignoredCallers.contains(callerName) && callerName != methodIdentifier) { // not called by itself
                     val newCallers = listOf(*ignoredCallers.toTypedArray(), callerName)
-                    val callerNode =
-                        build(callerName, newCallers)
+                    val callerNode = build(callerName, newCallers)
                     if (callerNode != null)
                         callerMethods.add(callerNode)
                 }
             }
 
-            return MethodTreeNode(methodIdentifier, callerMethods)
+            return MethodTreeNodeCS(methodIdentifier, callerMethods)
         } catch (e: Exception) {
             null
         }
     }
 
-    private fun getMethod(methodIdentifier: String): Method {
-        val filePath = Method.file(methodIdentifier)
-        val namespaceName = Method.namespace(methodIdentifier)
-        val className = Method.className(methodIdentifier)
-        val methodName = Method.method(methodIdentifier)
+    private fun getMethod(methodIdentifier: String): MethodCS {
+        val filePath = MethodCS.file(methodIdentifier)
+        val namespaceName = MethodCS.namespace(methodIdentifier)
+        val className = MethodCS.className(methodIdentifier)
+        val methodName = MethodCS.method(methodIdentifier)
 
-        var file: File? = null
+        var file: FileCS? = null
         model.projects.forEach { project ->
             project.files.forEach {
                 if (it.path == filePath)

@@ -1,0 +1,1192 @@
+[
+  {
+    "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider",
+    "children": [
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->bla.bla",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->bla.bla->Test1",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->bla.bla->Test1->main(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->bla.bla->Test1->amethod()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->printFingerPrintReport(java.util.List<org.dxworks.dxplatform.plugins.insider.utils.LibraryImport>, java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->printFingerPrintsReport(java.util.List<org.dxworks.dxplatform.plugins.insider.utils.LibraryImportInOtherTechnology>)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->transformJsonFileToCsv(java.lang.String, java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->parse(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->usage()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->usage()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DiagnoseCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DiagnoseCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DiagnoseCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DiagnoseCommand->usage()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->FindCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->FindCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->FindCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->HelpCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->HelpCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->HelpCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->HelpCommand->usage()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->VersionCommand",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->VersionCommand->parse(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->VersionCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->VersionCommand->usage()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->InsiderFile",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->InsiderFile->getLine(java.lang.Integer)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->InsiderFile->extractLineBreaks(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->InsiderResult",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readProjectFiles(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->hasAcceptedExtension(java.nio.file.Path)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->getInsiderCommand(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->reportUnknownExtensions()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 2
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->InsiderOptions",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JsonFingerprintParser",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JsonFingerprintParser->writeTechnologiesToFile(java.util.List<org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology>, java.nio.file.Path)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JsonFingerprintParser->parseTechnologiesFile(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->transformJsonFileToCsv(java.lang.String, java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DiagnoseCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JsonFingerprintParser->getConfigurationDTO(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JsonFingerprintParser->parseTechnologiesFile(java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->transformJsonFileToCsv(java.lang.String, java.lang.String)": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DiagnoseCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 3
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JavaLibrariesCsvParser",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JavaLibrariesCsvParser->writeTechnologiesToFile(java.util.List<org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology>, java.nio.file.Path)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->transformJsonFileToCsv(java.lang.String, java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->ConvertCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->JavaLibrariesCsvParser->parseTechnologiesFile(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->AddCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->FingerprintsXmlParser",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->FingerprintsXmlParser->writeTechnologiesToFile(java.util.List<org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology>, java.nio.file.Path)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->FingerprintsXmlParser->parseTechnologiesFile(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters->XmlToJsonConverter->convertXmlFileTOJson(java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters->XmlToJsonConverter->main(java.lang.String[])": 2
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.parsers->FingerprintsXmlParserTest",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->getPatternOccurrencesInFile(org.dxworks.dxplatform.plugins.insider.InsiderFile, java.util.regex.Pattern)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->getFullyQualifiedName(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->setFingerprints(java.util.List<java.lang.String>)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->TechnologyJsonDTO->toTechnology()": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->accepts(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->LibraryImport",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->LibraryImport->toStringArray()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->LibraryImportInOtherTechnology",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->LibraryImportInOtherTechnology->hashCode()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->LibraryImportInOtherTechnology->equals(java.lang.Object)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtils",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtils->unwrapImportPackage(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtilsTest->testUnwrapImport()": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtils->wrapImportPackage(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtilsTest->fingerprintsWrappedAsImports()": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->MapUtils",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->MapUtils->sortMapByValuesDesc(java.util.Map<java.lang.String,java.lang.Integer>)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeImportsToFile()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeFilesWithImports()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 3
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtils",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtils->removeComments(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtilsTest->removeComments()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtilsTest",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtilsTest->removeComments()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtilsTest->getContentOfResourceFile(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->FileUtilsTest->removeComments()": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtilsTest",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtilsTest->fingerprintsWrappedAsImports()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils->ImportUtilsTest->testUnwrapImport()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->accepts(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForJava(java.lang.String, java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForC_Like(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->getImportNumberForC_Like(java.lang.String, java.lang.String, org.dxworks.dxplatform.plugins.insider.library.detector.LibraryDetector.C_LikeImportExtractor)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForC_Like(java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->C_ImportsContainer",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->C_ImportsContainer->accepts(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->C_ImportsContainer->configure()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->C_ImportsContainer->getPackagingUnitFor(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writePackagingUnits()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->createPackagingUnitList()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writePackagingUnits()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 3
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->addFile(java.lang.String, int)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeImportsToFile()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->getContentFromMap(java.util.Map<java.lang.String,java.lang.Integer>)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeImportsToFile()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeFilesWithImports()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 3
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->accepts(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForJava(java.lang.String, java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->getImportNumberForC_Like(java.lang.String, java.lang.String, org.dxworks.dxplatform.plugins.insider.library.detector.LibraryDetector.C_LikeImportExtractor)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForC_Like(java.lang.String)": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->getPackagingUnitFor(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->createPackagingUnitList()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writePackagingUnits()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 3,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 4
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeFilesWithImports()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->configure()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->addImport(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForJava(java.lang.String, java.lang.String)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->getImportNumberForC_Like(java.lang.String, java.lang.String, org.dxworks.dxplatform.plugins.insider.library.detector.LibraryDetector.C_LikeImportExtractor)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->analyzeForC_Like(java.lang.String)": 2
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->JavaImportsContainer",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->JavaImportsContainer->accepts(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->JavaImportsContainer->getPackagingUnitFor(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->JavaImportsContainer->getPackageName(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->JavaImportsContainer->getPackagingUnitFor(java.lang.String)": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->JavaImportsContainer->configure()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->JsonConfigurationDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->TechnologyJsonDTO",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->TechnologyJsonDTO->fingerprintsWrappedAsImports()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->TechnologyJsonDTO->toTechnology()": 1
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->TechnologyJsonDTO->fromTechnology(org.dxworks.dxplatform.plugins.insider.technology.finder.model.Technology)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.json->TechnologyJsonDTO->toTechnology()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration->InsiderConfiguration",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration->InsiderConfiguration->getRootFolder()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->getFullyQualifiedName(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration->InsiderConfiguration->loadProperties(java.util.Properties)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 2
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration->InsiderConfiguration->getListProperty(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->hasAcceptedExtension(java.nio.file.Path)": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->reportUnknownExtensions()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 3
+                }
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration->InsiderConfiguration->getProperty(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writePackagingUnits()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.configuration->InsiderConfiguration->getRootFolder()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeImportsToFile()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writeFilesWithImports()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->getFullyQualifiedName(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->readInsiderConfiguration()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 3,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model->Technology->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)": 3,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider->Insider->main(java.lang.String[])": 3
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.dxplatform.commands",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.dxplatform.commands->PluginAddCommand",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.dxplatform.commands->PluginCommand",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.dxplatform",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.dxplatform->InsiderDxPlugin",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.dxplatform->InsiderDxPlugin->main(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.exceptions",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.exceptions->InsiderException",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->LanguageRegistry",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->LanguageRegistry->loadLanguagesToExtensionsFromConfigurationFile()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->LanguageRegistry->containsLanguage(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->LanguageRegistry->isOfLanguage(java.lang.String, java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->accepts(java.lang.String)": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->TechnologyFinder",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->TechnologyFinder->loadFingerPrints()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->TechnologyFinder->analyze(org.dxworks.dxplatform.plugins.insider.InsiderFile)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder->TechnologyFinder->accepts(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector.model",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector.model->PackagingUnit",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector.model->PackagingUnit->increment(int)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->createPackagingUnitList()": 1,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->ImportsContainer->writePackagingUnits()": 2,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.library.detector->LibraryDetector->generateResults()": 3,
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.commands->DetectCommand->execute(java.util.List<org.dxworks.dxplatform.plugins.insider.InsiderFile>, java.lang.String[])": 4
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters->XmlToJsonConverter",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters->XmlToJsonConverter->main(java.lang.String[])",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters->XmlToJsonConverter->convertXmlFileTOJson(java.lang.String)",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {
+                  "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.converters->XmlToJsonConverter->main(java.lang.String[])": 1
+                }
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.exceptions",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.exceptions->FingerprintParseException",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->CategoryXmlDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->FingerprintXmlDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->ConfigurationDataXmlDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->LanguagesXmlDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->LanguageXmlDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->TechnologyXmlDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          },
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.technology.finder.model.xml.old->XmlConfigurationDTO",
+            "children": [],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      },
+      {
+        "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils.transformers",
+        "children": [
+          {
+            "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils.transformers->JsonToCsvTransformerTest",
+            "children": [
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils.transformers->JsonToCsvTransformerTest->transformJsonFileToCsv()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils.transformers->JsonToCsvTransformerTest->addCsvFileToJson()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              },
+              {
+                "identifier": "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider->org.dxworks.dxplatform.plugins.insider.utils.transformers->JsonToCsvTransformerTest->diagnoseJsonFile()",
+                "type": "METHOD",
+                "isTestable": true,
+                "callers": {}
+              }
+            ],
+            "type": "CLASS",
+            "isTestable": true
+          }
+        ],
+        "type": "PACKAGE",
+        "isTestable": true
+      }
+    ],
+    "type": "PROJECT",
+    "isTestable": true
+  }
+]

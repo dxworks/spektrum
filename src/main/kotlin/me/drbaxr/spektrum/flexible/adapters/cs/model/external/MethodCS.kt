@@ -1,9 +1,8 @@
-package me.drbaxr.spektrum.flexible.adapters.model.external
+package me.drbaxr.spektrum.flexible.adapters.cs.model.external
 
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
-import me.drbaxr.spektrum.flexible.adapters.model.external.MethodInfo
 
-data class Method(
+data class MethodCS(
     val name: String, // <file>-><namespace>.<class>@<method>#<params>
     val attributes: Set<String>,
     val modifiers: Set<String>,
@@ -47,7 +46,7 @@ data class Method(
         }
     }
 
-    fun getInfo(): MethodInfo = MethodInfo(
+    fun getInfo(): MethodCSInfo = MethodCSInfo(
         name,
         attributes,
         modifiers,
