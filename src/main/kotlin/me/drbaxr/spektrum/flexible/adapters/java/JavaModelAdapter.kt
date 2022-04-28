@@ -3,6 +3,7 @@ package me.drbaxr.spektrum.flexible.adapters.java
 import com.google.gson.Gson
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
+import me.drbaxr.spektrum.flexible.RelevantInformation
 import me.drbaxr.spektrum.flexible.adapters.ModelAdapter
 import me.drbaxr.spektrum.flexible.adapters.java.model.external.ClassJava
 import me.drbaxr.spektrum.flexible.adapters.java.model.external.MethodJava
@@ -11,12 +12,17 @@ import me.drbaxr.spektrum.flexible.adapters.java.model.external.ProjectJava
 import java.io.FileReader
 
 class JavaModelAdapter(val path: String) : ModelAdapter {
+    private lateinit var methodTreeBuilder: MethodTreeBuilderJava
+    private lateinit var project: ProjectJava
+
     override fun adapt(): Set<HierarchyUnit> {
         val importModel = Gson().fromJson(FileReader(path), ProjectJava::class.java)
+        RelevantInformation.importJavaProject = importModel
+        project = importModel
 
-        val project = mapProject(importModel)
+        methodTreeBuilder = MethodTreeBuilderJava(importModel)
 
-        return setOf(project)
+        return setOf(mapProject(importModel))
     }
 
     private fun mapProject(project: ProjectJava): HierarchyUnit {
@@ -64,7 +70,12 @@ class JavaModelAdapter(val path: String) : ModelAdapter {
         )
         hMethod.parent = parent
 
-        // TODO: callers stack
+        val methodNode = methodTreeBuilder.build(method.id, listOf())
+        val callerMap = methodNode.getCallerMap(project)
+
+        callerMap.forEach { (fullName, order) ->
+            hMethod.callers[fullName] = order
+        }
 
         return hMethod
     }

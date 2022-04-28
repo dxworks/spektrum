@@ -22,7 +22,23 @@ data class MethodTreeNodeJava(
         return orderString
     }
 
-    // TODO: getCallerMap() for adapter
+    fun getCallerMap(project: ProjectJava): Map<String, Int> {
+        val orderMap = getOrderMap()
+        val callerMap = mutableMapOf<String, Int>()
+
+        orderMap.keys.forEach { order ->
+            val methodIds = orderMap[order] ?: listOf()
+            methodIds.forEach { id ->
+                val fullName = project.getMethodHierarchyName(id)
+                val currentOrder = callerMap[fullName]
+                if (currentOrder == null || order < currentOrder) {
+                    callerMap[fullName] = order
+                }
+            }
+        }
+
+        return callerMap
+    }
 
     private fun getOrderMap(): Map<Int, List<Long>> {
         val orderMap = mutableMapOf<Int, MutableList<Long>>()
