@@ -13,7 +13,7 @@ import org.junit.Test
 import java.io.FileReader
 import kotlin.test.assertTrue
 
-class CSTestIdentifierTest {
+class CSIntegrationTest {
 
     @Test
     fun testCSTestIdentifier() {

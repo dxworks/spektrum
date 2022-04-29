@@ -5,6 +5,7 @@ import me.drbaxr.spektrum.flexible.adapters.java.JavaModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.rules.java.ScriptRuleJava
 import org.junit.Before
 import org.junit.Test
+import kotlin.test.assertTrue
 
 class ScriptRuleJavaTest {
     @Before
@@ -23,6 +24,6 @@ class ScriptRuleJavaTest {
 
         val rule = ScriptRuleJava("rules/java/rule.groovy")
 
-        rule.isRespectedBy(unit)
+        assertTrue { rule.isRespectedBy(unit) }
     }
 }
