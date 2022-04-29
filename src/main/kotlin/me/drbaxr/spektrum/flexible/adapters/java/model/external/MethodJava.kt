@@ -5,4 +5,12 @@ data class MethodJava(
     val signature: String,
     val callers: Set<Long>,
     val calledMethods: Set<Long>
-)
+) {
+    fun getInfo(projectJava: ProjectJava): MethodJavaInfo {
+        return MethodJavaInfo(
+            signature,
+            callers.map { projectJava.getMethodHierarchyName(it) }.toSet(),
+            calledMethods.map { projectJava.getMethodHierarchyName(it) }.toSet()
+        )
+    }
+}

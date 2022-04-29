@@ -7,6 +7,8 @@ data class ProjectJava(
     val name: String,
     val packages: Set<PackageJava>
 ) {
+    fun getInfo(): ProjectJavaInfo = ProjectJavaInfo(name)
+
     fun getMethodById(methodId: Long): MethodJava {
         var method: MethodJava? = null
 
