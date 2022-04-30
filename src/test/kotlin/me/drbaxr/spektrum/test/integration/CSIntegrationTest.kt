@@ -47,7 +47,7 @@ class CSIntegrationTest {
 //        val attributesRule = HasSomeAttribute(setOf("Xunit.FactAttribute", "Xunit.TheoryAttribute"))
 //        val rule = And(listOf(usingStatementsRule, attributesRule))
         // more customizable
-        val rule = ScriptRuleCS("rules/cs/rule.groovy")
+        val rule = ScriptRuleCS("src/test/resources/rules/cs/rule.groovy")
 
         return TestIdentifier(mutableListOf(rule))
     }

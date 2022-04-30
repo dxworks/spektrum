@@ -5,6 +5,7 @@ import me.drbaxr.spektrum.flexible.adapters.java.JavaModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.rules.java.ScriptRuleJava
 import org.junit.Before
 import org.junit.Test
+import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 class ScriptRuleJavaTest {
@@ -25,5 +26,19 @@ class ScriptRuleJavaTest {
         val rule = ScriptRuleJava("src/test/resources/rules/java/rule.groovy")
 
         assertTrue { rule.isRespectedBy(unit) }
+    }
+
+    @Test
+    fun testScriptRuleJavaFalse() {
+        val identifier = "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider${HierarchyUnit.childSeparator}" +
+                "bla.bla${HierarchyUnit.childSeparator}" +
+                "Test1${HierarchyUnit.childSeparator}" +
+                "amethod()"
+
+        val unit = HierarchyUnit(identifier, mutableSetOf(), "METHOD")
+
+        val rule = ScriptRuleJava("src/test/resources/rules/java/rule.groovy")
+
+        assertFalse { rule.isRespectedBy(unit) }
     }
 }

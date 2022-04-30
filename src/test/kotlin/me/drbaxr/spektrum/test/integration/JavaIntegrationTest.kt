@@ -1,12 +1,17 @@
 package me.drbaxr.spektrum.test.integration
 
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import me.drbaxr.spektrum.fixed.central.CoverageModelCalculator
 import me.drbaxr.spektrum.fixed.central.MetricsExporter
 import me.drbaxr.spektrum.fixed.central.UnitClassifier
+import me.drbaxr.spektrum.fixed.model.ExportUnit
 import me.drbaxr.spektrum.flexible.adapters.java.JavaModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
 import me.drbaxr.spektrum.flexible.identifiers.rules.java.ScriptRuleJava
 import org.junit.Test
+import java.io.FileReader
+import kotlin.test.assertTrue
 
 class JavaIntegrationTest {
 
@@ -22,7 +27,13 @@ class JavaIntegrationTest {
 
         val exportModel = MetricsExporter().getExportModel(coveredModel)
 
-        TODO("assertion after rule is made")
+        val exportedModelType = object : TypeToken<Set<ExportUnit>>() {}.type
+        val expectedExportModel = Gson().fromJson<Set<ExportUnit>>(
+            FileReader("src/test/resources/outputs/jafaxInsiderJavaIntegration_exp.json"),
+            exportedModelType
+        )
+
+        assertTrue { expectedExportModel == exportModel }
     }
 
     private fun buildTestIdentifier(): TestIdentifier {
