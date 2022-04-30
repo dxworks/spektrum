@@ -7,6 +7,8 @@ import me.drbaxr.spektrum.flexible.adapters.cs.model.external.ProjectCS
 import me.drbaxr.spektrum.flexible.adapters.java.model.external.ProjectJava
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.exceptions.*
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.model.CSUnitInfo
+import me.drbaxr.spektrum.flexible.identifiers.rules.java.exceptions.PackageNotFoundException
+import me.drbaxr.spektrum.flexible.identifiers.rules.java.model.JavaUnitInfo
 import java.lang.Exception
 
 class RelevantInformation {
@@ -50,6 +52,27 @@ class RelevantInformation {
                 namespace.getInfo(),
                 cls.getInfo(),
                 method.getInfo()
+            )
+        }
+
+        fun getJavaUnitInformation(unitIdentifier: String): JavaUnitInfo {
+            val splitId = unitIdentifier.split(HierarchyUnit.childSeparator)
+
+            if (splitId.size != 4)
+                throw NotHierarchyMethodException(unitIdentifier)
+
+            val project = importJavaProject
+            val pkg = project.packages.find { it.name == splitId[1] } ?: throw PackageNotFoundException(splitId[1])
+            val cls = pkg.classes.find { it.name == splitId[2] }
+                ?: throw me.drbaxr.spektrum.flexible.identifiers.rules.java.exceptions.ClassNotFoundException(splitId[2])
+            val method = cls.methods.find { it.signature == splitId[3] }
+                ?: throw me.drbaxr.spektrum.flexible.identifiers.rules.java.exceptions.MethodNotFoundException(splitId[3])
+
+            return JavaUnitInfo(
+                project.getInfo(),
+                pkg.getInfo(),
+                cls.getInfo(),
+                method.getInfo(project)
             )
         }
     }

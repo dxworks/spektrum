@@ -43,7 +43,6 @@ class CSModelAdapter(val path: String) : ModelAdapter {
             file.path,
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.FILE,
-            true,
             parent
         )
 
@@ -57,7 +56,6 @@ class CSModelAdapter(val path: String) : ModelAdapter {
             "${parent.identifier}${HierarchyUnit.childSeparator}${namespace.name}",
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.NAMESPACE,
-            true,
             parent
         )
 
@@ -71,7 +69,6 @@ class CSModelAdapter(val path: String) : ModelAdapter {
             "${parent.identifier}${HierarchyUnit.childSeparator}${cls.name.split(".").last()}",
             mutableSetOf(),
             HierarchyUnit.CSHierarchyUnitTypes.CLASS,
-            true,
             parent
         )
 

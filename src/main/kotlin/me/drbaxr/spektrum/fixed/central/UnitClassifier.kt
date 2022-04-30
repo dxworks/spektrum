@@ -26,12 +26,9 @@ class UnitClassifier {
         val testMethods = mutableSetOf<HierarchyMethod>()
 
         if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
-            try {
-               if (testIdentifier.isTest(unit)) {
-                   unit.isTestable = false
-                   testMethods.add(unit)
-               }
-            } catch (e: Exception) {
+            if (testIdentifier.isTest(unit)) {
+                unit.isTestable = false
+                testMethods.add(unit)
             }
         } else {
             unit.children.forEach {

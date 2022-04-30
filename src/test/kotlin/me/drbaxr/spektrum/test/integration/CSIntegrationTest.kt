@@ -8,12 +8,15 @@ import me.drbaxr.spektrum.fixed.central.UnitClassifier
 import me.drbaxr.spektrum.fixed.model.ExportUnit
 import me.drbaxr.spektrum.flexible.adapters.cs.CSModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
+import me.drbaxr.spektrum.flexible.identifiers.rules.composite.And
+import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeAttribute
+import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeUsingStatements
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.ScriptRuleCS
 import org.junit.Test
 import java.io.FileReader
 import kotlin.test.assertTrue
 
-class CSTestIdentifierTest {
+class CSIntegrationTest {
 
     @Test
     fun testCSTestIdentifier() {
@@ -39,12 +42,12 @@ class CSTestIdentifierTest {
     }
 
     private fun buildTestIdentifier(): TestIdentifier {
-        // faster
+//         faster
 //        val usingStatementsRule = HasSomeUsingStatements(setOf("Xunit"))
 //        val attributesRule = HasSomeAttribute(setOf("Xunit.FactAttribute", "Xunit.TheoryAttribute"))
 //        val rule = And(listOf(usingStatementsRule, attributesRule))
         // more customizable
-        val rule = ScriptRuleCS("rules/cs/rule.groovy")
+        val rule = ScriptRuleCS("src/test/resources/rules/cs/rule.groovy")
 
         return TestIdentifier(mutableListOf(rule))
     }

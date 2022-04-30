@@ -6,7 +6,6 @@ open class HierarchyUnit(
     val identifier: String, // identifier MUST be the result that has a mapping oh 1-to-1 and is reversible (to be able to easily obtain parent name and local name of unit)
     val children: MutableSet<HierarchyUnit>,
     val type: String,
-    var isTestable: Boolean = true, // shouldn't be changed outside of unit classifier
     var parent: HierarchyUnit? = null // shouldn't be changed outside of model adapter
 ) {
     companion object {
@@ -37,11 +36,11 @@ open class HierarchyUnit(
         const val METHOD = "METHOD"
     }
 
-    fun getCoverage(): Float = coverage.takeIf { isTestable } ?: throw NonTestableUnitException(identifier)
+    fun getCoverage(): Float = coverage
 
     // shouldn't be called outside of coverage model calculator
     fun setCoverage(coverage: Float) {
-        this.coverage = coverage.takeIf { isTestable } ?: throw NonTestableUnitException(identifier)
+        this.coverage = coverage
     }
 
     override fun toString(): String {
@@ -107,6 +106,6 @@ open class HierarchyUnit(
             hierarchyUnit.identifier
         }
         
-        return "[${hierarchyUnit.type}] ${"[TEST]".takeIf { !isTestable } ?: "[${hierarchyUnit.getCoverage()}]"} $identifier"
+        return "[${hierarchyUnit.type}] [${hierarchyUnit.getCoverage()}] $identifier"
     }
 }

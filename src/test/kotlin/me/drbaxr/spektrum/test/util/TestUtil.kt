@@ -92,7 +92,7 @@ class TestUtil {
                     unit.identifier,
                     mutableSetOf(),
                     unit.type,
-                    unit.isTestable,
+                    true,
                     null
                 )
             }

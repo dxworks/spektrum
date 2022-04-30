@@ -4,6 +4,7 @@ data class ExportUnit (
     val identifier: String,
     val type: String,
     val coverage: Float,
+    val testAmount: Float,
     val children: MutableSet<ExportUnit>?
 ) {
     override fun equals(other: Any?): Boolean {
@@ -15,6 +16,7 @@ data class ExportUnit (
         if (identifier != other.identifier) return false
         if (type != other.type) return false
         if (coverage != other.coverage) return false
+        if (testAmount != other.testAmount) return false
         if (children != other.children) return false
 
         return true

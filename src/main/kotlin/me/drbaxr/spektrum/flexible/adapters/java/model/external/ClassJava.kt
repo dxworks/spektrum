@@ -5,4 +5,6 @@ data class ClassJava(
     val name: String,
     val dependencies: Set<String>,
     val methods: Set<MethodJava>
-)
+) {
+    fun getInfo(): ClassJavaInfo = ClassJavaInfo(name, dependencies)
+}
