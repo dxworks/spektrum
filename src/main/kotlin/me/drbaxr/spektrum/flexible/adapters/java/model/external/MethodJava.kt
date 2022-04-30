@@ -1,5 +1,7 @@
 package me.drbaxr.spektrum.flexible.adapters.java.model.external
 
+import me.drbaxr.spektrum.flexible.adapters.java.model.external.exceptions.JavaTreeMethodNotFoundException
+
 data class MethodJava(
     val id: Long,
     val signature: String,
@@ -9,8 +11,20 @@ data class MethodJava(
     fun getInfo(projectJava: ProjectJava): MethodJavaInfo {
         return MethodJavaInfo(
             signature,
-            callers.map { projectJava.getMethodHierarchyName(it) }.toSet(),
-            calledMethods.map { projectJava.getMethodHierarchyName(it) }.toSet()
+            callers.mapNotNull {
+                try {
+                    projectJava.getMethodHierarchyName(it)
+                } catch (e: JavaTreeMethodNotFoundException) {
+                    null
+                }
+            }.toSet(),
+            calledMethods.mapNotNull {
+                try {
+                    projectJava.getMethodHierarchyName(it)
+                } catch (e: JavaTreeMethodNotFoundException) {
+                    null
+                }
+            }.toSet()
         )
     }
 }

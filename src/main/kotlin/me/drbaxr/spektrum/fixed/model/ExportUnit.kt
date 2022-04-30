@@ -16,6 +16,7 @@ data class ExportUnit (
         if (identifier != other.identifier) return false
         if (type != other.type) return false
         if (coverage != other.coverage) return false
+        if (testAmount != other.testAmount) return false
         if (children != other.children) return false
 
         return true
