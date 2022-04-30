@@ -16,13 +16,13 @@ class ScriptRuleJavaTest {
     @Test
     fun testScriptRuleJavaTrue() {
         val identifier = "D:\\PersonalProjects\\jafax\\src\\test\\resources\\insider${HierarchyUnit.childSeparator}" +
-                "bla.bla${HierarchyUnit.childSeparator}" +
-                "Test1${HierarchyUnit.childSeparator}" +
-                "amethod()"
+                "org.dxworks.dxplatform.plugins.insider.commands${HierarchyUnit.childSeparator}" +
+                "DiagnoseCommand${HierarchyUnit.childSeparator}" +
+                "parse(java.lang.String[])"
 
         val unit = HierarchyUnit(identifier, mutableSetOf(), "METHOD")
 
-        val rule = ScriptRuleJava("rules/java/rule.groovy")
+        val rule = ScriptRuleJava("src/test/resources/rules/java/rule.groovy")
 
         assertTrue { rule.isRespectedBy(unit) }
     }

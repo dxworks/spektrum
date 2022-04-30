@@ -28,8 +28,8 @@ class UnitClassifier {
         if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
             if (testIdentifier.isTest(unit)) {
                 unit.isTestable = false
-                   testMethods.add(unit)
-               }
+                testMethods.add(unit)
+            }
         } else {
             unit.children.forEach {
                 val test = getTestMethods(it, testIdentifier)
