@@ -4,7 +4,8 @@ import me.drbaxr.spektrum.flexible.adapters.cs.model.external.MethodCS
 
 class HierarchyMethod(
     identifier: String,
-    val callers: MutableMap<String, Int>
+    val callers: MutableMap<String, Int>,
+    var isTestable: Boolean = true // shouldn't be changed outside of unit classifier
 ) : HierarchyUnit(identifier, mutableSetOf(), GeneralHierarchyUnitTypes.METHOD) {
     companion object {
         fun methodCSFullNameToName(fullName: String): String =

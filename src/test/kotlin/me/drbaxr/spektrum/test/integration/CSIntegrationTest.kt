@@ -8,6 +8,9 @@ import me.drbaxr.spektrum.fixed.central.UnitClassifier
 import me.drbaxr.spektrum.fixed.model.ExportUnit
 import me.drbaxr.spektrum.flexible.adapters.cs.CSModelAdapter
 import me.drbaxr.spektrum.flexible.identifiers.TestIdentifier
+import me.drbaxr.spektrum.flexible.identifiers.rules.composite.And
+import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeAttribute
+import me.drbaxr.spektrum.flexible.identifiers.rules.cs.HasSomeUsingStatements
 import me.drbaxr.spektrum.flexible.identifiers.rules.cs.ScriptRuleCS
 import org.junit.Test
 import java.io.FileReader
@@ -39,7 +42,7 @@ class CSIntegrationTest {
     }
 
     private fun buildTestIdentifier(): TestIdentifier {
-        // faster
+//         faster
 //        val usingStatementsRule = HasSomeUsingStatements(setOf("Xunit"))
 //        val attributesRule = HasSomeAttribute(setOf("Xunit.FactAttribute", "Xunit.TheoryAttribute"))
 //        val rule = And(listOf(usingStatementsRule, attributesRule))

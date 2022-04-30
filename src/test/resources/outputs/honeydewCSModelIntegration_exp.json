@@ -2336,17 +2336,17 @@
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs-\u003eHoneydewCoreTest.IO.Writers.Exporters-\u003eExportUtilsTests-\u003eCsvCountPerLine_ShouldReturn0_WhenNoNumberIsDetected#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs-\u003eHoneydewCoreTest.IO.Writers.Exporters-\u003eExportUtilsTests-\u003eCsvCountPerLine_ShouldReturnTheSumOfNumbers_WhenOnlyNumberAreProvided#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/Exporters/ExportUtilsTests.cs-\u003eHoneydewCoreTest.IO.Writers.Exporters-\u003eExportUtilsTests-\u003eCsvCountPerLine_ShouldReturnTheSumOfNumbers_WhenNumbersAndStringsAreProvided#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -2372,27 +2372,27 @@
                   {
                     "identifier": "HoneydewCoreTest/Models/ProjectModelTests.cs-\u003eHoneydewCoreTest.Models-\u003eProjectModelTests-\u003eAdd_ShouldAddNamespace_WhenANewClassModelWithNamespaceIsAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Models/ProjectModelTests.cs-\u003eHoneydewCoreTest.Models-\u003eProjectModelTests-\u003eAdd_ShouldAddNewClass_WhenClassIsFromDefaultNamespace#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Models/ProjectModelTests.cs-\u003eHoneydewCoreTest.Models-\u003eProjectModelTests-\u003eAdd_ShouldAddNamespace_WhenMultipleClassModelsWithNamespaceIsAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Models/ProjectModelTests.cs-\u003eHoneydewCoreTest.Models-\u003eProjectModelTests-\u003eAdd_ShouldAddNamespaceOnce_WhenDifferentClassesAreAddedFromTheSameNamespace#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Models/ProjectModelTests.cs-\u003eHoneydewCoreTest.Models-\u003eProjectModelTests-\u003eAdd_ShouldAddNamespaceOnce_WhenDifferentClassesAreAddedFromTheSameCompilationUnit#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -2418,32 +2418,32 @@
                   {
                     "identifier": "HoneydewCoreTest/Processors/FilePathShortenerProcessorTests.cs-\u003eHoneydewCoreTest.Processors-\u003eFilePathShortenerProcessorTests-\u003eProcess_ShouldHaveSolutionsWithShortenedPath_WhenProvidedWithInputPathToAFolder#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Processors/FilePathShortenerProcessorTests.cs-\u003eHoneydewCoreTest.Processors-\u003eFilePathShortenerProcessorTests-\u003eProcess_ShouldHaveProjectsWithShortenedPath_WhenProvidedWithInputPathToAFolder#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Processors/FilePathShortenerProcessorTests.cs-\u003eHoneydewCoreTest.Processors-\u003eFilePathShortenerProcessorTests-\u003eProcess_ShouldHaveClassesWithShortenedPath_WhenProvidedWithInputPathToAFolder#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Processors/FilePathShortenerProcessorTests.cs-\u003eHoneydewCoreTest.Processors-\u003eFilePathShortenerProcessorTests-\u003eProcess_ShouldHaveTheSamePath_WhenFilePathsDontContainTheInputPathToAFolder#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Processors/FilePathShortenerProcessorTests.cs-\u003eHoneydewCoreTest.Processors-\u003eFilePathShortenerProcessorTests-\u003eProcess_ShouldHaveFilePathsShortened_WhenProvidedWithInputPathToASolutionFile#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/Processors/FilePathShortenerProcessorTests.cs-\u003eHoneydewCoreTest.Processors-\u003eFilePathShortenerProcessorTests-\u003eProcess_ShouldHaveFilePathsShortened_WhenProvidedWithInputPathToACSharpProjectFile#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -2469,67 +2469,67 @@
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eAddLine_ShouldThrowInvalidCSVLineLengthException_WhenNoHeaderIsProvided_ButValuesAreAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eAddLine_ShouldThrowInvalidCSVLineLengthException_WhenHeaderIsProvided_ButMoreValuesAreAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eAddLine_ShouldThrowInvalidCSVLineLengthException_WhenHeaderIsProvided_ButFewerValuesAreAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldReturnEmptyString_WhenNoHeadersAndNoValuesAreProvided#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldReturnCsvStringWithHeaders_WhenHeadersAreProvided#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldCsvString_WhenHeadersAndValuesAreProvided#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldReturnCsvStringWithHeaders_WhenHeadersAreProvided_WithOtherSeparator#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldCsvString_WhenHeadersAndValuesAreProvided_WithOtherSeparator#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldAddTheRightAmountOfColumns_WhenProvidedLessColumnsThanRowCount#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldAddTheRightAmountOfColumns_WhenProvidedMoreColumnsThanRowCount#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldAddTheRightAmountOfColumns_WhenProvidedTheSameAmountOfColumnsAsRowCount#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldAddColumn_WhenProvidedAFormulaForEachRow#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewCoreTest/IO/Writers/CSV/CSVBuilderTests.cs-\u003eHoneydewCoreTest.IO.Writers.CSV-\u003eCsvBuilderTests-\u003eCreateCSV_ShouldAddColumn_WhenProvidedAFormulaForEachRowWithHeaderName#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6658,32 +6658,32 @@
                   {
                     "identifier": "HoneydewTests/Models/ProjectNamespaceTests.cs-\u003eHoneydewTests.Models-\u003eProjectNamespaceTests-\u003eAdd_ShouldAddNewClass_WhenClassIsFromDefaultNamespace#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/ProjectNamespaceTests.cs-\u003eHoneydewTests.Models-\u003eProjectNamespaceTests-\u003eAdd_ShouldAddNewClass_WhenANewClassModelIsAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/ProjectNamespaceTests.cs-\u003eHoneydewTests.Models-\u003eProjectNamespaceTests-\u003eAdd_ShouldAddNewClasses_WhenMultipleClassNamesAreAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/ProjectNamespaceTests.cs-\u003eHoneydewTests.Models-\u003eProjectNamespaceTests-\u003eAdd_ShouldAddNewClassOnce_WhenTheSameClassNamesAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/ProjectNamespaceTests.cs-\u003eHoneydewTests.Models-\u003eProjectNamespaceTests-\u003eAdd_ShouldNotAddClassOnce_WhenNamespaceIsDifferentInClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/ProjectNamespaceTests.cs-\u003eHoneydewTests.Models-\u003eProjectNamespaceTests-\u003eAdd_ShouldAddClassModelWithAllAttributes_WhenMultipleClassNamesAreAdded#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6709,37 +6709,37 @@
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_ShouldHaveNoRelations_WhenAddedEmptySource#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_WithOneParameter_ShouldHaveNoRelations_WhenAddedEmptySource#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_ShouldHaveNoRelations_WhenAddedEmptyTarget#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_ShouldHaveNoRelations_WhenAddedEmptyDependency#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_ShouldHaveRelation_WhenAddedOneDependency#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_ShouldHaveRelation_WhenAddedTwoDependenciesForTheSameSourceAndTarget#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Models/Representations/ClassRelationsRepresentationTests.cs-\u003eHoneydewTests.Models.Representations-\u003eClassRelationsRepresentationTests-\u003eAdd_ShouldHaveRelation_WhenAddedMultipleDependenciesForMultipleSourceAndTargets#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6765,12 +6765,12 @@
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorMethodTypesTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorMethodTypesTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithExtensionMethodType_WhenGivenClassWithExtensionMethod#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorMethodTypesTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorMethodTypesTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithDestructorMethodType_WhenGivenClassWithDestructor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6796,12 +6796,12 @@
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests-\u003eProcess_ShouldReferenceModelHavePartialClasses_WhenGivenTwoFilesContainingPartialClasses#string,string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests-\u003eProcess_ShouldPartialClassHaveAllTheMembers_WhenGivenTwoFilesContainingPartialClasses#string,string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests-\u003eLoadPartialClassesInRepositoryModel#string,string",
@@ -6832,7 +6832,7 @@
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTestsForImports.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTestsForImports-\u003eGetFunction_ShouldReturnImportNamespaceReference_WhenGivenClassWithImports#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6858,37 +6858,37 @@
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturnEmptyRepresentation_WhenRepositoryModelIsNull#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturnEmptyRepresentation_WhenRepositoryModelIsEmpty#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturn4ConcernsWith0Strength_WhenRepositoryModelHasOneClassWithNoMethodsOrProperties#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturn4Concerns_WhenRepositoryModelHasOneClassWithOneMethodInOneFile#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturn4Concerns_WhenRepositoryModelHasMultipleClassesWithOneMethodInOneFile#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturn4Concerns_WhenRepositoryModelHasOneClassWithMultipleMethodInOneFile#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToCyclomaticComplexityPerFileProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToCyclomaticComplexityPerFileProcessorTests-\u003eProcess_ShouldReturn4Concerns_WhenRepositoryModelHasMultipleClassesWithInMultipleFiles#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6952,27 +6952,27 @@
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpReturnValueRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpReturnValueRelationMetricTests-\u003eExtract_ShouldHaveVoidReturnValues_WhenClassHasMethodsThatReturnVoid#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpReturnValueRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpReturnValueRelationMetricTests-\u003eExtract_ShouldHavePrimitiveReturnValues_WhenClassHasMethodsThatReturnPrimitiveValues#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpReturnValueRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpReturnValueRelationMetricTests-\u003eExtract_ShouldHavePrimitiveReturnValues_WhenInterfaceHasMethodsWithPrimitiveReturnValues#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpReturnValueRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpReturnValueRelationMetricTests-\u003eExtract_ShouldHaveDependenciesReturnValues_WhenInterfaceHasMethodsWithDependenciesReturnValues#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpReturnValueRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpReturnValueRelationMetricTests-\u003eExtract_ShouldHaveDependenciesReturnValues_WhenClassHasMethodsWithDependenciesReturnValues#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -6998,37 +6998,37 @@
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHaveNoParameters_WhenClassHasMethodsWithNoParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHaveNoParameters_WhenClassHasConstructorWithNoParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHavePrimitiveParameters_WhenClassHasMethodsWithPrimitiveParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHavePrimitiveParameters_WhenInterfaceHasMethodsWithPrimitiveParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHaveDependenciesParameters_WhenInterfaceHasMethodsWithDependenciesParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHaveDependenciesParameters_WhenClassHasMethodsWithDependenciesParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpParameterRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpParameterRelationMetricTests-\u003eExtract_ShouldHaveDependenciesParameters_WhenClassHasConstructorWithDependenciesParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -7054,22 +7054,22 @@
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpPropertiesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpPropertiesRelationMetricTests-\u003eExtract_ShouldHavePrimitiveProperties_WhenClassHasPropertiesOfPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpPropertiesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpPropertiesRelationMetricTests-\u003eExtract_ShouldHavePrimitiveProperties_WhenClassHasEventPropertiesOfPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpPropertiesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpPropertiesRelationMetricTests-\u003eExtract_ShouldHaveDependenciesProperties_WhenClassHasProperties#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpPropertiesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpPropertiesRelationMetricTests-\u003eExtract_ShouldHaveDependenciesEventProperties_WhenClassHasEventProperties#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -7095,22 +7095,22 @@
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpFieldsRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpFieldsRelationVisitorTests-\u003eExtract_ShouldHavePrimitiveFields_WhenClassHasFieldsOfPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpFieldsRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpFieldsRelationVisitorTests-\u003eExtract_ShouldHavePrimitiveFields_WhenClassHasEventFieldsOfPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpFieldsRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpFieldsRelationVisitorTests-\u003eExtract_ShouldHaveDependenciesFields_WhenClassHasFields#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpFieldsRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpFieldsRelationVisitorTests-\u003eExtract_ShouldHaveDependenciesEventFields_WhenClassHasEventFields#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -7136,42 +7136,42 @@
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveNoLocalVariables_WhenClassHasMethodsThatDontUseLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHavePrimitiveLocalValues_WhenClassHasMethodsThatHaveLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveNoPrimitiveLocalVariables_WhenGivenAnInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveNoDependencies_WhenGivenAnInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveLocalVariablesDependencies_WhenClassHasMethodsWithNonPrimitiveLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveLocalVariablesDependencies_WhenClassHasConstructorLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveLocalVariablesDependencies_WhenClassHasMethodsWithNonPrimitiveLocalVariablesInAForLoop#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/RelationMetric/CSharpLocalVariablesRelationMetricTests.cs-\u003eHoneydewTests.RelationMetric-\u003eCSharpLocalVariablesRelationVisitorTests-\u003eExtract_ShouldHaveLocalVariablesDependencies_WhenNamespaceHasMultipleClasses#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -7197,37 +7197,37 @@
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsNull#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnEmptyProjects_WhenSolutionModelIsEmpty#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithProjectsAndNamespaces_WhenGivenASolutionModelWithProjectAndNamespaces#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithClasses_WhenGivenASolutionModelWithClasses#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithMethodReferences_WhenGivenASolutionModelWithClassesWithMethodReferencesWithNonPrimitiveTypesAsParameters#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithMethodReferences_WhenGivenASolutionModelWithClassesWithMethodReferencesOnlyWithPrimitiveTypesAsParameters_UsingCSharpClassFactExtractor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTests-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithFieldReferences_WhenGivenASolutionModelWithClassesWithFieldReferences#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -7253,27 +7253,27 @@
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithAllMethodReferences_WhenGivenASolutionModelWithClassesWithMethodReferencesOnlyWithPrimitiveTypesAsParameters_UsingCSharpFactExtractor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithAllMethodReferences_WhenGivenASolutionModelWithClassesWithMethodReferencesOnlyWithNumericValesAsParameters_UsingCSharpFactExtractor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithAllClassReferences_WhenGivenASolutionModelWithClassHierarchy_UsingCSharpFactExtractor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler-\u003eGetFunction_ShouldReturnReferenceSolutionModelWithAllMethodReferences_WhenGivenASolutionModelWithClassesWithMethodReferencesWithClassHierarchyAsParameter_UsingCSharpFactExtractor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorTestsWithMissingReferencesHandler-\u003eProcess_ShouldHaveLocalFunctionReferences_WhenGivenMethodWithDeepNestedLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8277,12 +8277,12 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/ConstructorAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eConstructorAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenConstructorThatAccessesFieldsAndPropertiesFromInsideTheClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/ConstructorAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eConstructorAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenStaticConstructorThatAccessesFieldsAndPropertiesFromInsideTheClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8308,42 +8308,42 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenProvidedWithClassWithMethodsAndProperties#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenProvidedWithClassAndDelegate#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenProvidedWithEnum#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenProvidedWithDelegateOnOneLine#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenProvidedWithDelegateOnMultipleLines#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenMethodWithLocalFunction#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenGivenPropertyWithGetAccessor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorLinesOfCodeTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorLinesOfCodeTests-\u003eExtract_ShouldHaveLinesOfCode_WhenGivenEventPropertyWithGetAccessor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8369,7 +8369,7 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/LocalFunctionsAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eLocalFunctionsAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenPropertyAccessorThatAccessesFieldsAndPropertiesFromOtherClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8395,12 +8395,12 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/PropertyAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003ePropertyAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenPropertyAccessorThatAccessesFieldsAndPropertiesFromOtherClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/PropertyAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003ePropertyAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenPropertyArrowSyntaxThatAccessesFieldsAndPropertiesFromOtherClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8426,7 +8426,7 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Attributes/CSharpAttributeForGenericTypesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Attributes-\u003eCSharpAttributeForGenericTypesTests-\u003eExtract_ShouldHaveAttributesToGenericParameters_WhenProvidedWithTypesThatSupportGenericParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8452,32 +8452,32 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpBaseClassMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpBaseClassMetricTests-\u003eExtract_ShouldHaveBaseClassObject_WhenClassDoesNotExtendsAnyClass#string,string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpBaseClassMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpBaseClassMetricTests-\u003eExtract_ShouldHaveBaseClass_WhenProvidedWithRecord#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpBaseClassMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpBaseClassMetricTests-\u003eExtract_ShouldHaveNoBaseClass_WhenProvidedWithInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpBaseClassMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpBaseClassMetricTests-\u003eExtract_ShouldHaveBaseClassIMetric_WhenClassExtendsIMetricInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpBaseClassMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpBaseClassMetricTests-\u003eExtract_ShouldHaveBaseObjectAndNoInterfaces_WhenClassOnlyExtendsOtherClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpBaseClassMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpBaseClassMetricTests-\u003eExtract_ShouldHaveBaseObjectAndInterfaces_WhenClassExtendsOtherClassAndImplementsMultipleInterfaces#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8503,12 +8503,12 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassInfoTests-\u003eExtract_ShouldHaveMethods_WhenProvidedWithInterfaceWithImplementedMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassInfoTests-\u003eExtract_ShouldHaveBaseObjectAndInterfaces_WhenClassExtendsOtherClassAndImplementsMultipleInterfaces#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8534,32 +8534,32 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithNoParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithOneParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithMultipleAttributesWitMultipleParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8585,22 +8585,22 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorDelegateTests-\u003eExtract_ShouldContainDelegates_WhenParsingTextWithDelegatesWithPrimitiveTypes#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorDelegateTests-\u003eExtract_ShouldContainDelegates_WhenParsingTextWithDelegatesWithOtherClasses#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorDelegateTests-\u003eExtract_ShouldContainDelegates_WhenParsingTextWithDelegatesWithParametersWithModifiers#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorDelegateTests-\u003eExtract_ShouldContainDelegates_WhenParsingTextWithDelegatesInInnerClasses#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8626,27 +8626,27 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/MethodAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eMethodAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenMethodThatAccessesFieldsAndPropertiesFromInsideTheClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/MethodAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eMethodAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenMethodThatAccessesFieldsAndPropertiesFromOtherClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/MethodAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eMethodAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenMethodThatAccessesFieldsAndPropertiesFromExternClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/MethodAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eMethodAccessedFieldsTests-\u003eExtract_ShouldNotHaveAccessedFields_WhenGivenArrayAccessor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/AccessedFields/MethodAccessedFieldsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.AccessedFields-\u003eMethodAccessedFieldsTests-\u003eExtract_ShouldHaveAccessedFields_WhenGivenFieldsFromBaseClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8672,72 +8672,72 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldHave1CyclomaticComplexity_WhenGivenClassWithMethodsAndPropertiesAndDelegate#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromWhiles_WhenGivenClassWithMethodsAndPropertiesAndDelegate#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromIfs_WhenGivenClassWithMethodsAndProperties#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromFors_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromUnaryExpression_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromComplexBinaryExpression_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromComplexBinaryExpressionWithIsAndOr_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromDoWhile_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromForeach_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromSwitch_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromPatternSwitchWithOperators_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromReturnSwitchWithStrings_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityFromPatternSwitchWithClassHierarchy_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCyclomaticComplexityTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCyclomaticComplexityTests-\u003eExtract_ShouldCountCyclomaticComplexityForConditionalOperators_WhenGivenClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8763,52 +8763,52 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveNoExceptionsThrown_WhenProvidedWithClassThatDoesntThrowExceptions#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveSystemExceptionsThrown_WhenProvidedWithClassThatThrowsSystemExceptions#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithClassThatThrowsCustomExceptions#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithClassThatRethrowsExplicitExceptions#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithClassThatRethrowsImplicitExceptions#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithClassThatTrowsExceptionsUsingVariablesParametersFieldsPropertiesAndMethodCalls#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExternalExceptionsThrown_WhenProvidedWithClassThatTrowsExternalExceptions#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithConditionalOperatorWithThrowException#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithNullCoalescingOperatorWithThrowException#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpExceptionsThrownRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpExceptionsThrownRelationMetricTests-\u003eExtract_ShouldHaveExceptionsThrown_WhenProvidedWithLambdaThathrowsException#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8834,27 +8834,27 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpFieldsInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpFieldsInfoMetricTests-\u003eExtract_ShouldHaveNoFields_WhenGivenAnInterface#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpFieldsInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpFieldsInfoMetricTests-\u003eExtract_ShouldHavePrivateFieldsWithModifiers_WhenGivenClassWithFieldsAndModifiersWithDefaultAccess#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpFieldsInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpFieldsInfoMetricTests-\u003eExtract_ShouldHaveFieldsWithNoOtherModifiers_WhenGivenClassWithOnlyFieldsAndTheirModifier#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpFieldsInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpFieldsInfoMetricTests-\u003eExtract_ShouldHaveFieldsWithNoOtherModifiers_WhenGivenClassWithOnlyEventFieldsAndTheirModifier#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpFieldsInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpFieldsInfoMetricTests-\u003eExtract_ShouldHaveFieldsWithNoModifiers_WhenGivenClassWithFieldsAndTheirVisibilityAndMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8880,27 +8880,27 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests-\u003eExtract_ShouldExtractGotoStatements_WhenProvidedConstructor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests-\u003eExtract_ShouldExtractGotoStatements_WhenProvidedDestructor#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests-\u003eExtract_ShouldExtractGotoStatements_WhenProvidedMethod#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests-\u003eExtract_ShouldExtractGotoStatements_WhenProvidedPropertyAccessors#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests-\u003eExtract_ShouldExtractGotoStatements_WhenProvidedMethodWithLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests-\u003eTestGotoStatementInMetrics#System.Collections.Generic.IList\u003cHoneydewModels.CSharp.MetricModel\u003e",
@@ -8931,7 +8931,7 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpFileScopedNamespaceTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpFileScopedNamespaceTests-\u003eExtract_ShouldHaveClassType_WhenGivenFileScopedNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -8957,42 +8957,42 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveObjectCreation_WhenProvidedWithClassInTheSameNamespace#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveOArrayCreation_WhenProvidedWithClassInTheSameNamespace#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveObjectCreation_WhenProvidedWithClassUnknownClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveArrayCreation_WhenProvidedWithClassUnknownClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveArrayCreation_WhenProvidedWithClassPrimitiveTypes#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveArrayCreation_WhenProvidedWithClassPrimitiveTypesInUnknownClassMethod#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveArrayCreation_WhenProvidedWithArrayCreationOfLocalVariablesPropertiesFieldsAndMethodCallsInUnknownClassMethod#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/RelationMetric/CSharpObjectCreationRelationMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel.RelationMetric-\u003eCSharpObjectCreationRelationMetricTests-\u003eExtract_ShouldHaveArrayCreation_WhenProvidedWithClassInSameNamespaceUsedWithUnknownClassMethod#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9018,57 +9018,57 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveClassNameOfGenericType_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveClassNameGenericTypeWithMultipleContainedTypes_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveOneBaseGenericType_WhenProvidedWitClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveOneBaseGenericType_WhenProvidedWitStruct#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveOneBaseGenericType_WhenProvidedWithRecord#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveOneBaseGenericType_WhenProvidedWithInterface#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveMultipleBaseGenericTypes_WhenProvidedWithClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveMultipleBaseConcreteGenericTypes_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveGenericModifiers_WhenProvidedWithGenericInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveGenericTypesWithPredefinedConstrains_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpGenericClassTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpGenericClassTests-\u003eExtract_ShouldHaveGenericTypesWithMultipleConstrains_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9094,77 +9094,77 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveConstructors_WhenGivenClassWithConstructorThatCallsOtherMethods#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsMethodsFromAFieldOfADifferentClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsStaticMethods#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsStaticMethodsFromUnknownClass#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsFuncLambdas#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsActionLambdas#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallMethodsInsideLambdas#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallHasCalledMethodsChained#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsLinqMethods#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsMethodsFromDictionaryOfACastedObject#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedClassThatCallsMethodsFromAnotherClassAsProperty#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenProvidedWithGenericMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveNoCalledMethods_WhenProvidedWithTypeofSyntax#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldExtractNameof_WhenProvidedWithNameofSyntax#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpCalledMethodsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpCalledMethodsTests-\u003eExtract_ShouldHaveCalledMethods_WhenGivenMethodWithAwaitStatement#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9190,22 +9190,22 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithCustomClassTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithExternClassTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithArrayLocalVariable#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9231,42 +9231,42 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenOneClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenCompilationUnitText#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesAndDelegatesInImbricatedNamespaces#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesWithInnerClasses#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesWithInnerClasses_ButNoNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenStaticUsings#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenAliasedNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/CompilationUnitLevel/CSharpCompilationUnitImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.CompilationUnitLevel-\u003eCSharpCompilationUnitImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenAliasedClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9292,22 +9292,22 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithSystemAttributes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9333,27 +9333,27 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpDelegateAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpDelegateAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithNoParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpDelegateAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpDelegateAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithOneParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpDelegateAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpDelegateAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithMultipleAttributesWitMultipleParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpDelegateAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpDelegateAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpDelegateAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpDelegateAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9379,32 +9379,32 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithNoParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithOneParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithMultipleAttributesWitMultipleParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9430,27 +9430,27 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpGenericDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpGenericDelegateTests-\u003eExtract_ShouldHaveDelegateNameOfGenericType_WhenProvidedWithGenericDelegate#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpGenericDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpGenericDelegateTests-\u003eExtract_ShouldHaveDelegateNameGenericTypeWithMultipleContainedTypes_WhenProvidedWithGenericDelegate#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpGenericDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpGenericDelegateTests-\u003eExtract_ShouldHaveGenericModifiers_WhenProvidedWithGenericDelegate#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpGenericDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpGenericDelegateTests-\u003eExtract_ShouldHaveGenericTypesWithPredefinedConstrains_WhenProvidedWithDelegate#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Delegate/CSharpGenericDelegateTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Delegate-\u003eCSharpGenericDelegateTests-\u003eExtract_ShouldHaveGenericTypesWithMultipleConstrains_WhenProvidedWithDelegate#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9476,12 +9476,12 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Enum/CSharpEnumAttributesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Enum-\u003eCSharpEnumAttributesTests-\u003eExtract_ShouldExtractAttribute_GivenEnum#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Enum/CSharpEnumAttributesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Enum-\u003eCSharpEnumAttributesTests-\u003eExtract_ShouldExtractLabelAttributes_GivenEnum#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9507,62 +9507,62 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenOneClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenEnum#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenOneDelegate#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesAndDelegatesWithTheSameUsings#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesAndDelegatesInMultipleNamespacesWithSharedUsings#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesAndDelegatesInImbricatedNamespaces#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesWithInnerClasses#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsings_WhenGivenMultipleClassesWithInnerClasses_ButNoNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenText#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenStaticUsings#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenAliasedNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpClassImportsMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpClassImportsMetricTests-\u003eExtract_ShouldHaveUsingsInClassModels_WhenGivenAliasedClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9588,47 +9588,47 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnSourceLinesCount_WhenProvidedWithContentWithOnlySourceLines#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnCommentLinesCount_WhenProvidedWithContentWithOnlySingleLineComments#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnCommentLinesCount_WhenProvidedWithContentWithOnlyMultiLineComments#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnWhitespaceLinesCount_WhenProvidedWithContentWithSourceAndWhitespaceLines#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnLinesOfCodeCount_WhenProvidedWithContentWithSourceAndCommentedAndWhitespaceLines#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnLinesOfCodeCount_WhenProvidedWithContentWithSourceAndCommentedOnTheSameLine#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnLinesOfCodeCount_WhenProvidedWithContentWithSourceAndImbricatedMultilineComments#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnLinesOfCodeCount_WhenProvidedWithContentWithSourceAndMultilineCommentsOnTheSameLine#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LinesOfCodeCounterTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction-\u003eLinesOfCodeCounterTests-\u003eCount_ShouldReturnLinesOfCodeCount_WhenProvidedWithContentWithSingleLineAndMultiLineComments#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9654,42 +9654,42 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveNoMethods_WhenGivenClassAndRecordsWithFieldsOnly#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveMethods_WhenGivenAClassHierarchy#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveMethodsWithMethodCalls_WhenGivenMethodsThatCallOtherMethods#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveMethodsWithMethodCalls_WhenGivenMethodsThatCallStaticMethods#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveMethodsWithMethodCallsWithParameterModifiers_WhenGivenMethodsThatCallOtherMethodsWithParameterModifiers#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldExtractNullDefaultValue#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveDefinitionClassNameAndLocationClassName_GivenClassHierarchy#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/ClassLevel/CSharpMethodInfoMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.ClassLevel-\u003eCSharpMethodInfoMetricTests-\u003eExtract_ShouldHaveNoMethodDefinitionNames_GivenExternClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9715,12 +9715,12 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpGenericFieldTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpGenericFieldTests-\u003eExtract_ShouldHaveFieldOfGenericType_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpGenericFieldTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpGenericFieldTests-\u003eExtract_ShouldHaveFieldOfGenericTypeWithMultipleContainedTypes_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9746,32 +9746,32 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpFieldAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpFieldAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpFieldAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpFieldAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithNoParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpFieldAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpFieldAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithOneParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpFieldAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpFieldAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithMultipleAttributesWitMultipleParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpFieldAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpFieldAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Field/CSharpFieldAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Field-\u003eCSharpFieldAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9797,42 +9797,42 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveRefModifier_WhenGivenMethodWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveRefReadonlyModifier_WhenGivenMethodWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveRefModifier_WhenGivenConstructorWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveRefReadonlyModifier_WhenGivenConstructorWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveRefModifier_WhenGivenPropertyWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveRefReadonlyModifier_WhenGivenPropertyWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveNullableVariables_WhenEntitiesWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/LocalVariable/CSharpLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.LocalVariable-\u003eCSharpLocalVariablesTests-\u003eExtract_ShouldHaveNullableVariables_WhenEntitiesWithLocalVariablesOfClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9858,32 +9858,32 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithNoParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithOneParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithMultipleAttributesWitMultipleParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9909,27 +9909,27 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorInfoTests-\u003eExtract_ShouldExtractStaticConstructor_WhenProvidedWithDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorInfoTests-\u003eExtract_ShouldHaveConstructors_WhenGivenClassWithConstructors#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorInfoTests-\u003eExtract_ShouldHaveConstructors_WhenGivenClassWithConstructorsThatCallEachOther#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorInfoTests-\u003eExtract_ShouldHaveConstructors_WhenGivenClassWithConstructorsThatCallEachOtherAndBaseConstructor#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Constructor/CSharpConstructorInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Constructor-\u003eCSharpConstructorInfoTests-\u003eExtract_ShouldHaveConstructors_WhenGivenClassWithConstructorsThatCallsBaseConstructor_ButBaseClassIsNotPresentInCompilationUnit#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -9955,132 +9955,132 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldThrowEmptyContentException_WhenTryingToExtractFromEmptyString#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldThrowExtractionException_WhenParsingTextWithParsingErrors#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetClassNameAndNamespace_WhenParsingTextWithOneEntity#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetClassModifiers_WhenParsingTextWithOneEntity#string,string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetParameters_WhenParsingTextWithOneClassWithMethodWithParameterWithModifiers#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetParameters_WhenParsingTextWithOneClassWithExtensionMethod#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetParameters_WhenParsingTextWithOneClassWithMethodWithParameterWithParamsModifiers#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetParameters_WhenParsingTextWithOneClassWithMethodWithParameterWithDefaultValues#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldNotHaveMetrics_WhenGivenAnEmptyListOfMetrics_ForOneClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldSetClassNameAndInterfaceAndNamespace_WhenParsingTextWithOneClassAndOneInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveNoFields_WhenGivenAnInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHavePrivateFieldsWithModifiers_WhenGivenClassWithFieldsAndModifiersWithDefaultAccess#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveFieldsWithNoOtherModifiers_WhenGivenClassWithOnlyFieldsAndTheirModifier#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveFieldsWithNoOtherModifiers_WhenGivenClassWithOnlyEventFieldsAndTheirModifier#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveFieldsWithNoModifiers_WhenGivenClassWithFieldsAndTheirVisibilityAndMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveNoMethods_WhenGivenClassTypeWithNoMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveMethods_WhenGivenAnInterfaceWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveMethods_WhenGivenAClassWithMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveReadonlyStructs_WhenGivenPathToAFileWithReadonlyStructs#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveReadonlyStructMembers_WhenGivenPathToAFileWithMutableStructWithReadonlyMembers#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveReadonlyStaticStructMembers_WhenGivenPathToAFileWithStructWithStaticReadonlyMembers#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveRefStructs_WhenGivenPathToAFileWithRefStructs#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveRefReturnMethod_WhenGivenPathToAFileWithRefStructs#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveNullableEntities_WhenProvidedWithClassWithNullableEntities#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveNullableEntities_WhenProvidedWithClassWithNullableClassEntities#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/CSharpClassFactExtractorsTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics-\u003eCSharpClassFactExtractorsTests-\u003eExtract_ShouldHaveContainingClassNames_GivenNestedClasses#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10106,17 +10106,17 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodReturnValueAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodReturnValueAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodReturnValueAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodReturnValueAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodReturnValueAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodReturnValueAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10142,32 +10142,32 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpGenericMethodTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpGenericMethodTests-\u003eExtract_ShouldHaveGenericMethod_WhenProvidedDifferentNonGenericClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpGenericMethodTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpGenericMethodTests-\u003eExtract_ShouldHaveGenericMethodWithMultipleGenericParams_WhenProvidedDifferentNonGenericClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpGenericMethodTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpGenericMethodTests-\u003eExtract_ShouldHaveGenericTypesWithPredefinedConstrains_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpGenericMethodTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpGenericMethodTests-\u003eExtract_ShouldHaveGenericTypesWithMultipleConstrains_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpGenericMethodTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpGenericMethodTests-\u003eExtract_ShouldHaveLocalFunctionGenericMethodWithConstraints_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpGenericMethodTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpGenericMethodTests-\u003eExtract_ShouldHaveGenericLocalMethodWithMultipleConstrains_WhenProvidedWithClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10193,17 +10193,17 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Enum/CSharpEnumInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Enum-\u003eCSharpEnumInfoTests-\u003eExtract_ShouldBasicInfo_WhenProvidedWithEnum#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Enum/CSharpEnumInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Enum-\u003eCSharpEnumInfoTests-\u003eExtract_ShouldHaveOtherType_WhenProvidedWithEnumWithOtherType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Enum/CSharpEnumInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Enum-\u003eCSharpEnumInfoTests-\u003eExtract_ShouldContainingClass_WhenProvidedWithEnumInInnerClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10299,22 +10299,22 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithSystemAttributes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodParametersAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodParametersAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10340,22 +10340,22 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAccessorMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAccessorMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAccessorMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAccessorMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithCustomClassTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAccessorMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAccessorMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithExternClassTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAccessorMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAccessorMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithArrayLocalVariable#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10381,17 +10381,17 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpGenericPropertyTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpGenericPropertyTests-\u003eExtract_ShouldHavePropertyOfGenericType_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpGenericPropertyTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpGenericPropertyTests-\u003eExtract_ShouldHavePropertyOfGenericTypeWithMultipleContainedTypes_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpGenericPropertyTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpGenericPropertyTests-\u003eExtract_ShouldHavePropertyOfGenericTypeWithMultipleNullableContainedTypes_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10417,42 +10417,42 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedDifferentClassType#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithNoParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithOneAttributeWithOneParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithMultipleAttributesWitMultipleParams#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithCustomAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithExternAttribute#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithPropertyAccessors#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyAttributeMetricTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyAttributeMetricTests-\u003eExtract_ShouldExtractAttribute_WhenProvidedWithPropertyAccessorsForReturnValue#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10478,87 +10478,87 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithPrimitiveTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithCustomClassTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithTypeofSyntax#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithNameofSyntax#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithExternClassTypes#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithArrayLocalVariable#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithLocalFunctionWithLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithLocalFunctionWithArrayLocalVariables#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithLocalVariablesFromIfAndSwitch#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithLocalFunctionsWithLocalVariablesFromIfAndSwitch#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithLocalVariablesFromForeach#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldExtractLocalVariables_WhenProvidedWithLocalFunctionsWithLocalVariablesFromForeach#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldHaveLocalVariablesDependencies_WhenGivenPropertyFromOtherClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldHaveNoLocalVariablesDependencies_WhenGivenUnknownClassMembers#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldHaveLocalVariableDependencies_WhenGivenMethodWithAwaitStatement#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldHaveLocalVariableDependencies_WhenGivenMethodWithAwaitStatementWithUnknownClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/CSharpMethodLocalVariablesTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eCSharpMethodLocalVariablesTests-\u003eExtract_ShouldHaveLocalVariableDependencies_WhenGivenMethodWithAwaitStatementWithUnknownGenericClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10584,57 +10584,57 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunction_WhenGivenMethodWithOneLocalFunctionThatReturnsVoidAndHasNoParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunction_WhenGivenLocalFunctionWithReturnValueAndParameters#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractMultipleLocalFunctions_WhenGivenLocalFunctionsWithModifiers#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctionCyclomaticComplexity_WhenGivenLocalFunctionWithHighCyclomaticComplexity#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunction_WhenGivenMethodPropertyConstructorWithLocalFunction#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctionAndUsages_WhenGivenMethodWithMultipleLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctions_WhenGivenMethodWithImbricatedLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctionsWithCalledMethods_WhenGivenMethodWithImbricatedLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctions_WhenGivenPropertyWithImbricatedLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctionsWithCalledMethods_WhenGivenPropertyWithImbricatedLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Method/LocalFunctionsExtractionTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Method-\u003eLocalFunctionsExtractionTests-\u003eExtract_ShouldExtractLocalFunctionsWithCalledMethods_WhenGivenEventPropertyWithImbricatedLocalFunctions#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }
@@ -10660,122 +10660,122 @@
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHavePropertyInfo_WhenGivenTypeWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveEventPropertyInfo_WhenGivenTypeWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveAbstractModifier_WhenGivenPropertyInInterface#",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveOnlyGetAccessors_WhenGivenClassWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveOnlySetAccessors_WhenGivenClassWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveOnlyInitAccessors_WhenGivenClassWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveGetSetAccessors_WhenGivenClassWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveGetInitAccessors_WhenGivenClassWithProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldCalledMethods_WhenGivenPropertyWithExpressionBodiedMember#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveCyclomaticComplexity_WhenGivenClassWithProperties#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveProperties_WhenGivenAnInterface#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHavePrivatePropertiesWithModifiers_WhenGivenClassWithPropertiesAndModifiersWithDefaultAccess#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHavePropertiesWithNoOtherModifiers_WhenGivenClassWithOnlyPropertiesAndTheirModifier#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHavePropertiesWithNoOtherModifiers_WhenGivenClassWithOnlyEventPropertiesAndTheirModifier#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHavePropertiesWithAccessors_WhenGivenClassWithPropertiesWithDifferentAccessors#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveProperties_WhenGivenClassWithComputedEmptyProperties#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveProperties_WhenGivenClassWithComputedPropertyThatCallsInnerMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveProperties_WhenGivenClassWithComputedPropertyThatCallsMethodsFromOtherClassFromTheSameNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveProperties_WhenGivenClassWithComputedPropertyThatCallsStaticMethodsFromUnknownClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveEventProperties_WhenGivenClassWithComputedPropertyThatCallsInnerMethods#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveEventProperties_WhenGivenClassWithComputedPropertyThatCallsMethodsFromOtherClassFromTheSameNamespace#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveEventProperties_WhenGivenClassWithComputedPropertyThatCallsStaticMethodsFromUnknownClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveEventProperties_WhenGivenClassWithComputedPropertyThatCallsMethodsFromOtherClassFromTheSameNamespaceAsProperty#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   },
                   {
                     "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Property/CSharpPropertyInfoTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Property-\u003eCSharpPropertyInfoTests-\u003eExtract_ShouldHaveNoMethodDefinitionNames_GivenExternClass#string",
                     "type": "METHOD",
-                    "coverage": -1.0
+                    "coverage": 0.0
                   }
                 ]
               }

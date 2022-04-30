@@ -1,3 +1,3 @@
 def check(unitInfo) {
-    return true
+    return unitInfo.pkg.name == "org.dxworks.dxplatform.plugins.insider.commands"
 }
