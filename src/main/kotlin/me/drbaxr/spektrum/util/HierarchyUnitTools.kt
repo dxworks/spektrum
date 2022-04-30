@@ -34,9 +34,11 @@ class HierarchyUnitTools {
                 }
 
                 if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
-                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, null)
+                    val testAmount = 1f.takeIf { !unit.isTestable } ?: 0f
+
+                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, testAmount, null)
                 } else {
-                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, mutableSetOf())
+                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, getHierarchyUnitTestAmount(unit), mutableSetOf())
                     exUnit.children?.addAll(mapToExport(unit.children))
                 }
 
@@ -44,6 +46,15 @@ class HierarchyUnitTools {
             }
 
             return exportSet
+        }
+
+        private fun getHierarchyUnitTestAmount(unit: HierarchyUnit): Float {
+            if (unit is HierarchyMethod)
+                return 1f.takeIf { !unit.isTestable } ?: 0f
+
+            val childrenTestAmount = unit.children.map { getHierarchyUnitTestAmount(it) }
+
+            return childrenTestAmount.average().toFloat().takeIf { !it.isNaN() } ?: 0f
         }
     }
 

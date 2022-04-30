@@ -4,6 +4,7 @@ data class ExportUnit (
     val identifier: String,
     val type: String,
     val coverage: Float,
+    val testAmount: Float,
     val children: MutableSet<ExportUnit>?
 ) {
     override fun equals(other: Any?): Boolean {
