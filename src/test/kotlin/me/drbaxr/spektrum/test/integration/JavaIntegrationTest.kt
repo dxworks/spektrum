@@ -33,6 +33,8 @@ class JavaIntegrationTest {
             exportedModelType
         )
 
+        MetricsExporter().exportAndSave(coveredModel)
+
         assertTrue { expectedExportModel == exportModel }
     }
 

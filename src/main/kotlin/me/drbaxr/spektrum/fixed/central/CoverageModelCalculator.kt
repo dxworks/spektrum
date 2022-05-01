@@ -1,6 +1,5 @@
 package me.drbaxr.spektrum.fixed.central
 
-import me.drbaxr.spektrum.fixed.exception.NonTestableUnitException
 import me.drbaxr.spektrum.fixed.model.HierarchyUnit
 import me.drbaxr.spektrum.fixed.model.HierarchyMethod
 import me.drbaxr.spektrum.util.HierarchyUnitTools
@@ -26,7 +25,10 @@ class CoverageModelCalculator {
 
         setCoverage(testMethods, testableMethods)
         aggregate(testMethods, AggregationType.TEST_AMOUNT)
-        aggregate(testableMethods, AggregationType.COVERAGE) // maybe split into aggregate coverage AND aggregate test amount and use them to their relevant sets
+        aggregate(
+            testableMethods,
+            AggregationType.COVERAGE
+        ) // maybe split into aggregate coverage AND aggregate test amount and use them to their relevant sets
 
         return units
     }
@@ -66,13 +68,11 @@ class CoverageModelCalculator {
     }
 
     private fun getHierarchyUnitCoverage(unit: HierarchyUnit): Float {
-        return unit.children.map {
-            try {
-                it.getCoverage()
-            } catch (e: NonTestableUnitException) {
-                0f
-            }
-        }.average().toFloat()
+        return unit.children
+            .filter { it.getTestAmount() < 1f }
+            .map { it.getCoverage() }
+            .average()
+            .toFloat()
     }
 
     private fun getHierarchyUnitTestAmount(unit: HierarchyUnit): Float {
