@@ -13,6 +13,7 @@ open class HierarchyUnit(
     }
 
     private var coverage: Float = 0.0f
+    private var testAmount: Float = 0.0f
 
     object GeneralHierarchyUnitTypes {
         const val FOLDER = "FOLDER"
@@ -41,6 +42,12 @@ open class HierarchyUnit(
     // shouldn't be called outside of coverage model calculator
     fun setCoverage(coverage: Float) {
         this.coverage = coverage
+    }
+
+    fun getTestAmount(): Float = testAmount
+
+    fun setTestAmount(testAmount: Float) {
+        this.testAmount = testAmount
     }
 
     override fun toString(): String {

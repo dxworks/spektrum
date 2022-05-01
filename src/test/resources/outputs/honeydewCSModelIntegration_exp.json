@@ -7624,7 +7624,7 @@
   {
     "identifier": "HoneydewTests",
     "type": "PROJECT",
-    "coverage": 0.016666668,
+    "coverage": 0.125,
     "testAmount": 0.6333333,
     "children": [
       {
@@ -7866,19 +7866,19 @@
       {
         "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests.cs",
         "type": "FILE",
-        "coverage": 0.33333334,
+        "coverage": 1.0,
         "testAmount": 0.6666667,
         "children": [
           {
             "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests.cs-\u003eHoneydewTests.Processors",
             "type": "NAMESPACE",
-            "coverage": 0.33333334,
+            "coverage": 1.0,
             "testAmount": 0.6666667,
             "children": [
               {
                 "identifier": "HoneydewTests/Processors/RepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests.cs-\u003eHoneydewTests.Processors-\u003eRepositoryModelToReferenceRepositoryModelProcessorPartialClassesTests",
                 "type": "CLASS",
-                "coverage": 0.33333334,
+                "coverage": 1.0,
                 "testAmount": 0.6666667,
                 "children": [
                   {
@@ -9587,7 +9587,7 @@
   {
     "identifier": "HoneydewExtractorsTests",
     "type": "PROJECT",
-    "coverage": 0.0034013607,
+    "coverage": 0.16666667,
     "testAmount": 0.89455783,
     "children": [
       {
@@ -10301,19 +10301,19 @@
       {
         "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs",
         "type": "FILE",
-        "coverage": 0.16666667,
+        "coverage": 1.0,
         "testAmount": 0.8333333,
         "children": [
           {
             "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common",
             "type": "NAMESPACE",
-            "coverage": 0.16666667,
+            "coverage": 1.0,
             "testAmount": 0.8333333,
             "children": [
               {
                 "identifier": "HoneydewExtractorsTests/CSharp/Metrics/Extraction/Common/GotoStatementVisitorTests.cs-\u003eHoneydewExtractorsTests.CSharp.Metrics.Extraction.Common-\u003eGotoStatementVisitorTests",
                 "type": "CLASS",
-                "coverage": 0.16666667,
+                "coverage": 1.0,
                 "testAmount": 0.8333333,
                 "children": [
                   {

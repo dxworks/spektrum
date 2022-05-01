@@ -27,18 +27,10 @@ class HierarchyUnitTools {
             model.forEach { unit ->
                 val exUnit: ExportUnit
 
-                val coverage = try {
-                    unit.getCoverage()
-                } catch (e: NonTestableUnitException) {
-                    -1.0f
-                }
-
                 if (unit.type == HierarchyUnit.GeneralHierarchyUnitTypes.METHOD && unit is HierarchyMethod) {
-                    val testAmount = 1f.takeIf { !unit.isTestable } ?: 0f
-
-                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, testAmount, null)
+                    exUnit = ExportUnit(unit.identifier, unit.type, unit.getCoverage(), unit.getTestAmount(), null)
                 } else {
-                    exUnit = ExportUnit(unit.identifier, unit.type, coverage, getHierarchyUnitTestAmount(unit), mutableSetOf())
+                    exUnit = ExportUnit(unit.identifier, unit.type, unit.getCoverage(), unit.getTestAmount(), mutableSetOf())
                     exUnit.children?.addAll(mapToExport(unit.children))
                 }
 
@@ -46,15 +38,6 @@ class HierarchyUnitTools {
             }
 
             return exportSet
-        }
-
-        private fun getHierarchyUnitTestAmount(unit: HierarchyUnit): Float {
-            if (unit is HierarchyMethod)
-                return 1f.takeIf { !unit.isTestable } ?: 0f
-
-            val childrenTestAmount = unit.children.map { getHierarchyUnitTestAmount(it) }
-
-            return childrenTestAmount.average().toFloat().takeIf { !it.isNaN() } ?: 0f
         }
     }
 
