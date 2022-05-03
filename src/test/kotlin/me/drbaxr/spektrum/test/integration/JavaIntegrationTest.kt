@@ -17,6 +17,7 @@ class JavaIntegrationTest {
 
     @Test
     fun integrationTest() {
+        // usage
         val adapter = JavaModelAdapter("src/test/resources/inputs/jafaxInsiderJavaModel_in.json")
 
         val model = adapter.adapt()
@@ -26,6 +27,7 @@ class JavaIntegrationTest {
         val coveredModel = CoverageModelCalculator().calculate(model)
 
         val exportModel = MetricsExporter().getExportModel(coveredModel)
+        // end usage
 
         val exportedModelType = object : TypeToken<Set<ExportUnit>>() {}.type
         val expectedExportModel = Gson().fromJson<Set<ExportUnit>>(

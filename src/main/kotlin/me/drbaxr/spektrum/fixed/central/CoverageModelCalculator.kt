@@ -28,7 +28,7 @@ class CoverageModelCalculator {
         aggregate(
             testableMethods,
             AggregationType.COVERAGE
-        ) // maybe split into aggregate coverage AND aggregate test amount and use them to their relevant sets
+        )
 
         return units
     }
