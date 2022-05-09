@@ -20,17 +20,17 @@ class CSIntegrationTest {
 
     @Test
     fun testCSTestIdentifier() {
+        // usage
         val adapter = CSModelAdapter("src/test/resources/inputs/honeydewCSModel_in.json")
 
-        // C# part
         val model = adapter.adapt()
         val csTestIdentifier = buildTestIdentifier()
 
-        // Fixed part
         UnitClassifier().classify(model, csTestIdentifier)
         val coveredModel = CoverageModelCalculator().calculate(model)
 
         val exportModel = MetricsExporter().getExportModel(coveredModel)
+        // end usage
 
         val exportedModelType = object : TypeToken<Set<ExportUnit>>() {}.type
         val expectedExportModel = Gson().fromJson<Set<ExportUnit>>(

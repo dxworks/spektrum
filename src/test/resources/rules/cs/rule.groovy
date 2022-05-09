@@ -1,10 +1,20 @@
-def check(unitInfo) {
-    GroovyShell shell = new GroovyShell()
-    def attribute = shell.parse(new File("rules/cs/hasSomeAttribute.groovy"))
-    def usingStatements = shell.parse(new File("rules/cs/hasSomeUsingStatements.groovy"))
+def hasSomeAttribute(unitInfo, attributes) {
+    return attributes.stream()
+            .anyMatch(paramAttr -> unitInfo.method.attributes.stream()
+                    .anyMatch(unitAttr -> unitAttr == paramAttr)
+            )
+}
 
-    def hasUsing = usingStatements.hasSomeUsingStatements(unitInfo, ["Xunit"])
-    def hasAttribute = attribute.hasSomeAttribute(unitInfo, ["Xunit.FactAttribute", "Xunit.TheoryAttribute"])
+def hasSomeUsingStatements(unitInfo, usingStatements) {
+    return usingStatements.stream()
+            .anyMatch(paramUsing -> unitInfo.cls.usingStatements.stream()
+                    .anyMatch(unitUsing -> unitUsing == paramUsing)
+            )
+}
+
+def check(unitInfo) {
+    def hasUsing = hasSomeUsingStatements(unitInfo, ["Xunit"])
+    def hasAttribute = hasSomeAttribute(unitInfo, ["Xunit.FactAttribute", "Xunit.TheoryAttribute"])
 
     return hasUsing && hasAttribute
 }
