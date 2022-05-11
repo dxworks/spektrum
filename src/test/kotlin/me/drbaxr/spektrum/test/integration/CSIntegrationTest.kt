@@ -38,8 +38,6 @@ class CSIntegrationTest {
             exportedModelType
         )
 
-        MetricsExporter().exportAndSave(coveredModel)
-
         assertTrue { expectedExportModel == exportModel }
     }
 
