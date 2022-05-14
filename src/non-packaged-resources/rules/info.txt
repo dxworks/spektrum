@@ -1,0 +1,17 @@
+directory structure:
+/rules                              <- where all the rules are
+  /cs                               <- C# rules directory
+    /helper_cs_rule1.groovy         <- helper scripts that can be used in the main rule
+    /helper_cs_rule2.groovy
+    /...
+    /rule.groovy                    <- the rule that will be used to identify test units
+  /java <- Java rules directory
+    /helper_java_rule1.groovy
+    /helper_java_rule2.groovy
+    /...
+    /rule.groovy
+  /general                          <- non language specific helpers
+    /general_rule1.groovy
+    /general_rule2.groovy
+    /...
+  /info.txt                         <- this file :)
