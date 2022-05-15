@@ -82,7 +82,7 @@ to ```./rules/java/rule.groovy```'s ```check``` function and replace its content
 project (_more info about the ```unitInfo``` parameter will come in the next subsection_).
 
 ```groovy
-package rules.cs
+package rules.java
 
 def coolRuleA(unitInfo) {
     def isRespected = false
